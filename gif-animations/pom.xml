@@ -3,10 +3,14 @@
 
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+	<groupId>org.onebeartoe.imaging.parent</groupId>
+	<artifactId>imaging-parent</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+    </parent>
+
     <groupId>org.onebeartoe.imaging</groupId>
-    
     <artifactId>animated-gifs</artifactId>
-    
     <version>0.0.1-SNAPSHOT</version>
     
     <name>onebeartoe-animated-gifs</name>
