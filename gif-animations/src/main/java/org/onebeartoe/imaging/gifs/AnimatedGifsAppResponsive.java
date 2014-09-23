@@ -23,6 +23,7 @@ import javax.swing.JProgressBar;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.KeyStroke;
+
 import org.onebeartoe.application.DesktopApplication;
 import org.onebeartoe.application.JavaPreferencesService;
 import org.onebeartoe.application.PreferencesService;
