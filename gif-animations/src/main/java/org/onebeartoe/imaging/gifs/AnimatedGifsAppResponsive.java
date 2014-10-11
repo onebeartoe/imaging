@@ -27,7 +27,7 @@ import javax.swing.KeyStroke;
 import org.onebeartoe.application.DesktopApplication;
 import org.onebeartoe.application.JavaPreferencesService;
 import org.onebeartoe.application.PreferencesService;
-import org.onebeartoe.ui.IntermediateProgressShowingWorkPanel;
+import org.onebeartoe.application.ui.IntermediateProgressShowingWorkPanel;
 
 /**
  * @author Roberto Marquez
