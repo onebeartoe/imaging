@@ -65,9 +65,11 @@ public class GifAnimationWorker extends AsynchIntermediateProgressEDTWorker
                     BufferedImage bi = new BufferedImage(w, h, type);                    
                     Graphics2D g = bi.createGraphics();
                     g.drawImage(originalImages[i], 0,0, guiParent);
-
+                    
                     // add the new 8 bit / 256 color image to the animation
                     gifenc.addFrame(bi);
+                    
+                    bi.flush();
                     System.out.println(" done.");                    
                 }
                 catch(Exception e)

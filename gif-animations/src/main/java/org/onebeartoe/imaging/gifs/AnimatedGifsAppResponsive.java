@@ -45,6 +45,8 @@ public class AnimatedGifsAppResponsive extends JFrame implements DesktopApplicat
     
     private JFileChooser inputChooser;
     
+    private JTextField textField;
+    
     public AnimatedGifsAppResponsive()
     {
 	setLayout( new BorderLayout() );
@@ -66,13 +68,17 @@ public class AnimatedGifsAppResponsive extends JFrame implements DesktopApplicat
         add(animationPanel, BorderLayout.CENTER);
         
         restoreSize();
-        restoreLocation();		
+        restoreLocation();
+        restoreInputDirectory();
         
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         addWindowListener(new WindowAdapter() 
         {
             public void windowClosing(WindowEvent e) 
             {
+                String value = textField.getText();
+                preferenceService.saveProperty(INPUT_PATH_KEY, value);
+                
                 preferenceService.saveWindowPreferences(AnimatedGifsAppResponsive.this);
             }
         });
@@ -82,13 +88,21 @@ public class AnimatedGifsAppResponsive extends JFrame implements DesktopApplicat
     
     private JPanel createAnimationPanel()
     {
-        JTextField textField = new JTextField();
+        textField = new JTextField();
+        textField.setEditable(false);
+        
         JButton chooserButton = new JButton("Input Directory");
         chooserButton.addActionListener( new ActionListener() 
         {
             public void actionPerformed(ActionEvent e) 
             {
-                inputChooser.showOpenDialog(AnimatedGifsAppResponsive.this);
+                int response = inputChooser.showOpenDialog(AnimatedGifsAppResponsive.this);
+                
+                if(response == JFileChooser.APPROVE_OPTION)
+                {
+                    String path = inputChooser.getSelectedFile().getAbsolutePath();
+                    textField.setText(path);
+                }
             }
         });
         JPanel directoryChooserPanel = new JPanel( new BorderLayout() );
@@ -147,6 +161,13 @@ public class AnimatedGifsAppResponsive extends JFrame implements DesktopApplicat
     public static void main(String [] args)
     {
         AnimatedGifsAppResponsive app = new AnimatedGifsAppResponsive();
+    }
+    
+    private void restoreInputDirectory()
+    {
+        String path = 
+                
+        textField.setText(path);
     }
     
     private void restoreLocation()

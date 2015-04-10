@@ -54,7 +54,10 @@ public class BruteForceAnimatedGifsApp extends JFrame implements DesktopApplicat
     
     private final Logger logger;
     
-    String path = "C:\\Users\\urhm020\\Desktop\\Workspace\\Sarah\\animated-gifs\\";
+//    String path = "C:\\Users\\urhm020\\Desktop\\Workspace\\Sarah\\animated-gif-fabric\\ten\\";
+    
+    String path = "C:\\Users\\urhm020\\Desktop\\Workspace\\Sarah\\animated-gif-fabric\\moving-through-fabric\\ten\\";
+    
     File inputDirectory = new File(path);
     
     public BruteForceAnimatedGifsApp()
