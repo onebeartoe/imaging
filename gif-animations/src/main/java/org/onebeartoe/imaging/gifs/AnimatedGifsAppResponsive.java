@@ -33,12 +33,7 @@ import org.onebeartoe.application.ui.IntermediateProgressShowingWorkPanel;
  * @author Roberto Marquez
  */
 public class AnimatedGifsAppResponsive extends JFrame implements DesktopApplication
-{
-    
-    public static final int DEFAULT_HEIGHT = 600;
-    
-    public static final int DEFAULT_WIDTH = 450;
-    
+{   
     private PreferencesService preferenceService;
     
     private final Logger logger;
@@ -46,6 +41,8 @@ public class AnimatedGifsAppResponsive extends JFrame implements DesktopApplicat
     private JFileChooser inputChooser;
     
     private JTextField textField;
+    
+    private String INPUT_PATH_KEY = "org.onebeartoe.imaging.animated.gifs.INPUT_PATH_KEY";
     
     public AnimatedGifsAppResponsive()
     {
@@ -165,7 +162,7 @@ public class AnimatedGifsAppResponsive extends JFrame implements DesktopApplicat
     
     private void restoreInputDirectory()
     {
-        String path = 
+        String path = preferenceService.restoreProperty(INPUT_PATH_KEY);
                 
         textField.setText(path);
     }

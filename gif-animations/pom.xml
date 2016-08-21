@@ -13,7 +13,7 @@
     <artifactId>animated-gifs</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     
-    <name>onebeartoe-animated-gifs</name>
+    <name>onebeartoe-imaging-animated-gifs</name>
 
     <packaging>jar</packaging>        
     

@@ -13,6 +13,7 @@
 
 	<modules>
 		<module>gif-animations</module>
+	 <module>onebeartoe-imaging-image-resizer</module>
 	</modules>
 
  <build>
