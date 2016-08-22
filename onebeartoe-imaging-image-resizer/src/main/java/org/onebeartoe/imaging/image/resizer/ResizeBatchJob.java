@@ -6,7 +6,6 @@ import java.io.File;
 public class ResizeBatchJob 
 {
     File [] inputFiles;
-    String outfilePrefix = "a.resize.of.";
     int width;
     int height;
     int percentage;
@@ -17,24 +16,23 @@ public class ResizeBatchJob
         percentage = percent;
     }
 
-    public int getHeight() {
+    public int getHeight() 
+    {
         return height;
     }
 
-    public String getOutfilePrefix() 
+    public int getPercentage() 
     {
-        return outfilePrefix;
-    }
-
-    public int getPercentage() {
         return percentage;
     }
 
-    public int getWidth() {
+    public int getWidth() 
+    {
         return width;
     }
 
-    public File[] getInputFiles() {
+    public File[] getInputFiles() 
+    {
         return inputFiles;
     }	
 }

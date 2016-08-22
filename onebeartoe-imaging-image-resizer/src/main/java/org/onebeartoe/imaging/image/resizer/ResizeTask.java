@@ -18,7 +18,7 @@ public class ResizeTask extends TimerTask
     private int newWidth;
     private int newHeight;
     private int newPercentage;
-    private String prefix;
+//    private String prefix;
     private JButton actionButton;
     private ScrollableTextArea outputArea;
 
@@ -29,8 +29,19 @@ public class ResizeTask extends TimerTask
         newWidth = job.getWidth();
         newHeight = job.getHeight();
         newPercentage = job.getPercentage();
-        prefix = job.getOutfilePrefix(); 
         outputArea = testArea;
+    }
+    
+    private String buildResizeName(String originalName)
+    {
+        int i = originalName.lastIndexOf('.');
+        
+        String baseName = originalName.substring(0, i);
+        String fileSuffix = originalName.substring(i);
+        
+        String resizedName = baseName + "-resized" + fileSuffix;
+                
+        return resizedName;
     }
 	
     @Override
@@ -47,7 +58,10 @@ public class ResizeTask extends TimerTask
             String infile = targetedFiles[f].getPath();
             status.append(infile + "...............");				
             outputArea.setText( status.toString() );
-            String outfile = targetedFiles[f].getParentFile().getPath() + File.separator + prefix + targetedFiles[f].getName();
+            
+            String resizedName = buildResizeName(targetedFiles[f].getName());
+            String outfile = targetedFiles[f].getParentFile().getPath() + File.separator + resizedName;
+            
             String result = null;
             try 
             {
