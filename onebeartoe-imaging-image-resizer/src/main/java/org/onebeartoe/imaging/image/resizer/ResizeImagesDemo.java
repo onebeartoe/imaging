@@ -10,7 +10,7 @@ public class ResizeImagesDemo extends JFrame
 
     private static final long serialVersionUID = -2530681569390665572L;
 
-    public static String title = "onebeartoe ImageResizer";
+    public static String title = "ImageResizer by onebeartoe.com";
 
     /**
      * @param title

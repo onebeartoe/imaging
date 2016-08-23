@@ -2,6 +2,7 @@
 package org.onebeartoe.imaging.image.resizer;
 
 import java.awt.BorderLayout;
+import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
@@ -10,6 +11,7 @@ import java.util.Timer;
 
 import javax.swing.JButton;
 import javax.swing.JPanel;
+import javax.swing.JSplitPane;
 import javax.swing.JTextField;
 import javax.swing.border.Border;
 
@@ -42,8 +44,8 @@ public class ResizeImageGui extends JPanel implements ActionListener
         fileSelectionPanel.setBorder(border);
 
         // these panel holds the components for the new image's dementions and filesize reduction percentage.  
-        Border border2 = GUITools.factoryLineBorder("Quality");
-        qualityTextField = new JTextField("100");
+        Border border2 = GUITools.factoryLineBorder("% of Quality Kept");
+        qualityTextField = new JTextField("30");
         qualityTextField.setBorder(border2);
         
         JPanel inputPanel = new JPanel(new BorderLayout());
@@ -64,11 +66,13 @@ public class ResizeImageGui extends JPanel implements ActionListener
         controlPanel.add(actionButton, BorderLayout.SOUTH);
         Border border3 = GUITools.factoryLineBorder("Control and Status");
         controlPanel.setBorder(border3);
+        controlPanel.setMinimumSize( new Dimension(650, 1) );
 
-        // define the JFrame content layout 		
+        // define the JFrame content layout        
         setLayout(new BorderLayout());
-        add(inputPanel, BorderLayout.CENTER);
-        add(controlPanel, BorderLayout.SOUTH);
+        JSplitPane splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, inputPanel, controlPanel);
+        splitPane.setOneTouchExpandable(true);
+        add(splitPane, BorderLayout.CENTER);
     }
 
     public void actionPerformed(ActionEvent ae) 
