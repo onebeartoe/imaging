@@ -11,6 +11,7 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.prefs.BackingStoreException;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
@@ -74,7 +75,11 @@ public class AnimatedGifsAppResponsive extends JFrame implements DesktopApplicat
             public void windowClosing(WindowEvent e) 
             {
                 String value = textField.getText();
-                preferenceService.saveProperty(INPUT_PATH_KEY, value);
+                try {
+                    preferenceService.saveProperty(INPUT_PATH_KEY, value);
+                } catch (BackingStoreException ex) {
+                    Logger.getLogger(AnimatedGifsAppResponsive.class.getName()).log(Level.SEVERE, null, ex);
+                }
                 
                 preferenceService.saveWindowPreferences(AnimatedGifsAppResponsive.this);
             }
