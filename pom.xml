@@ -14,6 +14,7 @@
 	<modules>
 		<module>gif-animations</module>
 	 <module>onebeartoe-imaging-image-resizer</module>
+	 <module>graphics</module>
 	</modules>
 
  <build>
