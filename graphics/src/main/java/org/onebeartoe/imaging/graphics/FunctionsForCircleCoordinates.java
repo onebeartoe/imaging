@@ -22,7 +22,7 @@ public class FunctionsForCircleCoordinates
 //                            + (imageHeight * 0.5);
                     
                     double radius = 1/200.0 + 1/10.0 * Math.pow(  Math.sin( (56*3.14*i)/12000.0 )  ,6);
-                    radius = radius * 100.0;
+//                    radius = radius * 100.0;
                 
         Circle c = new Circle(x, y, radius);
         
