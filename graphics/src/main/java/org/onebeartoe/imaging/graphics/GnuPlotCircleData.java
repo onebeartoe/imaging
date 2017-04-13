@@ -23,8 +23,6 @@ public class GnuPlotCircleData
 {
     private String outpath(FunctionsForCircleCoordinates.FunctionTypes coordinateName, int limit)
     {
-        
-        
         String s = String.valueOf(limit);
         int length = s.length();
         String format = "%0" + length + "d";
