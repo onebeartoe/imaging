@@ -3,7 +3,7 @@
     
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>org.onebeartoe.imaging.parent</groupId>
+	<groupId>org.onebeartoe.imaging</groupId>
 	<artifactId>imaging-parent</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
@@ -13,8 +13,9 @@
 
 	<modules>
 		<module>gif-animations</module>
-	 <module>onebeartoe-imaging-image-resizer</module>
-	 <module>graphics</module>
+		<module>gnuplot</module>
+		<module>graphics</module>
+		<module>onebeartoe-imaging-image-resizer</module>
 	</modules>
 
  <build>
