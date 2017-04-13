@@ -1,4 +1,6 @@
 
+package org.onebeartoe.imaging.graphics;
+
 //import corejava.*;
 
 import java.io.File;
