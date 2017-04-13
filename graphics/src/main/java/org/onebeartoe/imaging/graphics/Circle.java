@@ -21,5 +21,9 @@ public class Circle
         this.radius = radius;
     }
     
-    
+    @Override
+    public String toString()
+    {
+        return "" + x + "\t" + y + "\t" + radius;
+    }
 }
