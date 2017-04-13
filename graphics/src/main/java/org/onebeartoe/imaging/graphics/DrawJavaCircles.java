@@ -24,10 +24,10 @@ public class DrawJavaCircles
 {
     public static void main(String[] argv) throws Exception 
     {
-        FunctionsForCircleCoordinates circleCoordinates = new FunctionsForCircleCoordinates();
+        FunctionsForCircleCoordinates circleCoordinates = new TwelveHundredCicleCoordinates();
         
-        int imageWidth = 600;
-        int imageHeight = 600;
+        int imageWidth = 1600;
+        int imageHeight = 1600;
         BufferedImage bufferedImage = new BufferedImage(imageWidth, imageHeight, BufferedImage.TYPE_INT_RGB);
         Graphics2D g2d = bufferedImage.createGraphics();
 
@@ -37,7 +37,7 @@ public class DrawJavaCircles
         IntStream.range(1, 12000)
                  .forEach( i -> 
                  {
-                    Circle c = circleCoordinates.twelveHundredCicles(i); 
+                    Circle c = circleCoordinates.iToCircle(i);
                     
                     c.x = c.x * 500.0 
                             + (imageWidth * 0.5);

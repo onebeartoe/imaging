@@ -27,15 +27,23 @@ public class GnuPlotCircleData
         int length = s.length();
         String format = "%0" + length + "d";
         String number = String.format(format, limit);
-        String outpath = "circles-" + number + ".dat";
+        
+        String parent = "samples/" + coordinateName.name();
+        
+        String outpath = parent + "/" + "circles-" + number + ".dat";
+        
+        
         
         return outpath;
     }
     
     public static void main(String[] argv) throws Exception 
     {
+        IntToCircle itc = new TwelveHundredIntToCircle();
+//        FunctionsForCircleCoordinates circleCoordinates = new TwelveHundredCicleCoordinates();
+        
         GnuPlotCircleData gpcd = new GnuPlotCircleData();
-        gpcd.printData();
+        gpcd.printData(itc);//, circleCoordinates);
         
         System.exit(0);
     }
@@ -47,41 +55,41 @@ public class GnuPlotCircleData
      */
     private void outputList(FunctionsForCircleCoordinates.FunctionTypes coordinatesType, List<Circle> circles, int limit)
     {
-        String outpath = outpath(coordinatesType, limit);
-        File outfile = new File(outpath);
-        
         StringBuilder sb = new StringBuilder();
         
         circles.stream()
                 .forEach(c -> 
-                        sb.append(c.toString() + System.lineSeparator() ));
+                        sb.append(c.toString() + System.lineSeparator() ) );
         
         String circleData = sb.toString();
+
+        String outpath = outpath(coordinatesType, limit);
+        
+        System.out.println("output: " + outpath);
+        
+        File outfile = new File(outpath);
+        File parent = outfile.getParentFile();
+        if( !parent.exists())
+        {
+            parent.mkdirs();
+        }
         
         TextFileWriter tfw = new TextFileWriter();
         tfw.writeText(outfile, circleData);
     }
     
-    public void printData()
+    public void printData(IntToCircle itc)//, FunctionsForCircleCoordinates circleCoordinatessssss)
     {
-        int xyMultiplier = 800;
-        FunctionsForCircleCoordinates circleCoordinates = new FunctionsForCircleCoordinates();
-        
         List<Circle> allCircles = IntStream.range(1, 12000)
                  .mapToObj( i -> 
                  {
-                    Circle c = circleCoordinates.twelveHundredCicles(i);
-                    c.x = c.x * xyMultiplier;
-                    c.y = c.y * xyMultiplier;                    
-                    c.radius = c.radius * 100.0;
-                                        
+                    Circle c = itc.convert(i);
+                                   
                     System.out.println(i + ": " + c.toString() ) ;
                     
                     return c;
                  })
                 .collect(Collectors.toList() );
-        
-        StringBuilder demSb = new StringBuilder();
                 
         int limitIndex = 0;
         int [] limits = {2000, 4000 , 6000, 8000, 10000, allCircles.size()-1};
@@ -97,16 +105,50 @@ public class GnuPlotCircleData
             if(i == limits[limitIndex])
             {
                 FunctionsForCircleCoordinates.FunctionTypes functionType = FunctionsForCircleCoordinates.FunctionTypes.TWELVE_HUNDRED;
-               
-                
+
                 outputList(functionType, currentList, limits[limitIndex]);
                
-               limitIndex++;
+                limitIndex++;
                
-               currentList = new ArrayList();
+                currentList = new ArrayList();
             }
         };
-        
-//        create .dem file
     }   
+    
+    interface IntToCircle
+    {              
+        Circle convert(int i);//,FunctionsForCircleCoordinates circleCoordinates);
+    }
+    
+    public static class IntToCirlceWithMultipliers implements IntToCircle
+    {
+        protected FunctionsForCircleCoordinates circleCoordinates;
+        
+//        public IntToCirlceWithMultipliers(FunctionsForCircleCoordinates circleCoordinates)
+//        {
+//            this.circleCoordinates = circleCoordinates;
+//        }
+//        q
+        
+        @Override
+        public Circle convert(int i)
+        {
+            int xyMultiplier = 800;
+            Circle c = circleCoordinates.iToCircle(i);
+            c.x = c.x * xyMultiplier;
+            c.y = c.y * xyMultiplier;                    
+            c.radius = c.radius * 100.0;
+            
+            return c;
+        }        
+    }
+    
+    public static class TwelveHundredIntToCircle extends IntToCirlceWithMultipliers
+    {
+        public TwelveHundredIntToCircle()
+        {
+//            s
+            circleCoordinates = new TwelveHundredCicleCoordinates();
+        }
+    }
 }
