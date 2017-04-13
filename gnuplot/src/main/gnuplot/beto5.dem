@@ -1,0 +1,4 @@
+set title "Mota"
+splot x**2 + y**2
+
+pause -1 "Hit return to continue"

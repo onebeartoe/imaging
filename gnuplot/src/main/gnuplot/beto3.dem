@@ -1,0 +1,8 @@
+set title "Parametric Torus"
+set urange [0:2*pi]
+set vrange [0:2*pi]
+set zrange [-1:1]        # imitate old 'set view' hack
+splot (1-0.2*cos(v))*cos(u), (1-0.2*cos(v))*sin(u),0.2*sin(v)
+
+pause -1 "Hit return to continue"
+

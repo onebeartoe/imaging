@@ -1,0 +1,2 @@
+splot sin(x) * sin(y)
+pause -1 "Hit return to continue"

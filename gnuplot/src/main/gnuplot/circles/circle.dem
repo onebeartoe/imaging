@@ -1,0 +1,5 @@
+
+set object 1 circle at 6,6 size first 2.73 fc rgb "navy"
+#splot set object 1 circle at 6,6 size first 2.73 fc rgb "navy"
+
+pause -1 "Hit return to continue"

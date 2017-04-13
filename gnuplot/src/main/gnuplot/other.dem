@@ -1,0 +1,3 @@
+print "3D plot ahead, one moment please ..."
+pause -1 "Hit return to continue"
+reset

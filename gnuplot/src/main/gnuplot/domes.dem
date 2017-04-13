@@ -1,0 +1,11 @@
+#set xlabel "X axis" -3,-2
+#set ylabel "Y axis" 3,-2
+#set zlabel "Z axis" -5
+splot sqrt(16 - x**2 - y**2)
+pause -1 "Hit return to continue"
+
+splot sqrt(64 - x**2 - y**2)
+pause -1 "Hit return to continue"
+
+splot sqrt(100 - x**2 - y**2)
+pause -1 "Hit return to continue"

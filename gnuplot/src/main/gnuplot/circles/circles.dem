@@ -1,0 +1,14 @@
+
+# This is from the GnuPlot demonstration applications.
+#   https://github.com/gnuplot/gnuplot/blob/master/demo/circles.dem#L101
+#   http://www.bmsc.washington.edu/people/merritt/gnuplot/demo_canvas/circles.html
+
+set size ratio -1
+set title "Delaunay triangulation of Hemisphere points, some empty circles in red"
+unset key
+
+plot 'empty-circles.dat' with circles lw 2 lc rgb "red", \
+     'delaunay-edges.dat' with lines lc rgb "forest-green", \
+     'hemisphr.dat' u (100*$1):(100*$2) with points pt 7 lc rgb "black"
+
+pause -1 "Hit return to continue"

@@ -1,0 +1,5 @@
+#set xlabel "X axis" -3,-2
+#set ylabel "Y axis" 3,-2
+#set zlabel "Z axis" -5
+splot exp(x**2 + y**2)
+pause -1 "Hit return to continue"

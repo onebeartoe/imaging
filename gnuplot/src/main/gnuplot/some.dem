@@ -1,0 +1,26 @@
+
+# $Id: random.dem,v 1.8 2004/02/13 01:16:39 sfeam Exp $
+#
+# random.dem
+#
+# Lattice test for random numbers;
+# If you can see any patterns in this plot, the random number generator
+# is not very good.
+#
+# Copyright (c) 1991, Jos van der Woude, jvdwoude@hut.nl
+unset key
+set xrange [0: 10]
+set yrange [0: 10]
+set zrange [0: 10]
+set title "Point Plotting"
+set xlabel "x axis ->"
+set ylabel "y axis ->"
+set zlabel "z axis ->"
+set tics
+set style function dots
+set parametric
+print "3D plot ahead, one moment please ..."
+splot 'data2.dat'
+pause -1 "Hit return to continue"
+
+reset
