@@ -39,7 +39,9 @@ public class GnuPlotCircleData
     
     public static void main(String[] argv) throws Exception 
     {
-        IntToCircle itc = new TwelveHundredIntToCircle();
+//        IntToCircle itc = new TwelveHundredIntToCircle();
+        IntToCircle itc = new FourteenHundredIntToCircle();
+        
 //        FunctionsForCircleCoordinates circleCoordinates = new TwelveHundredCicleCoordinates();
         
         GnuPlotCircleData gpcd = new GnuPlotCircleData();
@@ -149,6 +151,14 @@ public class GnuPlotCircleData
         {
 //            s
             circleCoordinates = new TwelveHundredCicleCoordinates();
+        }
+    }
+    
+    public static class FourteenHundredIntToCircle extends IntToCirlceWithMultipliers
+    {
+        public FourteenHundredIntToCircle()
+        {
+            circleCoordinates = new FourteenHundredCicleCoordinates();
         }
     }
 }
