@@ -3,13 +3,13 @@ package org.onebeartoe.imaging.gifs;
 
 import com.fmsware.gif.AnimatedGifEncoder;
 import java.awt.BorderLayout;
-import java.awt.Dimension;
 import java.awt.Graphics2D;
 import java.awt.Image;
-import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -35,14 +35,14 @@ import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.border.BevelBorder;
 import net.jmge.gif.Gif89Encoder;
-import org.onebeartoe.application.DesktopApplication;
 import org.onebeartoe.application.JavaPreferencesService;
 import org.onebeartoe.application.PreferencesService;
+import org.onebeartoe.application.ui.swing.SwingApplication;
 
 /**
  * @author Roberto Marquez
  */
-public class BruteForceAnimatedGifsApp extends JFrame implements DesktopApplication
+public class BruteForceAnimatedGifsApp extends JFrame
 {
     private JLabel statusLabel;
     
@@ -51,6 +51,10 @@ public class BruteForceAnimatedGifsApp extends JFrame implements DesktopApplicat
     public static final int DEFAULT_WIDTH = 450;
     
     private PreferencesService preferenceService;
+    
+    private SwingApplication guiConfig;
+    
+    private final String applicationId;    
     
     private final Logger logger;
     
@@ -61,14 +65,17 @@ public class BruteForceAnimatedGifsApp extends JFrame implements DesktopApplicat
     File inputDirectory = new File(path);
     
     public BruteForceAnimatedGifsApp()
-    {
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);	
+    {        
 	setLayout( new BorderLayout() );
         
         String className = getClass().getName();
 	logger = Logger.getLogger(className);
+        applicationId = className;
+                
+        guiConfig = loadDefaultGuiConfig();        
+        guiConfig.restoreWindowProperties(this);        
         
-        preferenceService = new JavaPreferencesService(this);
+        preferenceService = new JavaPreferencesService( getClass() );
         
         JMenuBar menuBar = createMenuBar();
         
@@ -121,39 +128,29 @@ public class BruteForceAnimatedGifsApp extends JFrame implements DesktopApplicat
 	tabbedPane.addTab("Images", imagesTabIcon, encodePanel, "Load built-in images.");
 	tabbedPane.addTab("My Images", userTabIcon, decodePanel, "This panel displays images from your local hard drive.");
         
-	Dimension demension;
-	try 
-	{
-	    demension = preferenceService.restoreWindowDimension();
-	} 
-	catch (Exception ex) 
-	{
-	    demension = new Dimension(DEFAULT_WIDTH, DEFAULT_HEIGHT);
-	}        
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
+        addWindowListener( new WindowAdapter() 
+        {
+            public void windowClosing(WindowEvent e) 
+            {
+                try 
+                {                    
+                    guiConfig.setCurrentConfiguration(BruteForceAnimatedGifsApp.this);
+                    guiConfig.setApplicationId(applicationId);
+                    guiConfig.persistWindowProperties();
+                } 
+                catch (IOException ex) 
+                {
+                    ex.printStackTrace();
+                }
+            }
+        });
+    
                 
 	setJMenuBar(menuBar);
 	add(tabbedPane, BorderLayout.CENTER);	
 	add(statusPanel, BorderLayout.SOUTH);
-	setSize(demension);		
-	
-        Point location = null;
-	try 
-	{
-	    location = preferenceService.restoreWindowLocation();
-	} 
-	catch (Exception ex) 
-	{
-	    logger.log(Level.INFO, ex.getMessage(), ex);
-	}
-	if(location == null)
-	{
-	    // center it
-	    setLocationRelativeTo(null); 		
-	}
-	else
-	{
-	    setLocation(location);
-	}
 		
 	setVisible(true);
     }
@@ -267,12 +264,40 @@ public class BruteForceAnimatedGifsApp extends JFrame implements DesktopApplicat
         OutputStream out = new FileOutputStream(outfile);
         
         gifenc.encode(out);
-   }
+    }
+    
+    private SwingApplication loadDefaultGuiConfig()    
+    {
+        SwingApplication app = new SwingApplication(path) 
+        {
+            @Override
+            public int defaultX() {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+            
+            @Override
+            public int defaultY() {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+            
+            @Override
+            public int defaultWidth() 
+            {
+                return DEFAULT_WIDTH;
+            }
+            
+            @Override
+            public int defaultHeight() 
+            {
+                return DEFAULT_HEIGHT;
+            }
+        };
+        
+        return app;
+    }
     
     private File [] loadImageFiles()
     {
-        
-         
         File [] images = inputDirectory.listFiles( new FilenameFilter() 
         {
             public boolean accept(File dir, String name) 
@@ -295,5 +320,4 @@ public class BruteForceAnimatedGifsApp extends JFrame implements DesktopApplicat
     {
         BruteForceAnimatedGifsApp app = new BruteForceAnimatedGifsApp();
     }
-    
 }
