@@ -208,6 +208,5 @@ public class AnimatedGifsAppResponsive extends JFrame implements DesktopApplicat
 	}
         
         setSize(demension);
-    }
-    
+    }   
 }
