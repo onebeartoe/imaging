@@ -2,13 +2,12 @@
 package org.onebeartoe.imaging.gifs;
 
 import java.awt.BorderLayout;
-import java.awt.Dimension;
-import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.prefs.BackingStoreException;
@@ -25,18 +24,22 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.KeyStroke;
 
-import org.onebeartoe.application.DesktopApplication;
 import org.onebeartoe.application.JavaPreferencesService;
 import org.onebeartoe.application.PreferencesService;
 import org.onebeartoe.application.ui.IntermediateProgressShowingWorkPanel;
+import org.onebeartoe.application.ui.swing.SwingApplication;
 
 /**
  * @author Roberto Marquez
  */
-public class AnimatedGifsAppResponsive extends JFrame implements DesktopApplication
+public class AnimatedGifsAppResponsive extends JFrame// implements DesktopApplication
 {   
     private PreferencesService preferenceService;
     
+    private SwingApplication guiConfig;
+    
+    private final String applicationId;
+        
     private final Logger logger;
     
     private JFileChooser inputChooser;
@@ -52,7 +55,13 @@ public class AnimatedGifsAppResponsive extends JFrame implements DesktopApplicat
         String className = getClass().getName();
 	logger = Logger.getLogger(className);
         
-        preferenceService = new JavaPreferencesService(this);
+        applicationId = getClass().getName();
+        
+        guiConfig = loadDefaultGuiConfig();
+        
+        guiConfig.restoreWindowProperties(this);        
+        
+        preferenceService = new JavaPreferencesService( getClass() );
         
         inputChooser = new JFileChooser();
         inputChooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
@@ -65,8 +74,6 @@ public class AnimatedGifsAppResponsive extends JFrame implements DesktopApplicat
         JPanel animationPanel = createAnimationPanel();
         add(animationPanel, BorderLayout.CENTER);
         
-        restoreSize();
-        restoreLocation();
         restoreInputDirectory();
         
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -74,10 +81,24 @@ public class AnimatedGifsAppResponsive extends JFrame implements DesktopApplicat
         {
             public void windowClosing(WindowEvent e) 
             {
+                try 
+                {                    
+                    guiConfig.setCurrentConfiguration(AnimatedGifsAppResponsive.this);
+                    guiConfig.setApplicationId(applicationId);
+                    guiConfig.persistWindowProperties();
+                } 
+                catch (IOException ex) 
+                {
+                    ex.printStackTrace();
+                }                
+                
                 String value = textField.getText();
-                try {
+                try 
+                {
                     preferenceService.saveProperty(INPUT_PATH_KEY, value);
-                } catch (BackingStoreException ex) {
+                } 
+                catch (BackingStoreException ex) 
+                {
                     Logger.getLogger(AnimatedGifsAppResponsive.class.getName()).log(Level.SEVERE, null, ex);
                 }
                 
@@ -133,20 +154,17 @@ public class AnimatedGifsAppResponsive extends JFrame implements DesktopApplicat
 	KeyStroke instructionsKeyStroke = KeyStroke.getKeyStroke(KeyEvent.VK_1, ActionEvent.ALT_MASK);
 	menuItem.setAccelerator(instructionsKeyStroke);
 	menuItem.getAccessibleContext().setAccessibleDescription("update with accessible description");
-//	menuItem.addActionListener( new InstructionsListener() );
 	applicationMenu.add(menuItem);
 	
 	menuItem = new JMenuItem("About");
 	KeyStroke aboutKeyStroke = KeyStroke.getKeyStroke(KeyEvent.VK_2, ActionEvent.ALT_MASK);
 	menuItem.setAccelerator(aboutKeyStroke);
 	menuItem.getAccessibleContext().setAccessibleDescription("update with accessible description");
-//	menuItem.addActionListener( new AboutListener() );
 	applicationMenu.add(menuItem);
 	
 	menuItem = new JMenuItem("Exit");
 	KeyStroke keyStroke = KeyStroke.getKeyStroke(KeyEvent.VK_3, ActionEvent.ALT_MASK);
 	menuItem.setAccelerator(keyStroke);
-//	menuItem.addActionListener( new QuitListener() );
 	menuItem.getAccessibleContext().setAccessibleDescription("update with accessible description");
 	applicationMenu.add(menuItem);
 
@@ -171,42 +189,34 @@ public class AnimatedGifsAppResponsive extends JFrame implements DesktopApplicat
                 
         textField.setText(path);
     }
-    
-    private void restoreLocation()
+
+    private SwingApplication loadDefaultGuiConfig() 
     {
-        Point location = null;
-	try 
-	{
-	    location = preferenceService.restoreWindowLocation();
-	} 
-	catch (Exception ex) 
-	{
-	    logger.log(Level.INFO, ex.getMessage(), ex);
-	}
+        SwingApplication app = new SwingApplication(applicationId) 
+        {
+            @Override
+            public int defaultX() {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+            
+            @Override
+            public int defaultY() {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+            
+            @Override
+            public int defaultWidth() 
+            {
+                return 600;
+            }
+            
+            @Override
+            public int defaultHeight() 
+            {
+                return 600;
+            }
+        };
         
-	if(location == null)
-	{
-	    // center it
-	    setLocationRelativeTo(null); 		
-	}
-	else
-	{
-	    setLocation(location);
-	}
+        return app;
     }
-    
-    private void restoreSize()
-    {        
-	Dimension demension;
-	try 
-	{
-	    demension = preferenceService.restoreWindowDimension();
-	} 
-	catch (Exception ex) 
-	{
-	    demension = new Dimension(DEFAULT_WIDTH, DEFAULT_HEIGHT);
-	}
-        
-        setSize(demension);
-    }   
 }
