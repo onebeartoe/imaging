@@ -101,8 +101,6 @@ public class AnimatedGifsAppResponsive extends JFrame// implements DesktopApplic
                 {
                     Logger.getLogger(AnimatedGifsAppResponsive.class.getName()).log(Level.SEVERE, null, ex);
                 }
-                
-                preferenceService.saveWindowPreferences(AnimatedGifsAppResponsive.this);
             }
         });
         
