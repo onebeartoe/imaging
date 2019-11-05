@@ -1,10 +1,15 @@
 
+dist: trusty
+
 language: java
 
 addons:
   sonarcloud:
     organization: $SONAR_ORGANIZATION
     token: $SONAR_TOKEN
+
+jdk:
+  - oraclejdk8
 
 script:
   - Xvfb :5 -screen 0 800x600x24 &
@@ -15,3 +20,6 @@ cache:
   directories:
     - '$HOME/.m2/repository'
     - '$HOME/.sonar/cache'  
+
+
+
