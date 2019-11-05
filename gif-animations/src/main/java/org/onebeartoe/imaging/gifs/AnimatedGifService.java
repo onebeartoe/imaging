@@ -61,12 +61,19 @@ public class AnimatedGifService
 
         gifenc.setUniformDelay((int) Math.round(100 / frames_per_second));
         
-        String outpath = parentDir.getAbsolutePath() + File.separatorChar + "jmge-animation.gif";
-        File outfile = new File(outpath);
-        OutputStream out = new FileOutputStream(outfile);
-        
-        gifenc.encode(out);
-        
+        File outfile = null;
+                
+        if(parentDir != null)
+        {
+            String outpath = parentDir.getAbsolutePath() + File.separatorChar + "jmge-animation.gif";
+            
+            outfile = new File(outpath);
+            
+            OutputStream out = new FileOutputStream(outfile);
+
+            gifenc.encode(out);            
+        }
+      
         return outfile;
     }
 

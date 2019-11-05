@@ -3,6 +3,7 @@ package org.onebeartoe.imaging.gifs;
 
 import java.io.File;
 import javax.swing.JFrame;
+import static org.testng.AssertJUnit.assertNotNull;
 import static org.testng.AssertJUnit.assertTrue;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -35,6 +36,8 @@ public class AnimatedGifServiceSpecification
         JFrame frame = new JFrame();
         
         File outfile = implementation.encodeImagesJmge(images, frame);
+        
+        assertNotNull(outfile);
         
         assertTrue( outfile.exists() );
     }
