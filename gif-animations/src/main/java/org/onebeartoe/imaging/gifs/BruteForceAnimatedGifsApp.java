@@ -3,8 +3,6 @@ package org.onebeartoe.imaging.gifs;
 
 import com.fmsware.gif.AnimatedGifEncoder;
 import java.awt.BorderLayout;
-import java.awt.Graphics2D;
-import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
@@ -12,10 +10,8 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.FilenameFilter;
 import java.io.IOException;
-import java.io.OutputStream;
 import java.net.URL;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -34,7 +30,6 @@ import javax.swing.KeyStroke;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.border.BevelBorder;
-import net.jmge.gif.Gif89Encoder;
 import org.onebeartoe.application.JavaPreferencesService;
 import org.onebeartoe.application.PreferencesService;
 import org.onebeartoe.application.ui.swing.SwingApplication;
@@ -57,12 +52,12 @@ public class BruteForceAnimatedGifsApp extends JFrame
     private final String applicationId;    
     
     private final Logger logger;
-    
-//    String path = "C:\\Users\\urhm020\\Desktop\\Workspace\\Sarah\\animated-gif-fabric\\ten\\";
-    
-    String path = "C:\\Users\\urhm020\\Desktop\\Workspace\\Sarah\\animated-gif-fabric\\moving-through-fabric\\ten\\";
+
+    String path = "C:\\Users\\user\\Desktop\\Workspace\\Sarah\\animated-gif-fabric\\moving-through-fabric\\ten\\";
     
     File inputDirectory = new File(path);
+    
+    private AnimatedGifService animatedGifService;
     
     public BruteForceAnimatedGifsApp()
     {        
@@ -76,6 +71,8 @@ public class BruteForceAnimatedGifsApp extends JFrame
         guiConfig.restoreWindowProperties(this);        
         
         preferenceService = new JavaPreferencesService( getClass() );
+        
+        animatedGifService = new AnimatedGifService();
         
         JMenuBar menuBar = createMenuBar();
         
@@ -105,8 +102,11 @@ public class BruteForceAnimatedGifsApp extends JFrame
                     {
                         try 
                         {
-                            encodeImagesFmsware();                                                    
-                            encodeImagesJmge();
+                            encodeImagesFmsware();              
+                            
+                            File [] images = animatedGifService.loadImageFiles(inputDirectory);
+                            
+                            animatedGifService.encodeImagesJmge(images, BruteForceAnimatedGifsApp.this);
                         } 
                         catch (IOException ex) 
                         {
@@ -197,7 +197,7 @@ public class BruteForceAnimatedGifsApp extends JFrame
     
     private void encodeImagesFmsware()
     {
-        File [] images = loadImageFiles();
+        File [] images = animatedGifService.loadImageFiles(inputDirectory);
                 
         AnimatedGifEncoder encoder = new AnimatedGifEncoder();
         String outpath = inputDirectory.getAbsolutePath() + File.separatorChar + "fmsware-animation.gif";        
@@ -225,45 +225,6 @@ public class BruteForceAnimatedGifsApp extends JFrame
         }
         encoder.finish();
         System.out.println("animation written to: " + outpath);
-    }
-    
-    void encodeImagesJmge() throws IOException
-    {
-        File [] images = loadImageFiles();
-        Image[] originalImages = new Image[images.length];
-        
-        
-        String annotation = "some annotation";
-        boolean looped = true;
-        double frames_per_second = 2;
-       
-        Gif89Encoder gifenc = new Gif89Encoder();
-        for (int i = 0; i < originalImages.length; ++i)
-        {
-            System.out.print("jmpe encoding image " + i + " of " + originalImages.length + " - " + images[i].getName() );
-            originalImages[i] = ImageIO.read(images[i]);
-            
-            // use the origianl image to create a new 8 bit / 256 color image
-            int w = originalImages[i].getWidth(this);
-            int h = originalImages[i].getHeight(this);
-            int type = BufferedImage.TYPE_BYTE_INDEXED;            
-            BufferedImage bi = new BufferedImage(w, h, type);                    
-            Graphics2D g = bi.createGraphics();
-            g.drawImage(originalImages[i], 0,0, this);
-            
-            // add the new 8 bit / 256 color image to the animation
-            gifenc.addFrame(bi);
-            System.out.println(" done.");
-        }
-        gifenc.setComments(annotation);
-        gifenc.setLoopCount(looped ? 0 : 1);
-        gifenc.setUniformDelay((int) Math.round(100 / frames_per_second));
-        
-        String outpath = inputDirectory.getAbsolutePath() + File.separatorChar + "jmge-animation.gif";
-        File outfile = new File(outpath);
-        OutputStream out = new FileOutputStream(outfile);
-        
-        gifenc.encode(out);
     }
     
     private SwingApplication loadDefaultGuiConfig()    
@@ -294,26 +255,6 @@ public class BruteForceAnimatedGifsApp extends JFrame
         };
         
         return app;
-    }
-    
-    private File [] loadImageFiles()
-    {
-        File [] images = inputDirectory.listFiles( new FilenameFilter() 
-        {
-            public boolean accept(File dir, String name) 
-            {
-                boolean accepted = false;
-                String n = name.toLowerCase();
-                if(n.endsWith("png") || n.endsWith("jpg"))
-                {                    
-                    accepted = true;
-                }
-                
-                return accepted;
-            }
-        });
-        
-        return images;
     }
     
     public static void main(String [] args)

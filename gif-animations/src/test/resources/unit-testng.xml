@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="onebeartoe animated GIF Test Suite" parallel="none">
+    <test name="animaed GIF specification tests">
+        <packages>
+            <package name="org.onebeartoe.imaging.gifs"/>
+        </packages>
+    </test>
+</suite>
