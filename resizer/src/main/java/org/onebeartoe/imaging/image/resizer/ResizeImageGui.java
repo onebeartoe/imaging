@@ -25,8 +25,6 @@ public class ResizeImageGui extends JPanel implements ActionListener
 {
     final static long serialVersionUID = 1321324897498189498L;
 
-    public static String title = "Resize Image Helper";
-
     private final FileSelectionPanel fileSelectionPanel;
 
     private final JButton actionButton;

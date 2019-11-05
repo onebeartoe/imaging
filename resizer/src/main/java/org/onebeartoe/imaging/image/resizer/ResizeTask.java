@@ -18,7 +18,7 @@ public class ResizeTask extends TimerTask
     private int newWidth;
     private int newHeight;
     private int newPercentage;
-//    private String prefix;
+
     private JButton actionButton;
     private ScrollableTextArea outputArea;
 
@@ -65,13 +65,17 @@ public class ResizeTask extends TimerTask
             String result = null;
             try 
             {
-                ImageHelper.generateThumbnail(infile, outfile, newPercentage);
+                ImageService.reduceQuality(infile, outfile, newPercentage);
                 result = " done.";								
             }
             catch(Exception e) 
             {
+                System.err.println();
+                System.err.println(infile + " ->");
+                
                 e.printStackTrace();
-                result = " problem encountered!";
+                
+                result = " problem encountered -> " + e.getMessage();
             }
             status.append(result);
             status.append("\n\n");

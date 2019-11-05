@@ -7,10 +7,7 @@ import javax.swing.JFrame;
 
 public class ResizeImagesDemo extends JFrame 
 {
-
     private static final long serialVersionUID = -2530681569390665572L;
-
-    public static String title = "ImageResizer by onebeartoe.com";
 
     /**
      * @param title
@@ -40,6 +37,9 @@ public class ResizeImagesDemo extends JFrame
     public static void main(String[] args) 
     {
         // setup and show the GUI
+        
+        String title = "ImageResizer by onebeartoe.com";
+        
         ResizeImagesDemo app = new ResizeImagesDemo(title);
     }
 
