@@ -2,9 +2,14 @@
 package org.onebeartoe.imaging.gifs;
 
 import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardCopyOption;
 import javax.swing.JFrame;
+import org.onebeartoe.system.Filesystem;
 import static org.testng.AssertJUnit.assertNotNull;
 import static org.testng.AssertJUnit.assertTrue;
+
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -40,6 +45,20 @@ public class AnimatedGifServiceSpecification
         assertNotNull(outfile);
         
         assertTrue( outfile.exists() );
-    }
-    
+        
+        // cleanup
+        String pwd = Filesystem.pwd();
+        
+        System.out.println("pwd = " + pwd);
+        
+        File moveDir = new File( pwd + "/target/" + outfile.getName() );
+        
+        Path source = outfile.toPath();
+        
+        Path target = moveDir.toPath();
+        
+        StandardCopyOption options = StandardCopyOption.ATOMIC_MOVE;
+        
+        Files.move(source, target, options);
+    }    
 }
