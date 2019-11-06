@@ -13,7 +13,7 @@ public class ResizeImagesDemo extends JFrame
 {
     private static final long serialVersionUID = -2530681569390665572L;
 
-    private SwingApplication guiConfig;
+    private transient SwingApplication guiConfig;
 
     private final String applicationId;
     
@@ -64,7 +64,7 @@ public class ResizeImagesDemo extends JFrame
 
     SwingApplication loadDefaultGuiConfig()
     {
-        SwingApplication app = new SwingApplication(applicationId) 
+        return new SwingApplication(applicationId) 
         {
             @Override
             public int defaultX() 
@@ -90,8 +90,6 @@ public class ResizeImagesDemo extends JFrame
                 return 420;
             }
         };
-                
-        return app;
     }
     
     /**

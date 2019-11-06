@@ -43,8 +43,7 @@ public class ImageService
         ImageWriter writer = (ImageWriter) iter.next();
         ImageWriteParam iwp = writer.getDefaultWriteParam();
         
-        boolean isPng = extention.toLowerCase()
-                                 .equals("png");
+        boolean isPng = extention.equalsIgnoreCase("png");
         
         if(isPng)
         {
@@ -59,8 +58,7 @@ public class ImageService
         q = Math.max(0, Math.min(q, 100));
         float quality = (float) q / 100.0f;
         
-        boolean isGif = extention.toLowerCase()
-                                 .equals("gif");
+        boolean isGif = extention.equalsIgnoreCase("gif");
         
         if(isGif)
         {
