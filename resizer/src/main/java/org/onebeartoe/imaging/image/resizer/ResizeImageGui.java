@@ -3,13 +3,17 @@ package org.onebeartoe.imaging.image.resizer;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
+import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.util.Date;
 import java.util.Timer;
+import javax.swing.Box;
+import javax.swing.BoxLayout;
 
 import javax.swing.JButton;
+import javax.swing.JCheckBox;
 import javax.swing.JPanel;
 import javax.swing.JSplitPane;
 import javax.swing.JTextField;
@@ -33,6 +37,8 @@ public class ResizeImageGui extends JPanel implements ActionListener
     
     private final JTextField qualityTextField;
 
+    private final JCheckBox overwriteCheckBox;
+    
     public ResizeImageGui() 
     {
         // this panel gives the user a button to click to pick an input direcotyr,  it also shows which files will be worked on.
@@ -46,9 +52,20 @@ public class ResizeImageGui extends JPanel implements ActionListener
         qualityTextField = new JTextField("30");
         qualityTextField.setBorder(border2);
         
+        overwriteCheckBox = new JCheckBox();
+        overwriteCheckBox.setText("Existing Files");
+        Border qaopBorder = GUITools.factoryLineBorder("Overwrite");
+        JPanel checkboxPanel = new JPanel( new FlowLayout(FlowLayout.LEFT) );
+        checkboxPanel.add(overwriteCheckBox);
+        checkboxPanel.setBorder(qaopBorder);
+        
+        Box qualityAndOverwritePanel = new Box(BoxLayout.Y_AXIS);        
+        qualityAndOverwritePanel.add(qualityTextField);
+        qualityAndOverwritePanel.add(checkboxPanel);
+        
         JPanel inputPanel = new JPanel(new BorderLayout());
         inputPanel.add(fileSelectionPanel, BorderLayout.CENTER);
-        inputPanel.add(qualityTextField, BorderLayout.SOUTH);
+        inputPanel.add(qualityAndOverwritePanel, BorderLayout.SOUTH);
 
         // this panel holds the  buttons that start the thumbnail generation and displays the status of the application.  Tthis is the text area the displays the status of the application
         statusPanel = new ScrollableTextArea("\n \n \n \n \n ");
@@ -99,9 +116,13 @@ public class ResizeImageGui extends JPanel implements ActionListener
     private ResizeBatchJob createBatchJob() 
     {
         File[] files = fileSelectionPanel.getTargetedFiles();
+
         String s = qualityTextField.getText();
         int percentage = Integer.valueOf(s);
-        ResizeBatchJob job = new ResizeBatchJob(files, percentage);
+
+        boolean overwrite = overwriteCheckBox.isSelected();
+        
+        ResizeBatchJob job = new ResizeBatchJob(files, percentage, overwrite);
         
         return job;
     }

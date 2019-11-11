@@ -6,14 +6,22 @@ import java.io.File;
 public class ResizeBatchJob 
 {
     File [] inputFiles;
+
     int width;
+
     int height;
+
     int percentage;
 
-    public ResizeBatchJob(File [] files, int percent) 
+    boolean overwrite;
+
+    public ResizeBatchJob(File [] files, int percent, boolean overwrite) 
     {
         inputFiles = files;
+        
         percentage = percent;
+        
+        this.overwrite = overwrite;
     }
 
     public int getHeight() 
@@ -35,4 +43,9 @@ public class ResizeBatchJob
     {
         return inputFiles;
     }	
+
+    boolean getOverwrite()
+    {
+        return overwrite;
+    }
 }

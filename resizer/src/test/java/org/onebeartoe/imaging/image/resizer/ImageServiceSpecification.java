@@ -7,6 +7,8 @@ package org.onebeartoe.imaging.image.resizer;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.FileAlreadyExistsException;
+import org.onebeartoe.system.Sleeper;
 import static org.testng.AssertJUnit.assertTrue;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -29,13 +31,28 @@ public class ImageServiceSpecification
         implementation = new ImageService();
     }
 
-    private void reduceQuality(String testImage) throws IOException
+    /**
+     * This version overwrites by default.
+     * @param testImage
+     * @return
+     * @throws IOException 
+     */
+    private File reduceQuality(String testImage) throws IOException
+    {
+        boolean overwrite = true;
+        
+        File outfile = reduceQuality(testImage, overwrite);
+        
+        return outfile;
+    }
+    
+    private File reduceQuality(String testImage, boolean overwrite) throws IOException
     {
         String infilePath = testImageDir + testImage;
         
         String outfilePath = outputDir + testImage;
         
-        implementation.reduceQuality(infilePath, outfilePath, 20);
+        implementation.reduceQuality(infilePath, outfilePath, 20, overwrite);
         
         File infile = new File(infilePath);
         
@@ -45,7 +62,9 @@ public class ImageServiceSpecification
         
         boolean fileSizeWasReduced = outfile.length() < infile.length();
         
-        assertTrue(fileSizeWasReduced);        
+        assertTrue(fileSizeWasReduced);
+
+        return outfile;
     }
 
     /**
@@ -79,5 +98,38 @@ public class ImageServiceSpecification
         String testImage = "valohai-screen-shot-2019-11-04.png";
         
         reduceQuality(testImage);
+    }
+    
+    @Test
+    public void reduceQuality_overwrite() throws IOException
+    {
+        String testImage = "overwrite.jpg";
+        
+        File outfile = reduceQuality(testImage);
+        
+        long initialLastModified = outfile.lastModified();
+
+        System.out.println("sleepo");
+        Sleeper.sleepo(1000);
+        
+        outfile = reduceQuality(testImage);
+        
+        long secondLastModified = outfile.lastModified();
+        
+        System.out.println("initialLastModified = " + initialLastModified + "\n secondLastModified = " + secondLastModified);
+        
+        assertTrue(initialLastModified < secondLastModified);
+    }
+    
+    @Test(expectedExceptions = FileAlreadyExistsException.class)
+    public void reduceQuality_fails_overwriteNotSet() throws IOException
+    {
+        String testImage = "overwrite-fails.jpg";
+        
+        reduceQuality(testImage);
+        
+        boolean overwrite = false;
+        
+        reduceQuality(testImage, overwrite);
     }
 }

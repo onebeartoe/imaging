@@ -18,17 +18,20 @@ public class ResizeTask extends TimerTask
     private int newWidth;
     private int newHeight;
     private int newPercentage;
+    private boolean overwrite;
 
     private JButton actionButton;
     private ScrollableTextArea outputArea;
 
     public ResizeTask(ResizeBatchJob job, JButton button, ScrollableTextArea testArea) 
     {
-        actionButton = button;
         targetedFiles = job.getInputFiles();
         newWidth = job.getWidth();
         newHeight = job.getHeight();
         newPercentage = job.getPercentage();
+        overwrite = job.getOverwrite();
+        
+        actionButton = button;
         outputArea = testArea;
     }
     
@@ -65,7 +68,7 @@ public class ResizeTask extends TimerTask
             String result = null;
             try 
             {
-                ImageService.reduceQuality(infile, outfile, newPercentage);
+                ImageService.reduceQuality(infile, outfile, newPercentage, overwrite);
                 result = " done.";								
             }
             catch(Exception e) 

@@ -4,6 +4,7 @@ package org.onebeartoe.imaging.image.resizer;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.FileAlreadyExistsException;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
@@ -31,7 +32,7 @@ public class ImageService
      * @return
      * @throws Exception
      */
-    public static boolean reduceQuality(String infilePath, String outfilePath, int qualty) throws IOException
+    public static boolean reduceQuality(String infilePath, String outfilePath, int qualty, boolean overwrite) throws IOException
     {
         File infile = new File(infilePath);
         BufferedImage oldimage = ImageIO.read(infile);
@@ -76,14 +77,21 @@ public class ImageService
         }
 
         File outfile = new File(outfilePath);
-        FileImageOutputStream output = new FileImageOutputStream(outfile);
-        writer.setOutput(output);
+        if( outfile.exists() && !overwrite )
+        {
+            throw new FileAlreadyExistsException("outfile already exists: " + outfile.getAbsolutePath() );
+        }
+        else
+        {
+            FileImageOutputStream output = new FileImageOutputStream(outfile);
+            writer.setOutput(output);
 
-        IIOImage iioi = new IIOImage(oldimage, null, null);
-        writer.write(null, iioi, iwp);
-        writer.dispose();
-        output.close();
-
+            IIOImage iioi = new IIOImage(oldimage, null, null);
+            writer.write(null, iioi, iwp);
+            writer.dispose();
+            output.close();            
+        }
+        
         return true;
     }
 
@@ -101,10 +109,11 @@ public class ImageService
 
         int quality = Integer.parseInt(args[2]);
 
-        reduceQuality(infile, outfile, quality);
+        boolean overwrite = false;
+        
+        reduceQuality(infile, outfile, quality, overwrite);
 
         System.out.println("Done.");
         System.exit(0);
     }
-
 }
