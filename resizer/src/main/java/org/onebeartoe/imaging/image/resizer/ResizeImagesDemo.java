@@ -6,7 +6,10 @@ import java.awt.Container;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JFrame;
+import org.onebeartoe.application.logging.SysoutLoggerFactory;
 import org.onebeartoe.application.ui.swing.SwingApplication;
 
 public class ResizeImagesDemo extends JFrame 
@@ -17,12 +20,16 @@ public class ResizeImagesDemo extends JFrame
 
     private final String applicationId;
     
+    private Logger logger;
+    
     /**
      * @param title
      */
     public ResizeImagesDemo(String title) 
     {
         super(title);
+        
+        logger = SysoutLoggerFactory.getLogger( getClass().getName() );
 
         //	set up the input panel and its contents
         ResizeImageGui resizeImageGui = new ResizeImageGui();
@@ -53,7 +60,7 @@ public class ResizeImagesDemo extends JFrame
                 } 
                 catch (IOException ex) 
                 {
-                    ex.printStackTrace();
+                    logger.log(Level.SEVERE, ex.getMessage(), ex);
                 }
             }
         });
