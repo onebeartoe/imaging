@@ -2,13 +2,25 @@
 # First bed
 -267,  -183, "B1"
 
+
 # First village (got the bell from here)
 62,  -292, "V1"
 
 
 # Second village (has cats?)
+#       This one also has the second bed in a villager house.        
+#       This one has a decent little mine in the back on the second bed house.
 281,  79, "V2"
 
     
 # Second Village - My stuff! (out in the open) 
+#                  this is where I died and left my horse.  But I got him back on another visit.
 453, 95, "V2S"
+
+
+# Desert Hidey Hole (made of some cobblestone)
+430, -552, "DHH1"
+
+
+# Lava by water (far one)
+42, -868 "LW"
