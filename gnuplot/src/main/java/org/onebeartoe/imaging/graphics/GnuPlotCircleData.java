@@ -55,7 +55,9 @@ public class GnuPlotCircleData
      * 
      * @param circles 
      */
-    private void outputList(FunctionsForCircleCoordinates.FunctionTypes coordinatesType, List<Circle> circles, int limit)
+    private void outputList(FunctionsForCircleCoordinates.FunctionTypes coordinatesType, 
+                            List<Circle> circles, 
+                            int limit) throws java.io.IOException
     {
         StringBuilder sb = new StringBuilder();
         
@@ -80,7 +82,7 @@ public class GnuPlotCircleData
         tfw.writeText(outfile, circleData);
     }
     
-    public void printData(IntToCircle itc)//, FunctionsForCircleCoordinates circleCoordinatessssss)
+    public void printData(IntToCircle itc) throws java.io.IOException
     {
         List<Circle> allCircles = IntStream.range(1, 12000)
                  .mapToObj( i -> 

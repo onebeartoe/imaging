@@ -24,7 +24,7 @@ public class GeneratePoints
    static String [] content;
    static int arraysize = 28;
 
-   public static void main( String [] args ) 
+   public static void main( String [] args ) throws java.io.IOException
    {
       String input = GUITools.getString("How many points?");
       int count = Integer.parseInt(input);
@@ -81,6 +81,7 @@ public class GeneratePoints
       }
       
       TextFileWriter tfw = new TextFileWriter();
+
       tfw.writeText(outfile, buff.toString() );
    }
 
