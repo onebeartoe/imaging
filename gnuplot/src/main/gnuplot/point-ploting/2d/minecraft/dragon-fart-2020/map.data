@@ -1,15 +1,23 @@
 
+# current location
+-417, 181, "(now)"
+
+# elbo 90 angle from B1 to V2
+-261, 98 "elbo-V2"
+
+
 # First bed
--267,  -183, "B1"
+-267,  -183, "(B1)"
 
 
 # First village (got the bell from here)
 62,  -292, "V1"
 
 
-# Second village (has cats?)
+# Second Village (has cats?)
 #       This one also has the second bed in a villager house.        
 #       This one has a decent little mine in the back on the second bed house.
+#       Villagers trade potoatos, paper, and rotten meat for emerals
 281,  79, "V2"
 
     
@@ -23,4 +31,18 @@
 
 
 # Lava by water (far one)
+#       I think this one is near that desert booby trap temple where I died early on in the world.
 42, -868 "LW"
+
+
+-260 -560, "next"
+
+
+# Directions
+
+
+800, 0, "E->"
+
+
+
+
