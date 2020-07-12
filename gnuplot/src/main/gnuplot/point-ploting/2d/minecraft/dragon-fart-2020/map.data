@@ -1,8 +1,6 @@
 
-# current location
--417, 181, "(now)"
-
 # elbo 90 angle from B1 to V2
+#       This is needed to get around the mountian.
 -261, 98 "elbo-V2"
 
 
@@ -26,6 +24,11 @@
 453, 95, "V2S"
 
 
+# Third Village - Desert People!
+#       This one had cat that were tamed as pets.
+-300, -1234, "V3"
+
+
 # Desert Hidey Hole (made of some cobblestone)
 430, -552, "DHH1"
 
@@ -35,14 +38,13 @@
 42, -868 "LW"
 
 
--260 -560, "next"
-
-
 # Directions
+0, -1300, "N"
+0,  1300, "S"
 
 
-800, 0, "E->"
+# utility markers
+-265, 500, "next"
 
-
-
-
+# current location
+#-417, 181, "(now)"
