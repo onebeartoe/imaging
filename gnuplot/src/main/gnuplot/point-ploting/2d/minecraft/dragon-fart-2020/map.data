@@ -35,7 +35,15 @@
 
 # Lava by water (far one)
 #       I think this one is near that desert booby trap temple where I died early on in the world.
-42, -868 "LW"
+42, -868, "LW"
+
+
+# Not much here (mourntain I think?)
+-265, 500, "NMH"
+
+
+# Nice littl hill top 1
+249, -587, "HT1"
 
 
 # Directions
@@ -44,7 +52,7 @@
 
 
 # utility markers
--265, 500, "next"
+-900, -200, "next"
 
 # current location
 #-417, 181, "(now)"
