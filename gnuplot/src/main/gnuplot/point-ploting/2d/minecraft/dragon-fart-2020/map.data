@@ -5,7 +5,10 @@
 
 
 # First bed
+#       main food and weapon/armor, crafting materials storage
+#       nether portal
 -267,  -183, "(B1)"
+
 
 
 # First village (got the bell from here)
@@ -55,4 +58,5 @@
 -900, -200, "next"
 
 # current location
-#-417, 181, "(now)"
+256, -593, "(now)"
+
