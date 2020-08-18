@@ -1,9 +1,4 @@
 
-# elbo 90 angle from B1 to V2
-#       This is needed to get around the mountian.
--261, 98 "elbo-V2"
-
-
 # First bed
 #       main food and weapon/armor, crafting materials storage
 #       nether portal
@@ -12,7 +7,14 @@
 
 
 # First village (got the bell from here)
+# The bell was returned but the village had already 'died'   :(
 62,  -292, "V1"
+
+
+
+# elbo 90 angle from B1 to V2
+#       This is needed to get around the mountian.
+-261, 98 "elbo-V2"
 
 
 # Second Village (has cats?)
@@ -27,9 +29,11 @@
 453, 95, "V2S"
 
 
+
 # Third Village - Desert People!
 #       This one had cat that were tamed as pets.
 -300, -1234, "V3"
+
 
 
 # Desert Hidey Hole (made of some cobblestone)
