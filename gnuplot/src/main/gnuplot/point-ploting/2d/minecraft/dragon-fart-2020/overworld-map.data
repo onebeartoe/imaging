@@ -37,6 +37,10 @@
 
 
 
+# Fourth Village - Savana People!
+-341, -836, "V4"
+
+
 # Desert Hidey Hole (made of some cobblestone)
 430, -552, "DHH1"
 
@@ -60,8 +64,7 @@
 
 
 # utility markers
--900, -200, "next"
+#-900, -200, "next"
 
 # current location
-256, -593, "(now)"
-
+#256, -593, "(now)"
