@@ -1,7 +1,8 @@
 
-# First bed
-#       main food and weapon/armor, crafting materials storage
-#       nether portal
+# First Base with a Bed
+#       This is the original main base for food and weapon/armor, crafting materials storage space.  
+#	Still has some items in storage.
+#       This base also has a Nether portal.
 -267,  -183, "(B1)"
 
 
@@ -35,14 +36,16 @@
 #       This one had cat that were tamed as pets.
 #	There is a pretty cool ravine, that I fell in with a horse.
 #	In the ravine, there is mine shaft.
-#	The first villager spawn was here.  they were willing after I gave them a bunch of potatos. 3>
 -300, -1234, "V3"
 
 
 
 # Fourth Village - Savana People!
+#	This is now the new base!
 #	Cleric -> rotten flesh for emerlds
 #	has a librarian that I made with a Lectern job site block.
+#	The first villager spawn was here.  they were willing after I gave them a bunch of potatos. 3>
+#	This one now has a bunch of librarian villagers and a decent farm.
 -341, -836, "V4"
 
 
