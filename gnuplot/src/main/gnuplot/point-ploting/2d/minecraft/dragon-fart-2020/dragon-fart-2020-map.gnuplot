@@ -1,8 +1,8 @@
 
 unset key
 
-set xrange [-1400: 1400]
-set yrange [-1400: 1400]
+set xrange [-1800: 1800]
+set yrange [-1800: 1800]
 
 set title "Point Plotting"
 
@@ -24,3 +24,4 @@ plot 'overworld-map.data' using 1:2:3 with labels
 pause -1 "Hit return to continue"
 
 reset
+
