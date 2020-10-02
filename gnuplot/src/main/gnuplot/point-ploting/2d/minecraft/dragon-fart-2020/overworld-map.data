@@ -68,8 +68,14 @@
 42, -868, "LW"
 
 
-# Not much here (mourntain I think?)
--265, 500, "NMH"
+# Check Point 2 - forest
+-265, 500, "CP2"
+
+
+
+# Check Point 3 - forest
+-280, 815, "CP3"
+
 
 
 # Nice littl hill top 1
