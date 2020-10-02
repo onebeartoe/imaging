@@ -60,6 +60,7 @@
 430, -552, "DHH1"
 
 
+
 # Lava by water (far one)
 #       I think this one is near that desert booby trap temple where I died early on in the world.
 #	Somehow I managed to put out lava with a bucket of water, but it did not turn into obsidian.
@@ -68,9 +69,11 @@
 42, -868, "LW"
 
 
+
 # Check Point 2 - forest
 # 	This is where I foun the first two wolves!
 #	It has a super small house, with a bed, chest, and crafting table.
+#	There is a real nice lake (water source) right by the house.
 -265, 500, "CP2"
 
 
