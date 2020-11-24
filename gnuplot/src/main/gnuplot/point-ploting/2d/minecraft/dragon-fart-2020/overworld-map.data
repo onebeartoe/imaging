@@ -35,6 +35,11 @@
 # Bridge over water betweeen Second village and Fifth village
 565, 104, I
 
+# Sixth Village - Savana
+#	This one has a donkey!
+700, 200, "V6"
+
+
 # Fifth Village - Desert
 #	this one is kinda big
 #	the plan is to put the thrid Nether Portal here, 
@@ -43,8 +48,6 @@
 #	Broken portal!
 #		1304, 212
 #	Needs
-#		Silk Touch Pickake
-#		Fortune Pickake
 #		Rares
 #		Enchanting Items
 1313, 80, "V5"
