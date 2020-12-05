@@ -7,5 +7,11 @@
 
 
 # second portal - at the libraian village (fourth village)
-#	Spaned in a Crimsom Forrest
+#	Spawned in a Crimsom Forrest
 -54, -123, "P2"
+
+
+# third portal - at 5th viallage (desert)
+#	spawned in a Crimson Forrest
+152, 25, P3
+
