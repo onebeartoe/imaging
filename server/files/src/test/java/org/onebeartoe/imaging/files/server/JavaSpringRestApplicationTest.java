@@ -11,7 +11,9 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class JavaSpringRestApplicationTest {
 
 	@Test
-	public void contextLoads() {
+	public void contextLoads() 
+        {
+            //TODO: what does this test even do?
 	}
 
 }
