@@ -15,4 +15,8 @@
     <name>onebeartoe-imaging-server</name>
 
     <packaging>pom</packaging>
+    
+        <modules>
+            <module>files</module>
+        </modules>
 </project>
