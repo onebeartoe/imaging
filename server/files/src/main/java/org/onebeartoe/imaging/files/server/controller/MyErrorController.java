@@ -1,4 +1,4 @@
-package be.webtechie.javaspringrest.controller;
+package org.onebeartoe.imaging.files.server.controller;
 
 import javax.servlet.http.HttpServletRequest;
 

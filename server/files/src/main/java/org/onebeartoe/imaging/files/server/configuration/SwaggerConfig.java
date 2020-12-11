@@ -1,4 +1,4 @@
-package be.webtechie.javaspringrest.configuration;
+package org.onebeartoe.imaging.files.server.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
