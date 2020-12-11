@@ -23,6 +23,7 @@
         <module>gnuplot</module>
         <module>graphics</module>
         <module>resizer</module>
+        <module>server</module>
     </modules>
 
     <repositories>
