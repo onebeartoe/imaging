@@ -16,7 +16,7 @@
 
     <packaging>pom</packaging>
     
-        <modules>
-            <module>files</module>
-        </modules>
+    <modules>
+        <module>files</module>
+    </modules>
 </project>
