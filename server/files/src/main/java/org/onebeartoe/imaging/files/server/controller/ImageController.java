@@ -22,7 +22,8 @@ import org.springframework.web.bind.annotation.RestController;
  * REST calls to access the images on this device.
  */
 @RestController
-public class ImageController {
+public class ImageController 
+{
 
     /**
      * Get the value from application.properties where we define the location of the images.
