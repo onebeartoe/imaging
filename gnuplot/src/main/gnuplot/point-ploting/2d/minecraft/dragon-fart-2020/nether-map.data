@@ -13,5 +13,8 @@
 
 # third portal - at 5th viallage (desert)
 #	spawned in a Crimson Forrest
-152, 25, P3
+152, 25, "P3"
+
+# chunckbase - Nether Fortress (Crossing)
+491, 187, "NF1"
 
