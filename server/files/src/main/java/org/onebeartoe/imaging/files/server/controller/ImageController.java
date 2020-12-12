@@ -1,3 +1,4 @@
+
 package org.onebeartoe.imaging.files.server.controller;
 
 import java.io.File;
@@ -36,10 +37,12 @@ public class ImageController
      * @return An HTML string with a list of all the files.
      */
     @GetMapping("/files")
-    public String getFiles() {
+    public String getFiles() 
+    {
         StringBuilder rt = new StringBuilder();
 
-        try {
+        try 
+        {
             rt.append("<html>")
                 .append("   <body>")
                 .append("       <table>")
@@ -83,7 +86,8 @@ public class ImageController
      * @param file
      * @return
      */
-    private String getSize(File file) {
+    private String getSize(File file) 
+    {
         long sizeInBytes = file.length();
         long sizeInKilobytes = sizeInBytes / 1024;
         return sizeInKilobytes + "Kb";
@@ -95,7 +99,8 @@ public class ImageController
      * @param file
      * @return
      */
-    private String getTimestamp(File file) {
+    private String getTimestamp(File file) 
+    {
         long timestamp = file.lastModified();
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         return dateFormat.format(new Date(timestamp));
@@ -107,7 +112,8 @@ public class ImageController
      * @return The file as byte array
      */
     @GetMapping(value = "/file/{filename}", produces = MediaType.APPLICATION_OCTET_STREAM_VALUE)
-    public ResponseEntity<byte[]> getFile(@PathVariable("filename") String fileName) {
+    public ResponseEntity<byte[]> getFile(@PathVariable("filename") String fileName) 
+    {
         // Initiate the headers we will use in the return
         HttpHeaders headers = new HttpHeaders();
         headers.setCacheControl(CacheControl.noCache().getHeaderValue());
