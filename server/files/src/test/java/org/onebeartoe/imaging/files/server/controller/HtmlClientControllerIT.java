@@ -13,8 +13,7 @@ import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.http.ResponseEntity;
 
 /**
- * 
- * AC3 mabye????
+ * This test handels user story US0-AC3.
  */
 //TODO: change my name!!!
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT
