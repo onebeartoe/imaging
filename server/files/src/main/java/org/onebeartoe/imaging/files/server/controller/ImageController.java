@@ -45,6 +45,7 @@ public class ImageController
         {
             rt.append("<html>")
                 .append("   <body>")
+                    .append("Image Files:")
                 .append("       <table>")
                 .append("           <tr>")
                 .append("               <th>File</th>")

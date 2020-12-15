@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-//TODO: rename this
+//TODO: rename this please
 public class MyErrorController implements ErrorController 
 {
   @RequestMapping("/error")
@@ -19,9 +19,10 @@ public class MyErrorController implements ErrorController
 
       Exception exception = (Exception) request.getAttribute("javax.servlet.error.exception");
 
-      return String.format("<html><body><h2>Error Page</h2><div>Status code: <b>%s</b></div>"
-                      + "<div>Exception Message: <b>%s</b></div><body></html>",
-              statusCode, exception==null? "N/A": exception.getMessage());
+      String html = "<html><body><h2>Error Page</h2><div>Status code: <b>%s</b></div>"
+                      + "<div>Exception Message: <b>%s</b></div><body></html>";
+      
+      return String.format(html, statusCode, exception==null? "N/A": exception.getMessage());
   }
 
   @Override
