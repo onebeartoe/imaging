@@ -38,19 +38,18 @@ public class HtmlClientControllerIT
     @BeforeEach
     public void setUp() throws Exception 
     {
-        this.base = new URL("http://localhost:" + port + "/random");
+        this.base = new URL("http://localhost:" + port + "/randomPage");
     }
 
     public String randomImagePageIsPresent() throws Exception 
     {
+System.out.println("base: " + base);
+        
         ResponseEntity<String> response = template.getForEntity(base.toString(), String.class);
         
         String body = response.getBody();
         
         assertThat(body).contains("Random Image");        // the title
-        
-//httpp is no longer required in the URL        
-//        assertThat(body).contains("http");        // an image URL
     
         // parse the URL
         

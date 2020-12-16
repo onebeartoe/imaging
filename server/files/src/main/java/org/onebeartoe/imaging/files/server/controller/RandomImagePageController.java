@@ -19,7 +19,7 @@ public class RandomImagePageController
     @Autowired
     private RandomImageService service;
     
-    @RequestMapping("/random")
+    @RequestMapping("/randomPage")
     public String next(Map<String, Object> model) 
     {
         model.put("message", "You are in new page, imager!!");
@@ -27,8 +27,6 @@ public class RandomImagePageController
         model.put("currentPort: ", request.getServerPort() );
         
         String url = service.randomImageUrl();
-        
-//http://someimage-server:8080$        
         
         model.put("randomImageUrl", "/file/" + url);
         
