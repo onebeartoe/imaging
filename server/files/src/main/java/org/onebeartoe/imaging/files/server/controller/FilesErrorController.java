@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 //TODO: rename this please
-public class MyErrorController implements ErrorController 
+public class FilesErrorController implements ErrorController 
 {
   @RequestMapping("/error")
   @ResponseBody
