@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-//TODO: rename this please
 public class FilesErrorController implements ErrorController 
 {
   @RequestMapping("/error")
