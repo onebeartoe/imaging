@@ -15,7 +15,9 @@ public class RandomImagePageController
     public String next(Map<String, Object> model) 
     {
         model.put("message", "You are in new page, imager!!");
-    
+
+        model.put("randomImageUrl", "riu-" + System.currentTimeMillis() + ".jpg");
+        
         return "random";
     }
 

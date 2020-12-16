@@ -3,6 +3,12 @@ package org.onebeartoe.imaging.files.server.controller;
 
 import java.net.URL;
 import static org.assertj.core.api.Assertions.assertThat;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.onebeartoe.imaging.files.server.JavaSpringRestApplication;
@@ -12,10 +18,6 @@ import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.http.ResponseEntity;
 
-/**
- * This test handels user story US0-AC3.
- */
-//TODO: change my name!!!
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT
         ,
         classes = 
@@ -23,6 +25,7 @@ import org.springframework.http.ResponseEntity;
             JavaSpringRestApplication.class
         }
 )
+//TODO: change my name!!!
 public class HtmlClientControllerIT
 {
     @LocalServerPort
@@ -37,11 +40,9 @@ public class HtmlClientControllerIT
     public void setUp() throws Exception 
     {
         this.base = new URL("http://localhost:" + port + "/random");
-//        this.base = new URL("http://localhost:" + port + "/random.jsp");
     }
 
-    @Test
-    public void randomImagePageIsPresent() throws Exception 
+    public String randomImagePageIsPresent() throws Exception 
     {
         ResponseEntity<String> response = template.getForEntity(base.toString(), String.class);
         
@@ -49,9 +50,35 @@ public class HtmlClientControllerIT
         
         assertThat(body).contains("Random Image");        // the title
         
-        assertThat(body).contains("<img src=");        // an image tag
-        
         assertThat(body).contains("http");        // an image URL
+    
+        // parse the URL
+        
+        Document doc = Jsoup.parse(body);
+        
+        Element imageElement = doc.getElementById("randomImage");
+        
+        String src = imageElement.attr("src");
+        
+        return src;
     }
     
+    /**
+     * This test handels user story US0-AC3.
+     */    
+    @Test 
+    public void imagesAreRandom() throws Exception
+    {
+        String image0 = randomImagePageIsPresent();      
+        assertNotNull(image0);
+        
+        String image1 = randomImagePageIsPresent();      
+        assertNotNull(image1);        
+        assertNotEquals(image0, image1);
+        
+        String image2 = randomImagePageIsPresent();
+        assertNotNull(image2);
+
+        assertNotEquals(image1, image2);
+    }
 }

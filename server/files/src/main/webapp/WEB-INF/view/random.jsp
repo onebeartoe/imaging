@@ -13,9 +13,12 @@
             
     <h3>Random Image</h3>
 
-    <img src="http://someimage-server:8080/rando.png"/>
+    <img id="randomImage" 
+         src="http://someimage-server:8080/${randomImageUrl}"/>
 
-    hi 
+    <br/>
+    
+    
 
     <%= 44 * 3 %>            
 </body>
