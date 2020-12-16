@@ -34,6 +34,10 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+  <dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-devtools</artifactId>
+  </dependency>
 
 <!--TODO: Is Swagger even needed??? -->
         <dependency>
@@ -94,6 +98,13 @@
     <artifactId>bootstrap</artifactId>
     <version>3.3.7</version>
 </dependency>
+
+    <dependency>
+        <groupId>org.onebeartoe</groupId>
+        <artifactId>onebeartoe-system</artifactId>
+        <version>1.0</version>
+    </dependency>
+
     </dependencies>
 
     <build>
