@@ -10,9 +10,10 @@ package org.onebeartoe.imaging.graphics;
  */
 public class Circle 
 {
-    double x;
-    double y;
-    double radius;
+//TODO: make this a Java Record    
+    public double x;
+    public double y;
+    public double radius;
     
     public Circle(double x, double y, double radius)
     {
