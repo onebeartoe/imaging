@@ -21,7 +21,7 @@ import org.springframework.http.ResponseEntity;
             ShapesApplication.class
         }
 )
-public class SquaresControllerIT 
+public class ManyCirclesControllerIT 
 {
     @LocalServerPort
     private int port;
