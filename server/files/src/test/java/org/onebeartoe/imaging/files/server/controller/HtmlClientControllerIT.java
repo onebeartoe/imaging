@@ -36,7 +36,8 @@ public class HtmlClientControllerIT
     @BeforeEach
     public void setUp() throws Exception 
     {
-        this.base = new URL("http://localhost:" + port + "/random.jsp");
+        this.base = new URL("http://localhost:" + port + "/random");
+//        this.base = new URL("http://localhost:" + port + "/random.jsp");
     }
 
     @Test

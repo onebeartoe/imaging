@@ -21,10 +21,7 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-<!-- DONT' forget you changed this Dec 15 -->                                
-<version>2.3.2.RELEASE</version>                
-<!--<version>2.1.8.RELEASE</version>-->
-                <!--<version>1.5.6.RELEASE</version>-->
+                <version>2.3.2.RELEASE</version>                
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -92,12 +89,12 @@
 
     <build>
         <plugins>
-<!--            <plugin>
+            <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>-->
+            </plugin>
             
-            <plugin>
+<!--            <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
                     <configuration>
@@ -111,7 +108,7 @@
                             </goals>
                         </execution>
                    </executions>
-            </plugin>            
+            </plugin>            -->
             
             <plugin>
                 <artifactId>maven-failsafe-plugin</artifactId>
