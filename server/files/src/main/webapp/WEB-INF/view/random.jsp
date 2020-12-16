@@ -14,7 +14,7 @@
     <h3>Random Image</h3>
 
     <img id="randomImage" 
-         src="http://someimage-server:8080/${randomImageUrl}"/>
+         src="${randomImageUrl}"/>
 
     <br/>
     

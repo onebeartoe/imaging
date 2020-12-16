@@ -49,7 +49,8 @@ public class HtmlClientControllerIT
         
         assertThat(body).contains("Random Image");        // the title
         
-        assertThat(body).contains("http");        // an image URL
+//httpp is no longer required in the URL        
+//        assertThat(body).contains("http");        // an image URL
     
         // parse the URL
         
@@ -63,7 +64,7 @@ public class HtmlClientControllerIT
     }
     
     /**
-     * This test handels user story US0-AC3.
+     * This test handles user story US0-AC3.
      */    
     @Test 
     public void imagesAreRandom() throws Exception

@@ -1,11 +1,11 @@
 
-package org.onebeartoe.imaging.shapes.controller;
+package org.onebeartoe.imaging.files.server.controller;
 
 import java.net.URL;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.onebeartoe.imaging.shapes.ShapesApplication;
+import org.onebeartoe.imaging.files.server.JavaSpringRestApplication;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
@@ -17,10 +17,10 @@ import org.springframework.http.ResponseEntity;
         ,
         classes = 
         {
-            ShapesApplication.class
+            JavaSpringRestApplication.class
         }
 )
-public class RhoControllerIT 
+public class ImageControllerIT 
 {
     @LocalServerPort
     private int port;
@@ -33,16 +33,19 @@ public class RhoControllerIT
     @BeforeEach
     public void setUp() throws Exception 
     {
-        this.base = new URL("http://localhost:" + port + "/rho/some.png");
+        // a default testing image found under the src/test/recources/ directory
+        base = new URL("http://localhost:" + port + "/file/square-10.png");
     }
     
     @Test
     public void randomImagePageIsPresent() throws Exception 
     {
         ResponseEntity<String> response = template.getForEntity(base.toString(), String.class);
-        
+
         MediaType contentType = response.getHeaders().getContentType();
         
-        assertEquals(contentType.getType(), "image");        
+        String expected = "image";
+        
+        assertEquals(expected, contentType.getType());        
     }
 }

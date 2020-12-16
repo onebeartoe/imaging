@@ -22,10 +22,10 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * REST calls to access the images on this device.
  */
+//@Controller
 @RestController
 public class ImageController 
 {
-
     /**
      * Get the value from application.properties where we define the location of the images.
      */
@@ -112,7 +112,13 @@ public class ImageController
      * @param fileName The filename
      * @return The file as byte array
      */
-    @GetMapping(value = "/file/{filename}", produces = MediaType.APPLICATION_OCTET_STREAM_VALUE)
+    @GetMapping(value = "/file/{filename}"
+            , 
+                        produces = {MediaType.IMAGE_JPEG_VALUE, MediaType.IMAGE_GIF_VALUE, MediaType.IMAGE_PNG_VALUE,
+                        MediaType.APPLICATION_OCTET_STREAM_VALUE}
+//            produces = MediaType.ALL_VALUE // cause 404 page not found
+ //           produces = MediaType.APPLICATION_OCTET_STREAM_VALUE
+    )
     public ResponseEntity<byte[]> getFile(@PathVariable("filename") String fileName) 
     {
         // Initiate the headers we will use in the return

@@ -16,6 +16,9 @@ public class RandomImagePageController
     @Autowired
     private HttpServletRequest request;
     
+    @Autowired
+    private RandomImageService service;
+    
     @RequestMapping("/random")
     public String next(Map<String, Object> model) 
     {
@@ -23,7 +26,11 @@ public class RandomImagePageController
 
         model.put("currentPort: ", request.getServerPort() );
         
-        model.put("randomImageUrl", "riu-" + System.currentTimeMillis() + ".jpg");
+        String url = service.randomImageUrl();
+        
+//http://someimage-server:8080$        
+        
+        model.put("randomImageUrl", "/file/" + url);
         
         return "random";
     }
