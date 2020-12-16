@@ -13,17 +13,20 @@ import org.springframework.web.servlet.view.JstlView;
  *
 
  */
-@Configuration
-@EnableWebMvc
-@ComponentScan
+//TODO: renable this or find a workaround for JSP templateing
+//@Configuration
+//@EnableWebMvc
+//@ComponentScan
 public class JspMvcConfiguration extends WebMvcConfigurerAdapter
 {
     @Override
-    public void configureViewResolvers(ViewResolverRegistry registry) {
+    public void configureViewResolvers(ViewResolverRegistry registry) 
+    {
         InternalResourceViewResolver resolver = new InternalResourceViewResolver();
         resolver.setPrefix("/WEB-INF/view/");
         resolver.setSuffix(".jsp");
         resolver.setViewClass(JstlView.class);
+        
         registry.viewResolver(resolver);
     }
 }
