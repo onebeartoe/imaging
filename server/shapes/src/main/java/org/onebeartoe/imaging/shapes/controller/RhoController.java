@@ -16,10 +16,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
+/**
+ *
+ */
 @Controller
-public class SquaresController extends ShapeController
-{    
-    @GetMapping(value = "/squares/{filename}", produces = MediaType.APPLICATION_OCTET_STREAM_VALUE)
+public class RhoController extends ShapeController
+{
+    @GetMapping(value = "/rho/{filename}", produces = MediaType.APPLICATION_OCTET_STREAM_VALUE)
     public ResponseEntity<byte[]> getFile(@PathVariable("filename") String fileName) 
     {
         return serveImage(fileName);
@@ -43,11 +46,11 @@ public class SquaresController extends ShapeController
 
         int sideDecrement = 5;
         
+        int iteration = 0;
+        
         for(int side = imageWidth; side > 0; side -= sideDecrement)
         {
-            int x = (int) (
-                        (imageWidth / 2.0) - (side / 2.0)// - iteration * sideDecrement;
-                    );
+            int x = iteration * sideDecrement;
             
             int y = x;
         
@@ -56,16 +59,18 @@ public class SquaresController extends ShapeController
             g2d.setPaint(randomColor);
             
             g2d.drawRect(x,y, side,side);
+            
+            iteration++;
         }
 
         g2d.dispose();
 
         ByteArrayOutputStream outstream = new ByteArrayOutputStream();
 
-        ImageIO.write(bufferedImage, "png", outstream);
+        boolean write = ImageIO.write(bufferedImage, "png", outstream);
         
         byte [] media = outstream.toByteArray();
 
         return media;
-    }
+    }    
 }

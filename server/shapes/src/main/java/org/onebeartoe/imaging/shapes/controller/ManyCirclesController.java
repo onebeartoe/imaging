@@ -86,19 +86,15 @@ public class ManyCirclesController
                     
                     c.radius = c.radius * 100.0;                    
                                         
-                    System.out.println("(" + c.x + ", " + c.y + ") r: " + c.radius) ;
+//                    System.out.println("(" + c.x + ", " + c.y + ") r: " + c.radius) ;
                     g2d.drawOval( (int)c.x, (int)c.y, (int)c.radius, (int)c.radius);
                  });
 
         g2d.dispose();
 
         ByteArrayOutputStream outstream = new ByteArrayOutputStream();
-//        BufferedOutputStream bufferedOutstream = new BufferedOutputStream(outstream);
-        
-//        File pwd = new File(".");
-//        File outfile = new File(pwd, "circles.png");
-//        System.out.println("outputing to: " + outfile.getCanonicalPath() );
-        boolean write = ImageIO.write(bufferedImage, "png", outstream);
+
+        ImageIO.write(bufferedImage, "png", outstream);
         
         byte [] media = outstream.toByteArray();
 

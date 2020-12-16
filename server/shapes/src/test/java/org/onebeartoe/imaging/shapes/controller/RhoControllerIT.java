@@ -20,7 +20,7 @@ import org.springframework.http.ResponseEntity;
             ShapesApplication.class
         }
 )
-public class ManyCirclesControllerIT 
+public class RhoControllerIT 
 {
     @LocalServerPort
     private int port;
@@ -33,7 +33,7 @@ public class ManyCirclesControllerIT
     @BeforeEach
     public void setUp() throws Exception 
     {
-        this.base = new URL("http://localhost:" + port + "/circles/some.png");
+        this.base = new URL("http://localhost:" + port + "/rho/some.png");
     }
     
     @Test

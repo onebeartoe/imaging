@@ -3,7 +3,6 @@ package org.onebeartoe.imaging.shapes.controller;
 
 import java.net.URL;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.onebeartoe.imaging.shapes.ShapesApplication;
@@ -34,7 +33,7 @@ public class SquaresControllerIT
     @BeforeEach
     public void setUp() throws Exception 
     {
-        this.base = new URL("http://localhost:" + port + "/circles/some.png");
+        this.base = new URL("http://localhost:" + port + "/squares/some.png");
     }
     
     @Test
@@ -45,11 +44,5 @@ public class SquaresControllerIT
         MediaType contentType = response.getHeaders().getContentType();
         
         assertEquals(contentType.getType(), "image");        
-    }
-    
-    @Test
-    public void reqq()
-    {
-        assertTrue(true);
     }
 }
