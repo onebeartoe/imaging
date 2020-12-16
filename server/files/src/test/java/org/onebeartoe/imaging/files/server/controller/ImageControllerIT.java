@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.web.server.LocalServerPort;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 
@@ -34,15 +35,28 @@ public class ImageControllerIT
     public void setUp() throws Exception 
     {
         // a default testing image found under the src/test/recources/ directory
-        base = new URL("http://localhost:" + port + "/file/square-10.png");
+        base = new URL("http://localhost:" + port + "/file/square-1.png");
     }
     
     @Test
     public void randomImagePageIsPresent() throws Exception 
     {
         ResponseEntity<String> response = template.getForEntity(base.toString(), String.class);
+        
+        HttpStatus statusCode = response.getStatusCode();
+        
+        HttpStatus expectedStatus = HttpStatus.OK;
 
+        assertEquals(expectedStatus, statusCode);
+        
         MediaType contentType = response.getHeaders().getContentType();
+        
+        if(contentType == null)
+        {
+            String body = response.getBody();
+            
+            System.out.println("no content type body: " + body);
+        }
         
         String expected = "image";
         

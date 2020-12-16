@@ -74,7 +74,9 @@ public class ImageController
             rt.append(" </body>");
             rt.append("</html>");
 
-        } catch (Exception ex) {
+        } 
+        catch (Exception ex) 
+        {
             throw new RuntimeException("Error accessing requested file/directory: " + ex.getMessage());
         }
 
@@ -136,9 +138,13 @@ public class ImageController
 
         // Get the file as a byte array.
         byte[] media = null;
-        try (InputStream in = new FileInputStream(file)) {
+        
+        try (InputStream in = new FileInputStream(file)) 
+        {
             media = in.readAllBytes();
-        } catch (IOException ex) {
+        } 
+        catch (IOException ex) 
+        {
             // Oops something went wrong, return error 500.
             headers.setContentType(MediaType.TEXT_PLAIN);
             return new ResponseEntity(ex.getMessage(), headers, HttpStatus.INTERNAL_SERVER_ERROR);

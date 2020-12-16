@@ -31,7 +31,7 @@ public class RandomImageService
     
     public String randomImageUrl() 
     {
-System.out.printf("PathImages: %s\n", pathImages);
+//System.out.printf("PathImages: %s\n", pathImages);
         if(searcher == null)
         {
             File directory = new File(pathImages);
