@@ -18,6 +18,7 @@
 
     <br/>
     
+    Current Port: ${currentPort}
     
 
     <%= 44 * 3 %>            
