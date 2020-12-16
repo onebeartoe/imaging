@@ -1,4 +1,4 @@
-
+//TODO: move this to the .controller package
 package org.onebeartoe.imaging.files.server;
  
 import org.springframework.context.annotation.ComponentScan;

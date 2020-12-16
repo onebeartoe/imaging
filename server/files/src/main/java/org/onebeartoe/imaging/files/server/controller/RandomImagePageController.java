@@ -21,7 +21,7 @@ public class RandomImagePageController
     {
         model.put("message", "You are in new page, imager!!");
 
-        model.put("currentPort", request.getServerPort() );
+        model.put("currentPort: ", request.getServerPort() );
         
         model.put("randomImageUrl", "riu-" + System.currentTimeMillis() + ".jpg");
         
