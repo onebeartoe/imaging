@@ -18,5 +18,6 @@
     
     <modules>
         <module>files</module>
+        <module>shapes</module>
     </modules>
 </project>
