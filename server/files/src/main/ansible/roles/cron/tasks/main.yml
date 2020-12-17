@@ -3,4 +3,4 @@
   cron:
     name: "image sever job on reboot"
     special_time: reboot
-    job: "/opt/onebeartoe/image-server/run.sh > /home/patsy/image-server.log 2>&1 &"
+    job: "/opt/onebeartoe/imaging/server/files/run.sh > /opt/onebeartoe/imaging/server/files/server.log 2>&1 &"
