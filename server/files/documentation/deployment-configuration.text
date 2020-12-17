@@ -1,0 +1,16 @@
+
+copy application to host
+
+    establish /opt/onebeartoe/imaging/server/files directory
+
+        create directory
+
+        user permissions for application specific user
+
+    scp JAR to host
+
+create Cron entry for reboot
+
+    user application specific user
+
+    add entry to the Cron table with reboot frequency
