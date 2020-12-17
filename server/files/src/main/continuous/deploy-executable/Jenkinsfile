@@ -8,7 +8,7 @@ pipeline
 
     stages 
     {
-        stage('Configure Engraver Camera') 
+        stage('Deploy JAR') 
         {
             steps 
             {
@@ -17,10 +17,10 @@ pipeline
                 sh '''
                     pwd
                     ls -ltrh
-                    cd neje-engrave/src/main/ansible
+                    cd src/main/ansible
                     cp ${ansible_inventory_path} .
                     ls -ltrh
-                    ansible-playbook camera.yml -i ansible-betoland.inventory -l camera-light-stick
+                    ansible-playbook deploy-jar.yml -i ansible-betoland.inventory -l inspiron
                 '''
             }
         }

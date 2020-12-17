@@ -8,7 +8,7 @@ pipeline
 
     stages 
     {
-        stage('Configure Engraver Camera') 
+        stage('Configure Cron Table Entry for Imaging File Server') 
         {
             steps 
             {
