@@ -1,0 +1,8 @@
+
+
+- hosts: all
+  remote_user: patsy
+  serial: 1
+  become: true
+  roles:
+    - deploy-executable
