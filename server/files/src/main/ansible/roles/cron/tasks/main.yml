@@ -1,0 +1,6 @@
+
+- name: Create a cron job for the image server.
+  cron:
+    name: "image sever job on reboot"
+    special_time: reboot
+    job: "/opt/onebeartoe/image-server/run.sh > /home/patsy/image-server.log 2>&1 &"

@@ -1,0 +1,28 @@
+
+pipeline 
+{
+    agent
+    {
+        label 'master'
+    }
+
+    stages 
+    {
+        stage('Configure Engraver Camera') 
+        {
+            steps 
+            {
+                echo 'Configuring...'
+
+                sh '''
+                    pwd
+                    ls -ltrh
+                    cd src/main/ansible
+                    cp ${ansible_inventory_path} .
+                    ls -ltrh
+                    ansible-playbook cron.yml -i ansible-betoland.inventory -l inspiron
+                '''
+            }
+        }
+    }
+}
