@@ -17,7 +17,7 @@ pipeline
                 sh '''
                     pwd
                     ls -ltrh
-                    cd src/main/ansible
+                    cd server/files/src/main/ansible
                     cp ${ansible_inventory_path} .
                     ls -ltrh
                     ansible-playbook cron.yml -i ansible-betoland.inventory -l inspiron
