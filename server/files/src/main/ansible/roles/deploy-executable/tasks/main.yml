@@ -1,1 +1,7 @@
 
+- name: Create the directory for the application binaries.
+  file:
+    path: "/opt/onebeartoe/imaging/server/files"
+    state: directory
+    owner: patsy
+    group: patsy
