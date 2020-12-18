@@ -5,3 +5,11 @@
     state: directory
     owner: patsy
     group: patsy
+
+- name: Present Working directory
+  shell: pwd
+
+- name: Copy the JAR file to the target host.
+  copy:
+    src: ../../../../../target/files-0.0.1-SNAPSHOT.jar
+    dest: /opt/onebeartoe/imaging/server/files/
