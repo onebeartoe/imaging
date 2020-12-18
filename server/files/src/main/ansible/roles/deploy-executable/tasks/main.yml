@@ -7,15 +7,11 @@
     group: patsy
 
 - name: Present Working directory
-  shell: pwd
+  shell: ls -la ~/.m2/repository/org/onebeartoe/
+  register: startPwd
 
-- name: Present Working directory
-  shell: pwd
-  register: hello
-
-- debug: msg="{{ hello.stdout }}"
-- debug: msg="{{ hello.stderr }}"
-
+- debug: msg="{{ startPwd.stdout }}"
+- debug: msg="{{ startPwd.stderr }}"
 
 - name: Copy the JAR file to the target host.
   copy:
