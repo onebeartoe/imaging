@@ -9,6 +9,14 @@
 - name: Present Working directory
   shell: pwd
 
+- name: Present Working directory
+  shell: pwd
+  register: hello
+
+- debug: msg="{{ hello.stdout }}"
+- debug: msg="{{ hello.stderr }}"
+
+
 - name: Copy the JAR file to the target host.
   copy:
     src: ../../../../../target/files-0.0.1-SNAPSHOT.jar
