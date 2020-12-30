@@ -1,10 +1,16 @@
 
 # First Base with a Bed
+#	This is the location of the World Spawn by the livestock, 
+#		on the side of the house where the original storate was located.
 #       This is the original main base for food and weapon/armor, crafting materials storage space.  
 #	Still has some items in storage.
 #       This base also has the original Nether portal.
 #	This base also has the original Mine.
 #		On 2020-10-02, a pretty good loot was lost next to a spider spawner.   Anger.
+#		The spider spawner is at -188, 32, -269
+#	Stronghold search with Eye of Ender
+#		left off here: 
+#			-546, -288
 -267,  -183, "(B1)"
 
 
@@ -41,14 +47,25 @@
 
 
 # Fifth Village - Desert
-#	this one is kinda big
+#	This is now the new base!
+#	This village has the first iron farm, fom Golumns.
+#	this one has a structure to grow huge brown and red mushrooms on Podzol.
 #	the plan is to put the thrid Nether Portal here, 
 #		and hopefully find some fortress remenants for Blaze drops.
 #	it has a skeleton spawner right by it!
 #	Broken portal!
 #		1304, 212
+#	Desert Temple!
+		1320, -373
+#	Stronghold search with Eye of Ender
+#		left off here: 
+#			1330, -400, "loh"
 1313, 80, "V5"
 
+
+
+# Jungle 1
+1134, -365, "J1
 
 
 # Ocean with Kelp!
@@ -67,11 +84,14 @@
 
 
 # Fourth Village - Savana People!
-#	This is now the new base!
 #	Cleric -> rotten flesh for emerlds
 #	has a librarian that I made with a Lectern job site block.
 #	The first villager spawn was here.  they were willing after I gave them a bunch of potatos. 3>
 #	This one now has a bunch of librarian villagers and a decent farm.
+#NEED FROM HERE:
+#
+#	Looting Book (x2)
+#
 -341, -836, "V4"
 
 
