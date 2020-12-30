@@ -1,4 +1,7 @@
 
+# world seed:
+#	-1861601998     (from DragonFart2020)
+
 # First Base with a Bed
 #	This is the location of the World Spawn by the livestock, 
 #		on the side of the house where the original storate was located.
@@ -65,7 +68,7 @@
 
 
 # Jungle 1
-1134, -365, "J1
+1134, -365, "J1"
 
 
 # Ocean with Kelp!
@@ -99,6 +102,20 @@
 # Check Point 1
 #	There is not much here, except a huge mountain.
 -1335,  169, "CP1"
+
+
+
+# Strong Hold 1 (found on https://www.chunkbase.com/apps/seed-map#-1861601998)
+# 	Library 1
+#		-1643, 33, -73
+#	Silverfish door (last died here)
+#	-1640, 27, -105
+-1630, -76, "SH1"
+
+
+
+# Flower Forest 1
+-1600, -60
 
 
 
