@@ -21,7 +21,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 /**
- * REST calls to access the images on this device.
+ * This class provides access to images.
  */
 @Controller
 //@RestController
@@ -117,13 +117,11 @@ public class ImageController
      * @param fileName The filename
      * @return The file as byte array
      */    
-    @GetMapping(value = "/file/**"
-//    @GetMapping(value = "/file/{filename}"
-            , 
-                        produces = {MediaType.IMAGE_JPEG_VALUE, MediaType.IMAGE_GIF_VALUE, MediaType.IMAGE_PNG_VALUE,
-                        MediaType.APPLICATION_OCTET_STREAM_VALUE}
-//            produces = MediaType.ALL_VALUE // cause 404 page not found
- //           produces = MediaType.APPLICATION_OCTET_STREAM_VALUE
+    @GetMapping(value = "/file/**",
+                        produces = {MediaType.IMAGE_JPEG_VALUE, 
+                                    MediaType.IMAGE_GIF_VALUE, 
+                                    MediaType.IMAGE_PNG_VALUE,
+                                    MediaType.APPLICATION_OCTET_STREAM_VALUE}
     )
     public ResponseEntity<byte[]> getFile(//@PathVariable("filename") String fileName,
                                           HttpServletRequest request) 
@@ -168,11 +166,16 @@ public class ImageController
         // Check which type of file we are returning so we can correctly define
         // the header content type. By doing this, the browser can show 
         // the image inside the browser, otherwise it will do a download.
-        if (fileName.toLowerCase().endsWith(".jpg")) {
+        if (fileName.toLowerCase().endsWith(".jpg")) 
+        {
             headers.setContentType(MediaType.IMAGE_JPEG);
-        } else if (fileName.toLowerCase().endsWith(".png")) {
+        } 
+        else if (fileName.toLowerCase().endsWith(".png")) 
+        {
             headers.setContentType(MediaType.IMAGE_PNG);
-        } else if (fileName.toLowerCase().endsWith(".gif")) {
+        } 
+        else if (fileName.toLowerCase().endsWith(".gif")) 
+        {
             headers.setContentType(MediaType.IMAGE_GIF);
         }
 
