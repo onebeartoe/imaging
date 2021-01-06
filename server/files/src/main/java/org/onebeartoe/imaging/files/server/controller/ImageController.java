@@ -8,6 +8,8 @@ import java.io.InputStream;
 import java.net.URLEncoder;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.logging.Logger;
+import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.CacheControl;
@@ -15,15 +17,14 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
 
 /**
  * REST calls to access the images on this device.
  */
-//@Controller
-@RestController
+@Controller
+//@RestController
 public class ImageController 
 {
     /**
@@ -32,6 +33,8 @@ public class ImageController
     @Value("${path.images}")
     private String pathImages;
 
+    private Logger logger = Logger.getLogger(getClass().getName() );
+    
     /**
      * Get a list of all the files.
      * @return An HTML string with a list of all the files.
@@ -113,25 +116,37 @@ public class ImageController
      * Get the request file.
      * @param fileName The filename
      * @return The file as byte array
-     */
-    @GetMapping(value = "/file/{filename}"
+     */    
+    @GetMapping(value = "/file/*"
+//    @GetMapping(value = "/file/{filename}"
             , 
                         produces = {MediaType.IMAGE_JPEG_VALUE, MediaType.IMAGE_GIF_VALUE, MediaType.IMAGE_PNG_VALUE,
                         MediaType.APPLICATION_OCTET_STREAM_VALUE}
 //            produces = MediaType.ALL_VALUE // cause 404 page not found
  //           produces = MediaType.APPLICATION_OCTET_STREAM_VALUE
     )
-    public ResponseEntity<byte[]> getFile(@PathVariable("filename") String fileName) 
+    public ResponseEntity<byte[]> getFile(//@PathVariable("filename") String fileName,
+                                          HttpServletRequest request) 
     {
         // Initiate the headers we will use in the return
         HttpHeaders headers = new HttpHeaders();
         headers.setCacheControl(CacheControl.noCache().getHeaderValue());
 
+        String requestUri = request.getRequestURI();
+        
+        String fileName = requestUri.replaceFirst("/file/", "");
+        
         // Get the file
         File file = new File(this.pathImages, fileName);
 
         // Check if the file exists.
-        if (!file.exists()) {
+        if (!file.exists()) 
+        {
+            logger.severe("requested file does not exist: " + file.getPath() );
+            
+            String requestURI = fileName;
+            logger.info("file path = " + requestURI);
+            
             // Immediately return error 404.
             return new ResponseEntity(HttpStatus.NOT_FOUND);
         }

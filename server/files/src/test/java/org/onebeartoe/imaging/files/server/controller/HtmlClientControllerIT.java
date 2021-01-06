@@ -38,13 +38,11 @@ public class HtmlClientControllerIT
     @BeforeEach
     public void setUp() throws Exception 
     {
-        this.base = new URL("http://localhost:" + port + "/randomPage");
+        base = new URL("http://localhost:" + port + "/randomPage");
     }
 
     public String randomImagePageIsPresent() throws Exception 
-    {
-System.out.println("base: " + base);
-        
+    {        
         ResponseEntity<String> response = template.getForEntity(base.toString(), String.class);
         
         String body = response.getBody();
@@ -66,7 +64,7 @@ System.out.println("base: " + base);
      * This test handles user story US0-AC3.
      */    
     @Test 
-    public void imagesAreRandom() throws Exception
+    public void htmlClientImagesAreRandom() throws Exception
     {
         String image0 = randomImagePageIsPresent();      
         assertNotNull(image0);

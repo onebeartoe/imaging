@@ -1,9 +1,11 @@
 
 package org.onebeartoe.imaging.files.server.controller;
 
+import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.logging.Logger;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.onebeartoe.imaging.files.server.JavaSpringRestApplication;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +16,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 
+/**
+ * This class verifies US0-AC2.
+ */
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT
         ,
         classes = 
@@ -26,21 +31,21 @@ public class ImageControllerIT
     @LocalServerPort
     private int port;
 
-    private URL base;
-
     @Autowired
     private TestRestTemplate template;    
+ 
+    private static Logger logger;
     
-    @BeforeEach
-    public void setUp() throws Exception 
+    @BeforeAll
+    public static void setUp() throws Exception 
     {
-        // a default testing image found under the src/test/recources/ directory
-        base = new URL("http://localhost:" + port + "/file/square-1.png");
+        logger = Logger.getLogger( "ImageControllerIT" );
     }
     
-    @Test
-    public void randomImagePageIsPresent() throws Exception 
+    private void assertImagIsPresent(String subpath) throws MalformedURLException
     {
+        URL base = setupUrl(subpath);
+        
         ResponseEntity<String> response = template.getForEntity(base.toString(), String.class);
         
         HttpStatus statusCode = response.getStatusCode();
@@ -61,5 +66,36 @@ public class ImageControllerIT
         String expected = "image";
         
         assertEquals(expected, contentType.getType());        
+    }
+    
+    
+    @Test
+    public void knownImageIsPresent() throws Exception 
+    {
+        String subpath = "square-1.png";
+        
+        assertImagIsPresent(subpath);
+    }
+    
+    
+    @Test
+    public void knownImageIsPresentInSubDirectory() throws Exception 
+    {        
+        String subpath = "digits/square-10.png";
+        
+        assertImagIsPresent(subpath);                
+    }
+
+    private URL setupUrl(String subpath) throws MalformedURLException 
+    {
+        // a default testing image found under the src/test/recources/ directory
+        
+        String url = "http://localhost:" + port + "/file/" + subpath;
+        
+        logger.info("setupURL: " + url);
+        
+        URL base = new URL(url);
+
+        return base;
     }
 }
