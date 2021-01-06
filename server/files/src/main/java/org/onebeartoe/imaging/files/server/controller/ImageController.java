@@ -117,7 +117,7 @@ public class ImageController
      * @param fileName The filename
      * @return The file as byte array
      */    
-    @GetMapping(value = "/file/*"
+    @GetMapping(value = "/file/**"
 //    @GetMapping(value = "/file/{filename}"
             , 
                         produces = {MediaType.IMAGE_JPEG_VALUE, MediaType.IMAGE_GIF_VALUE, MediaType.IMAGE_PNG_VALUE,
