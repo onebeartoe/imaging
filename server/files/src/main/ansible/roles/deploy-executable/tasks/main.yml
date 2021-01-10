@@ -13,7 +13,7 @@
 - debug: msg="{{ startPwd.stdout }}"
 - debug: msg="{{ startPwd.stderr }}"
 
-- name: Debug: who am i?
+- name: "Debug: who am I"
   shell: whoami
 
 - name: Copy the JAR file to the target host.
