@@ -117,8 +117,19 @@
 -1630, -76, "SH1"
 
 
-#closest village by Strong Hold 1
+
+# This is the closest village by Strong Hold 1
+#	It is swampy here.
 -1780, -450, "SH1V1"
+
+
+
+
+# This is Strong Hold Village 2????
+#	Plains village, has two bells.
+# 	A very basic farm was made here.
+-1901, -685, "SH1V2"
+
 
 
 
