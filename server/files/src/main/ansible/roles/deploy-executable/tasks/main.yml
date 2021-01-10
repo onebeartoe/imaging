@@ -8,14 +8,16 @@
 
 - name: Present Working directory
   shell: ls -la ~/.m2/repository/org/onebeartoe/
-  user: patsy
   register: startPwd
 
 - debug: msg="{{ startPwd.stdout }}"
 - debug: msg="{{ startPwd.stderr }}"
 
+- name: Debug: who am i?
+  shell: whoami
+
 - name: Copy the JAR file to the target host.
   copy:
     src: ~/.m2/repository/org/onebeartoe/imaging/files/0.0.1-SNAPSHOT/files-0.0.1-SNAPSHOT.jar
     dest: /opt/onebeartoe/imaging/server/files/
-    user: patsy
+    remote_user: patsy
