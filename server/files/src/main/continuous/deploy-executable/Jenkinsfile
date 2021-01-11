@@ -8,17 +8,21 @@ pipeline
 
     }
 
-    node('master') 
-    {
-        env.JAVA_HOME="${tool 'Java11'}"
-        env.PATH="${env.JAVA_HOME}/bin:${env.PATH}"
-        sh 'java -version'
-    }
+#    node('master') 
+#    {
+#        env.JAVA_HOME="${tool 'Java11'}"
+#        env.PATH="${env.JAVA_HOME}/bin:${env.PATH}"
+#        sh 'java -version'
+#    }
 
     stages 
     {
         stage('Deploy JAR') 
         {
+            tools
+            {
+                jdk "Java11"
+            }
             steps 
             {
                 echo 'Configuring...'
