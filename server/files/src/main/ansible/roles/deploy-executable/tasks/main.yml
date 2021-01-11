@@ -19,7 +19,7 @@
 
 
 - name: "Local Debug: M2 Repository Listing"
-  local_action: shell pwd; ls -la ~/.m2/repository/
+  local_action: shell pwd; ls -la ~/.m2/repository/org/onebeartoe/
   become: false  
   register: m2Listing
 - debug: msg="{{ m2Listing.stdout }}"
