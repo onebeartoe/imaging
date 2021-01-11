@@ -19,7 +19,7 @@
 
 
 - name: "Local Debug: pwd"
-  local_action: shell pwd; ls -la ../../../target
+  local_action: shell pwd; ls -la ../../../
   become: false  
   register: localPwd
 - debug: msg="{{ localPwd.stdout }}"
