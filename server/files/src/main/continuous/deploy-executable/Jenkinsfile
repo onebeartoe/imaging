@@ -18,6 +18,7 @@ pipeline
                     pwd
                     ls -ltrh
                     cd server/files/src/main/ansible
+                    mvn install 
                     cp ${ansible_inventory_path} .
                     ls -ltrh
                     ansible-playbook deploy-jar.yml -i ansible-betoland.inventory -l inspiron
