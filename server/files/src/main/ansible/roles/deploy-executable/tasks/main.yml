@@ -20,6 +20,7 @@
 
 - name: "Local Debug: pwd"
   local_action: shell ls -la 
+  become: false  
   register: localPwd
 - debug: msg="{{ localPwd.stdout }}"
 - debug: msg="{{ localPwd.stderr }}"
