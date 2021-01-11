@@ -1,0 +1,4 @@
+
+ls -lah
+
+java -version

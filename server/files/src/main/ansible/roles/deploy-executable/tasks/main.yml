@@ -54,3 +54,14 @@
     dest: /opt/onebeartoe/imaging/server/files/
     owner: patsy
     group: patsy
+
+
+
+
+
+- name: Copy the run script to the target host.
+  copy:
+    src: files/run.sh
+    dest: /opt/onebeartoe/imaging/server/files/
+    owner: patsy
+    group: patsy

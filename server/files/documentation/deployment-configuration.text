@@ -9,6 +9,8 @@ copy application to host
 
     scp JAR to host
 
+    scp run script to host
+
 create Cron entry for reboot
 
     user application specific user
