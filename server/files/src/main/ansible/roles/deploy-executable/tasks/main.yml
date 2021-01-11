@@ -18,6 +18,16 @@
 
 
 
+- name: "Local Debug: M2 Repository Listing"
+  local_action: shell pwd; ls -la ~/.m2/repository/
+  become: false  
+  register: m2Listing
+- debug: msg="{{ m2Listing.stdout }}"
+- debug: msg="{{ m2Listing.stderr }}"
+
+
+
+
 - name: "Local Debug: pwd"
   local_action: shell pwd; ls -la ../../../
   become: false  
