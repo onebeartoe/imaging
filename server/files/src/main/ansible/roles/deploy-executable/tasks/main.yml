@@ -6,17 +6,12 @@
     owner: patsy
     group: patsy
 
-#- name: Present Working directory
-#  shell: ls -la ~/.m2/repository/org/onebeartoe/
-#  register: startPwd
-#
-#- debug: msg="{{ startPwd.stdout }}"
-#- debug: msg="{{ startPwd.stderr }}"
+
+
 
 - name: "Local Debug: who am I"
   shell: whoami
   register: localWhoami
-
 - debug: msg="{{ localWhoami.stdout }}"
 - debug: msg="{{ localWhoami.stderr }}"
 
@@ -24,9 +19,8 @@
 
 
 - name: "Local Debug: pwd"
-  local_action: shell pwd; ls -la ~/.m2/repository/org/onebeartoe/imaging
+  local_action: shell ls -la 
   register: localPwd
-
 - debug: msg="{{ localPwd.stdout }}"
 - debug: msg="{{ localPwd.stderr }}"
 
@@ -37,7 +31,6 @@
 - name: "Debug: who am I"
   shell: whoami
   register: romoteWhoami
-
 - debug: msg="{{ romoteWhoami.stdout }}"
 - debug: msg="{{ romoteWhoami.stderr }}"
 
