@@ -21,6 +21,19 @@
 - debug: msg="{{ localWhoami.stderr }}"
 
 
+
+
+- name: "Local Debug: pwd"
+  local_action: shell pwd; ls -la ~/.m2/repository/org/onebeartoe/imaging
+  register: localPwd
+
+- debug: msg="{{ localPwd.stdout }}"
+- debug: msg="{{ localPwd.stderr }}"
+
+
+
+
+
 - name: "Debug: who am I"
   shell: whoami
   register: romoteWhoami
