@@ -20,7 +20,7 @@ pipeline
                     cd server/files/src/main/ansible
                     cp ${ansible_inventory_path} .
                     ls -ltrh
-                    ansible-playbook cron.yml -i ansible-betoland.inventory -l inspiron
+                    ansible-playbook cron.yml -i ansible-betoland.inventory -l ${hostLimit} --extra-vars "onebeartoeCronUser=${cronUser} other=123"
                 '''
             }
         }

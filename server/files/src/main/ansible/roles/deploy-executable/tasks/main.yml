@@ -3,8 +3,8 @@
   file:
     path: "/opt/onebeartoe/imaging/server/files"
     state: directory
-    owner: patsy
-    group: patsy
+    owner: {{onebeartoeCronUser}}
+    group: {{onebeartoeCronUser}}
 
 
 
@@ -52,8 +52,8 @@
   copy:
     src: ~/.m2/repository/org/onebeartoe/imaging/files/0.0.1-SNAPSHOT/files-0.0.1-SNAPSHOT.jar
     dest: /opt/onebeartoe/imaging/server/files/
-    owner: patsy
-    group: patsy
+    owner: {{onebeartoeCronUser}}
+    group: {{onebeartoeCronUser}}
 
 
 
@@ -63,5 +63,14 @@
   copy:
     src: files/run.sh
     dest: /opt/onebeartoe/imaging/server/files/
-    owner: patsy
-    group: patsy
+    owner: {{onebeartoeCronUser}}
+    group: {{onebeartoeCronUser}}
+
+
+
+- name: Copy the run script to the target host.
+  copy:
+    src: files/application.properties
+    dest: /opt/onebeartoe/imaging/server/files/
+    owner: {{onebeartoeCronUser}}
+    group: {{onebeartoeCronUser}}
