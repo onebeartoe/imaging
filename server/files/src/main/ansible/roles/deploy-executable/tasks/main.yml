@@ -65,7 +65,7 @@
     dest: /opt/onebeartoe/imaging/server/files/
     owner: "{{onebeartoeCronUser}}"
     group: "{{onebeartoeCronUser}}"
-
+    mode: u+rwx
 
 
 - name: Copy the run script to the target host.
