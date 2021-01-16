@@ -17,7 +17,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 
 /**
- * This class verifies US0-AC2.
+ * This class verifies US0-AC2 and US0-AC5.
  */
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT
         ,
@@ -42,7 +42,7 @@ public class ImageControllerIT
         logger = Logger.getLogger( "ImageControllerIT" );
     }
     
-    private void assertImagIsPresent(String subpath) throws MalformedURLException
+    private void assertImageIsPresent(String subpath) throws MalformedURLException
     {
         URL base = setupUrl(subpath);
         
@@ -74,7 +74,7 @@ public class ImageControllerIT
     {
         String subpath = "square-1.png";
         
-        assertImagIsPresent(subpath);
+        assertImageIsPresent(subpath);
     }
     
     
@@ -83,8 +83,17 @@ public class ImageControllerIT
     {        
         String subpath = "digits/square-10.png";
         
-        assertImagIsPresent(subpath);                
+        assertImageIsPresent(subpath);                
     }
+    
+
+//    @Test
+//    public void knownImageWithSpacesIsPresent() throws Exception 
+//    {
+//        String subpath = "square-1.png";
+//        
+//        assertImagIsPresent(subpath);
+//    }    
 
     private URL setupUrl(String subpath) throws MalformedURLException 
     {
