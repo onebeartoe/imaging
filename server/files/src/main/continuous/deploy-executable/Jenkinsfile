@@ -22,7 +22,8 @@ pipeline
                     pwd
                     ls -ltrh
                     cd server/files/
-                    mvn -P distribution -DskipTests install 
+                    mvn package
+                    mvn -P distribution -DskipTests install
                     cd src/main/ansible
                     cp ${ansible_inventory_path} .
                     ls -ltrh
