@@ -63,8 +63,11 @@ public class RandomImageService
         
         File image = images[imageIndex];
 
-        
-        String path = image.getPath().replace(pathImages + "/", "");
+        // remove path for local testing
+        String path = image.getPath().replaceFirst(pathImages + "/", "");
+
+        // remove path for deployed testing
+        path = image.getPath().replaceFirst(pathImages, "");
         
         logger.info("image service - pathImages -> " + pathImages);
         
