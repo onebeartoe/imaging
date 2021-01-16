@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FilenameFilter;
 import java.util.List;
 import java.util.Random;
+import java.util.logging.Logger;
 import org.onebeartoe.filesystem.FileHelper;
 import org.onebeartoe.filesystem.FileSystemSearcher;
 import org.onebeartoe.filesystem.FileType;
@@ -28,6 +29,8 @@ public class RandomImageService
     private List<File> targetDirectories;
     
     private Random rando = new Random();
+    
+    private Logger logger = Logger.getLogger( getClass().getName() );
     
     public String randomImageUrl() 
     {
@@ -59,8 +62,11 @@ public class RandomImageService
         int imageIndex = rando.nextInt(images.length);
         
         File image = images[imageIndex];
+
         
         String path = image.getPath().replace(pathImages + "/", "");
+        
+        logger.info("image service - path -> " + path);
         
         return path;
     }

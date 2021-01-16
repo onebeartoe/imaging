@@ -1,3 +1,6 @@
+
+//TODO: remove this class or re-enable it
+
 package org.onebeartoe.imaging.files.server.controller;
 
 import javax.servlet.http.HttpServletRequest;
