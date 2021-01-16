@@ -7,4 +7,4 @@ cd /opt/onebeartoe/imaging/server/files/
 
 ls -lah
 
-java -jar files-0.0.1-SNAPSHOT.jar
+java -jar files-0.0.1-SNAPSHOT.war

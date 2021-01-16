@@ -50,7 +50,7 @@
 
 - name: Copy the JAR file to the target host.
   copy:
-    src: ~/.m2/repository/org/onebeartoe/imaging/files/0.0.1-SNAPSHOT/files-0.0.1-SNAPSHOT.jar
+    src: ~/.m2/repository/org/onebeartoe/imaging/files/0.0.1-SNAPSHOT/files-0.0.1-SNAPSHOT.war
     dest: /opt/onebeartoe/imaging/server/files/
     owner: "{{onebeartoeCronUser}}"
     group: "{{onebeartoeCronUser}}"
