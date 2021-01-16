@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.URLDecoder;
 import java.net.URLEncoder;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -132,7 +133,11 @@ public class ImageController
 
         String requestUri = request.getRequestURI();
         
+        requestUri = URLDecoder.decode(requestUri);
+        
         String fileName = requestUri.replaceFirst("/file/", "");
+        
+        
         
         // Get the file
         File file = new File(this.pathImages, fileName);

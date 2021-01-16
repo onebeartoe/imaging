@@ -76,8 +76,7 @@ public class ImageControllerIT
         
         assertImageIsPresent(subpath);
     }
-    
-    
+
     @Test
     public void knownImageIsPresentInSubDirectory() throws Exception 
     {        
@@ -85,15 +84,14 @@ public class ImageControllerIT
         
         assertImageIsPresent(subpath);                
     }
-    
 
-//    @Test
-//    public void knownImageWithSpacesIsPresent() throws Exception 
-//    {
-//        String subpath = "square-1.png";
-//        
-//        assertImagIsPresent(subpath);
-//    }    
+    @Test
+    public void knownImageWithSpacesIsPresent() throws Exception 
+    {
+        String subpath = "space dir/space image.png";
+
+        assertImageIsPresent(subpath);
+    }    
 
     private URL setupUrl(String subpath) throws MalformedURLException 
     {
