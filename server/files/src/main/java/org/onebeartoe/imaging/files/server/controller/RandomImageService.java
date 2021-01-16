@@ -69,9 +69,9 @@ public class RandomImageService
         // remove path for deployed testing
         path = image.getPath().replaceFirst(pathImages, "");
         
-        logger.info("image service - pathImages -> " + pathImages);
+        logger.info("pathImages -> " + pathImages);
         
-        logger.info("image service - path       -> " + path);
+        logger.info("path       -> " + path);
         
         return path;
     }
