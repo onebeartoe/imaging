@@ -4,10 +4,7 @@ pipeline
     agent
     {
         label 'master'
-
-
     }
-
 
     stages 
     {
@@ -25,7 +22,7 @@ pipeline
                     pwd
                     ls -ltrh
                     cd server/files/
-                    mvn install 
+                    mvn -P distribution -DskipTests install 
                     cd src/main/ansible
                     cp ${ansible_inventory_path} .
                     ls -ltrh
