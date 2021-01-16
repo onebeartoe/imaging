@@ -7,11 +7,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-@Controller
-public class FilesErrorController implements ErrorController 
+//@Controller
+public class FilesErrorController // implements ErrorController 
 {
-  @RequestMapping("/error")
-  @ResponseBody
+//  @RequestMapping("/error")
+//  @ResponseBody
   public String handleError(HttpServletRequest request) 
   {
       Integer statusCode = (Integer) request.getAttribute("javax.servlet.error.status_code");
@@ -24,7 +24,7 @@ public class FilesErrorController implements ErrorController
       return String.format(html, statusCode, exception==null? "N/A": exception.getMessage());
   }
 
-  @Override
+//  @Override
   public String getErrorPath() 
   {
       return "/error";
