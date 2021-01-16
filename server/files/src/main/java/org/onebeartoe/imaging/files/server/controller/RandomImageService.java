@@ -66,7 +66,9 @@ public class RandomImageService
         
         String path = image.getPath().replace(pathImages + "/", "");
         
-        logger.info("image service - path -> " + path);
+        logger.info("image service - pathImages -> " + pathImages);
+        
+        logger.info("image service - path       -> " + path);
         
         return path;
     }
