@@ -53,16 +53,12 @@
 #	This is now the new base!
 #	This village has the first iron farm, fom Golumns.
 #	this one has a structure to grow huge brown and red mushrooms on Podzol.
-#	the plan is to put the thrid Nether Portal here, 
-#		and hopefully find some fortress remenants for Blaze drops.
+#	the base has the thrid Nether Portal, it has Fortress remenants with a Blaze spawner!
 #	it has a skeleton spawner right by it!
 #	Broken portal!
 #		1304, 212
 #	Desert Temple!
-		1320, -373
-#	Stronghold search with Eye of Ender
-#		left off here: 
-#			1330, -400, "loh"
+#		1320, -373
 1313, 80, "V5"
 
 
@@ -96,6 +92,10 @@
 #	Looting Book (x2)
 #
 -341, -836, "V4"
+
+
+# Broken Portal 3
+-1200, 300, "BP3
 
 
 
