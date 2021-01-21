@@ -14,7 +14,7 @@
 #	Stronghold search with Eye of Ender
 #		left off here: 
 #			-546, -288
--267,  -183, "(B1)"
+-267,  -183, "B1"
 
 
 
@@ -95,7 +95,7 @@
 
 
 # Broken Portal 3
--1200, 300, "BP3
+-1200, 300, "BP3"
 
 
 
@@ -118,6 +118,8 @@
 #		-1643, 33, -73
 #	Silverfish door (last died here)
 #	-1640, 27, -105
+#	End Portal
+	-1620, 20, -117
 -1630, -76, "SH1"
 
 
