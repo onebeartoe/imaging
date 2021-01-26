@@ -85,12 +85,9 @@
 # Fourth Village - Savana People!
 #	Cleric -> rotten flesh for emerlds
 #	has a librarian that I made with a Lectern job site block.
-#	The first villager spawn was here.  they were willing after I gave them a bunch of potatos. 3>
+#	The first villager spawn was here.  they were willing after I gave them a bunch of potatos. <3
 #	This one now has a bunch of librarian villagers and a decent farm.
-#NEED FROM HERE:
-#
-#	Looting Book (x2)
-#
+#	This has a medium mob spawner platform.
 -341, -836, "V4"
 
 
@@ -119,7 +116,7 @@
 #	Silverfish door (last died here)
 #	-1640, 27, -105
 #	End Portal
-	-1620, 20, -117
+#	-1620, 20, -117
 -1630, -76, "SH1"
 
 
