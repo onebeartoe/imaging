@@ -10,8 +10,6 @@
 #       This base also has the original Nether portal.
 #	This base also has the original Mine.
 #		On 2020-10-02, a pretty good loot was lost next to a spider spawner.   Anger.
-#		The spider spawner is at -188, 32, -269
-#	Stronghold search with Eye of Ender
 #		left off here: 
 #			-546, -288
 -267,  -183, "B1"
@@ -111,25 +109,27 @@
 
 
 
-# Strong Hold 1 (found on https://www.chunkbase.com/apps/seed-map#-1861601998)
+# Stronghold 1 (found on https://www.chunkbase.com/apps/seed-map#-1861601998)
 # 	Library 1
 #		-1643, 33, -73
 #	Silverfish door (last died here)
 #	-1640, 27, -105
 #	End Portal
 #	-1620, 20, -117
+#	spider spaner at 
+#	-1612, 33, -226
 -1630, -76, "SH1"
 
 
 
-# This is the closest village by Strong Hold 1
+# This is the closest village by Stronghold 1
 #	It is swampy here.
 -1780, -450, "SH1V1"
 
 
 
 
-# This is Strong Hold Village 2????
+# This is Stronghold Village 2????
 #	Plains village, has two bells.
 # 	A very basic farm was made here.
 -1901, -685, "SH1V2"
