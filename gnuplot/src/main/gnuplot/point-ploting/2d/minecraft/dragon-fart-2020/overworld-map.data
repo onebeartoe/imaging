@@ -124,6 +124,8 @@
 
 # This is the closest village by Stronghold 1
 #	It is swampy here.
+#	So I made water channel to SH1 (Strong Hold 1) for 
+#		transporting villagers.
 -1780, -450, "SH1V1"
 
 
