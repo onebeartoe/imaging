@@ -8,6 +8,16 @@
 -765, 60, -986
 
 
+# First End Ship
 # looked up on Chunk Base
 #	https://www.chunkbase.com/apps/seed-map#-1861601998
-x= 1016, z=1080
+# There is an Ender Chest under the End City, in the direction of the ship.
+# I got my first Elytra here!
+-1224, -1224
+
+# Second End Ship
+# Chunk base showed the  next closest End City/Ship is at this location:
+-1896, -2168
+
+#There may be another End Ship here (but I have not checked).
+#x= 1016, z=1080
