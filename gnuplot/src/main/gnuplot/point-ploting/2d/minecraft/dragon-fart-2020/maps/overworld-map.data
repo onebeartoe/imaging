@@ -92,6 +92,7 @@
 
 
 # Broken Portal 3
+# This one is kinda close to SH1.
 -1200, 300, "BP3"
 
 
@@ -117,7 +118,7 @@
 #	-1640, 27, -105
 #	End Portal
 #	-1620, 20, -117
-#	spider spaner at 
+#	spider spawner at 
 #	-1612, 33, -226
 -1630, -76, "SH1"
 
