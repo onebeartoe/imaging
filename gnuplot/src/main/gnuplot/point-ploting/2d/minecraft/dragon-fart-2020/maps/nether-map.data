@@ -4,6 +4,10 @@
 -34, -18, "P1"
 
 
+# Warped Forrest
+#	this is the one where I was trying to get to Warped Nylium, but found a 
+#	Bastion Remnant along the way.
+300, -450
 
 
 # second portal - at the libraian village (fourth village)
@@ -20,3 +24,11 @@
 
 #Blaze Spawner
 530, 185, "BS"
+
+
+# Broken Portal 3 (kinda close to Strong Hold 1 'SH1') spawns here:
+-155, 36
+
+
+
+
