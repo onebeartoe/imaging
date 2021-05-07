@@ -96,7 +96,6 @@
 -1200, 300, "BP3"
 
 
-
 # Check Point 1
 #	There is not much here, except a huge mountain.
 -1335,  169, "CP1"
@@ -110,6 +109,19 @@
 -1880, 730, "SPV1"
 
 
+# Woodland Mansion
+-1032, -2040
+
+#Buried Treasure 1
+-999, -1863
+
+
+#Buried Treasure 2
+-871, -1815
+
+
+#Shipwreck
+-920, -1784
 
 # Stronghold 1 (found on https://www.chunkbase.com/apps/seed-map#-1861601998)
 # 	Library 1
