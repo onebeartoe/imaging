@@ -19,7 +19,9 @@
     </properties>
 
     <modules>
+    <!--
         <module>gif-animations</module>
+        -->
         <module>gnuplot</module>
         <module>graphics</module>
         <module>resizer</module>
