@@ -9,7 +9,7 @@ addons:
     token: $SONAR_TOKEN
 
 jdk:
-  - oraclejdk9
+  - oraclejdk11
 
 script:
   - Xvfb :5 -screen 0 800x600x24 &
