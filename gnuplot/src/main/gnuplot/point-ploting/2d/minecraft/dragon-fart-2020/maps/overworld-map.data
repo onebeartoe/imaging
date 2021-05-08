@@ -12,6 +12,7 @@
 #		On 2020-10-02, a pretty good loot was lost next to a spider spawner.   Anger.
 #		left off here: 
 #			-546, -288
+#	This base has a small aquarium.
 -267,  -183, "B1"
 
 
@@ -33,6 +34,7 @@
 #       Villagers trade potoatos, paper, and rotten meat for emerals
 #	All the villagers died in a raid :(
 281,  79, "V2"
+
 
     
 # Second Village - My stuff! (out in the open) 
@@ -65,6 +67,12 @@
 
 # Jungle 1
 1134, -365, "J1"
+
+
+# Village 6 - Dessert
+#	This is right by a jungle and a Dessert Temple.
+#	The Dessert Temple near here is a rip off, there was no loot.
+1272, -296, "V7"
 
 
 # Ocean with Kelp!
@@ -132,6 +140,11 @@
 #	-1620, 20, -117
 #	spider spawner at 
 #	-1612, 33, -226
+#	Base with villagers
+#		farmer 1 - carrots, wheet
+#		farmer 2 - wheat, beetroot
+#		farmer 3 - carrots
+#		farmer 4 - carrots, potato
 -1630, -76, "SH1"
 
 
@@ -198,5 +211,5 @@
 #-900, -200, "next"
 
 # current location
--2190, -80, "(now)"
+#-1333, 167, "(now)"
 
