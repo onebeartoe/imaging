@@ -4,7 +4,7 @@ dist: trusty
 language: java
 
 node_js:
-  - "10"
+  - '10'
 
 addons:
   sonarcloud:
