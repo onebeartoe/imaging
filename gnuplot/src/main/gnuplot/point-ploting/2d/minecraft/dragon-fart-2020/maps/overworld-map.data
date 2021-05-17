@@ -121,11 +121,16 @@
 -1032, -2040
 
 #Buried Treasure 1
--999, -1863
+-999, -1863, BT1
 
 
 #Buried Treasure 2
--871, -1815
+-871, -1815, BT2
+
+
+# Ocean Explorer Map 1
+# 	The monument is at these coordinates
+-3000, 900, OEM1
 
 
 #Shipwreck
