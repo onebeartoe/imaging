@@ -50,7 +50,6 @@
 
 
 # Fifth Village - Desert
-#	This is now the new base!
 #	This village has the first iron farm, fom Golumns.
 #	this one has a structure to grow huge brown and red mushrooms on Podzol.  It has a glowstone block to keep spawn away.
 #	The structure is 10x9x9 (x,y,z).
@@ -60,7 +59,7 @@
 #		1304, 212
 #	Desert Temple!
 #		1320, -373
-#NEEDS: lapis lazuli
+#	This area has a horses.
 1313, 80, "V5"
 
 
@@ -72,6 +71,7 @@
 # Village 6 - Dessert
 #	This is right by a jungle and a Dessert Temple.
 #	The Dessert Temple near here is a rip off, there was no loot.
+#	Three parrots are here.
 1272, -296, "V7"
 
 
@@ -132,6 +132,7 @@
 -920, -1784
 
 # Stronghold 1 (found on https://www.chunkbase.com/apps/seed-map#-1861601998)
+#	This is now the new base!
 # 	Library 1
 #		-1643, 33, -73
 #	Silverfish door (last died here)
