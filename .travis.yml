@@ -3,6 +3,9 @@ dist: trusty
 
 language: java
 
+node_js:
+  - "10"
+
 addons:
   sonarcloud:
     organization: $SONAR_ORGANIZATION
