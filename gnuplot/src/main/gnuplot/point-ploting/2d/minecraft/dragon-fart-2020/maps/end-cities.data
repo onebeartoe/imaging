@@ -1,11 +1,11 @@
 # End City Locations
 
 # First Portal
--740, 65, -990
+-740, -990, "P1"
 
 
 # First Ender Chest
--765, 60, -986
+-765, -986, EC1
 
 
 # First End Ship
@@ -13,25 +13,18 @@
 #	https://www.chunkbase.com/apps/seed-map#-1861601998
 # There is an Ender Chest under the End City, in the direction of the ship.
 # I got my first Elytra here!
--1224, -1224
+-1224, -1224, "ES1"
+
+
+# End City 1 (No Ship)
+-1200, -1500, "EC1NS"
+
 
 # Second End Ship
 # Chunk base showed the  next closest End City/Ship is at this location:
 #!!!!!!Still need to get the dropped loot near the top of End City
--1896, -2168
+-1896, -2168, "ES2"
+
 
 #There may be another End Ship here (but I have not checked).
 #x= 1016, z=1080
-
-
-
-
-
-
-
-
-
-
-
-
-
