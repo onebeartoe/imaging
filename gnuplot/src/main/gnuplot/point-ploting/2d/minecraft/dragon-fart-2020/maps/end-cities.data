@@ -5,7 +5,13 @@
 
 
 # First Ender Chest
+#	It is not there anymore, I picked it up with Silk Touch.
 -765, -986, EC1
+
+
+
+#end of third blob
+-1400, -1430, "EoTB"
 
 
 # First End Ship

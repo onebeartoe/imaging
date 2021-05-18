@@ -108,6 +108,19 @@
 #	There is not much here, except a huge mountain.
 -1335,  169, "CP1"
 
+
+# Buried Treasure 1
+#	The location was provided by chunckbase
+#	Boofale!
+-1399, -567, "BT1"
+
+
+# Buried Treasure 2
+#	The location was provided by chunckbase
+#	Boofale!
+-1735, 441, "BT2"
+
+
 # Check Point 1 - Bridge 1
 # 	This is the 'top left' corner.
 #	SH1 -> here is okay
@@ -120,12 +133,12 @@
 # Woodland Mansion
 -1032, -2040
 
-#Buried Treasure 1
--999, -1863, BT1
+#Buried Treasure ?
+-999, -1863, BT?
 
 
-#Buried Treasure 2
--871, -1815, BT2
+#Buried Treasure ?
+-871, -1815, BT?
 
 
 # Ocean Explorer Map 1
