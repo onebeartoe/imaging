@@ -1,4 +1,20 @@
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # world seed:
 #	-1861601998     (from DragonFart2020)
 
@@ -51,10 +67,13 @@
 
 # Fifth Village - Desert
 #	This village has the first iron farm, fom Golumns.
-#	this one has a structure to grow huge brown and red mushrooms on Podzol.  It has a glowstone block to keep spawn away.
-#	The structure is 10x9x9 (x,y,z).
-#	the base has the thrid Nether Portal, it has Fortress remenants with a Blaze spawner!
-#	it has a skeleton spawner right by it!
+#		It is pretty much Wattles design, with the bottom base at 20 blocks off the ground.
+#
+#	This one has a structure to grow huge brown and red mushrooms on Podzol.  
+#		It has a glowstone block to keep spawn away.
+#		The structure is 10x9x9 (x,y,z).
+#	The base has the thrid Nether Portal, it has Fortress remenants with a Blaze spawner!
+#	It has a skeleton spawner right by it!
 #	Broken portal!
 #		1304, 212
 #	Desert Temple!
@@ -219,6 +238,10 @@
 
 # Nice littl hill top 1
 249, -587, "HT1"
+
+
+# Witch's Hut
+-2808, -920, "WH1"
 
 
 # Directions
