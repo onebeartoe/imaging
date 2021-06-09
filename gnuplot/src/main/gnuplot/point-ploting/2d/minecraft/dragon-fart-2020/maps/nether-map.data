@@ -31,6 +31,8 @@
 # Broken Portal 3 (kinda close to Strong Hold 1 'SH1') spawns here:
 -155, 36
 
+# This spawn spot for the Nether Portal at 'SH1'.  It is Y levl 50
+-206, -13, "SS-SH1"
 
 
 
