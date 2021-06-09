@@ -15,6 +15,7 @@
 
 
 
+
 # world seed:
 #	-1861601998     (from DragonFart2020)
 
@@ -57,8 +58,10 @@
 #                  this is where I died and left my horse.  But I got him back on another visit.
 453, 95, "V2S"
 
+
 # Bridge over water betweeen Second village and Fifth village
 565, 104, I
+
 
 # Sixth Village - Savana
 #	This one has a donkey!
@@ -90,7 +93,6 @@
 # Village 6 - Dessert
 #	This is right by a jungle and a Dessert Temple.
 #	The Dessert Temple near here is a rip off, there was no loot.
-#	Three parrots are here.
 1272, -296, "V7"
 
 
@@ -161,7 +163,8 @@
 
 
 # Ocean Explorer Map 1
-# 	The monument is at these coordinates
+# 	The Ocean Monument is at these coordinates.
+#       This is the first Ocean Monument that was looted in this world.
 -3000, 900, OEM1
 
 
@@ -202,6 +205,11 @@
 -1901, -685, "SH1V2"
 
 
+# A small ocean near a Plains biome is here.
+#   This is sorta near Stronghold 1.
+#   There are turtles here.
+#   I am gonna try to get a Trident here.
+-1400, -830, "SONP1"
 
 
 # Flower Forest 1
