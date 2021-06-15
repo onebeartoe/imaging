@@ -3,19 +3,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 # world seed:
 #	-1861601998     (from DragonFart2020)
 
@@ -30,7 +17,7 @@
 #		left off here: 
 #			-546, -288
 #	This base has a small aquarium.
--267,  -183, "B1"
+-267, -183, "B1"
 
 
 
@@ -190,6 +177,7 @@
 
 
 
+
 # This is the closest village by Stronghold 1
 #	It is swampy here.
 #	So I made water channel to SH1 (Strong Hold 1) for 
@@ -214,6 +202,11 @@
 
 # Flower Forest 1
 -1600, -60
+
+
+# Subspace Bubble
+#   This is where the portal at SH1 sent me for the advancement.
+-8940, 245, "SB1"
 
 
 
