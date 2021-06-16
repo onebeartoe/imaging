@@ -20,12 +20,16 @@
 152, 25, "P3"
 
 
-# chunckbase - Nether Fortress (Crossing)
+# chunckbase - 1st Nether Fortress (Crossing)
+# 	This fortress has a Blaze spawner on the second floor.
 491, 187, "NF1"
 
 
 #Blaze Spawner
 530, 185, "BS"
+
+# 2nd Nether Fortress
+955, 123, "NF2"
 
 
 # Broken Portal 3 (kinda close to Strong Hold 1 'SH1') spawns here:
