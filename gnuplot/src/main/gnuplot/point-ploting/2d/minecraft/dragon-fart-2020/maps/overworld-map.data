@@ -3,6 +3,14 @@
 
 
 
+
+
+
+
+
+
+
+
 # world seed:
 #	-1861601998     (from DragonFart2020)
 
@@ -77,9 +85,12 @@
 1134, -365, "J1"
 
 
-# Village 6 - Dessert
+# Village 7 - Dessert
 #	This is right by a jungle and a Dessert Temple.
 #	The Dessert Temple near here is a rip off, there was no loot.
+#	This is where the first parrots were found.
+#	The first rail and cart system for transport (villagers in this case) is here.
+#		It connects this village to the first iron farm village (V5).
 1272, -296, "V7"
 
 
@@ -173,6 +184,7 @@
 #		farmer 2 - wheat, beetroot
 #		farmer 3 - carrots
 #		farmer 4 - carrots, potato
+#	This base has a 'Gunpowder farm' via Creepers.
 -1630, -76, "SH1"
 
 
