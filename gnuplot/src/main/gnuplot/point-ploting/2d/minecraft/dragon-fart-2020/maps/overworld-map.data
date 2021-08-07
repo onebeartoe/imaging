@@ -80,6 +80,10 @@
 1313, 80, "V5"
 
 
+# Village 8 - Desert
+# 	This village is nice and flat.
+#	It already has a bunch of villagers with jobs.
+1590, 280, "V8"
 
 # Jungle 1
 1134, -365, "J1"
@@ -101,14 +105,6 @@
 2260, 83, "BP2"
 
 
-# Third Village - Desert People!
-#       This one had cat that were tamed as pets.
-#	There is a pretty cool ravine, that I fell in with a horse.
-#	In the ravine, there is mine shaft.
--300, -1234, "V3"
-
-
-
 # Fourth Village - Savana People!
 #	Cleric -> rotten flesh for emerlds
 #	has a librarian that I made with a Lectern job site block.
@@ -116,6 +112,14 @@
 #	This one now has a bunch of librarian villagers and a decent farm.
 #	This has a medium mob spawner platform.
 -341, -836, "V4"
+
+
+# Third Village - Desert People!
+#       This one had cat that were tamed as pets.
+#	There is a pretty cool ravine, that I fell in with a horse.
+#	In the ravine, there is mine shaft.
+#	Get villagers from here for 'B1'
+-300, -1234, "V3"
 
 
 # Broken Portal 3
@@ -160,6 +164,11 @@
 -871, -1815, BT?
 
 
+# Frozen Ocean 1
+# This place has a bunch of blue and packed ice.
+-2500, 700, "FO1"
+
+
 # Ocean Explorer Map 1
 # 	The Ocean Monument is at these coordinates.
 #       This is the first Ocean Monument that was looted in this world.
@@ -167,7 +176,7 @@
 
 
 #Shipwreck
--920, -1784
+-920, -1784, "SW1"
 
 # Stronghold 1 (found on https://www.chunkbase.com/apps/seed-map#-1861601998)
 #	This is now the new base!
