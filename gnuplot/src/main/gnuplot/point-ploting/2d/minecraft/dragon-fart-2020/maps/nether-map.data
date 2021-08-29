@@ -20,6 +20,7 @@
 152, 25, "P3"
 
 
+
 # chunckbase - 1st Nether Fortress (Crossing)
 # 	This fortress has a Blaze spawner on the second floor.
 491, 187, "NF1"
@@ -34,6 +35,11 @@
 
 # Broken Portal 3 (kinda close to Strong Hold 1 'SH1') spawns here:
 -155, 36
+
+
+# Soul Sand Valley 1
+-185, 105, "SSV1"
+
 
 # This spawn spot for the Nether Portal at 'SH1'.  It is Y levl 50
 -206, -13, "SS-SH1"
