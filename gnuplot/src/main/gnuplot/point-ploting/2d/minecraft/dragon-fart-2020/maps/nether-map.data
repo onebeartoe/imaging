@@ -1,4 +1,34 @@
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # initial portal - at original home base
 #	Spawned in a Crimsom Forest
 -34, -18, "P1"
@@ -38,8 +68,13 @@
 
 
 # Soul Sand Valley 1
+#	
 -185, 105, "SSV1"
 
+
+# Soul Sand Valley 1 - Base
+#	There isa little mini-base here, y = 73.
+-155, 47
 
 # This spawn spot for the Nether Portal at 'SH1'.  It is Y levl 50
 -206, -13, "SS-SH1"
