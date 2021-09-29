@@ -46,7 +46,8 @@
 
 
 # third portal - at 5th viallage (desert)
-#	spawned in a Crimson Forrest
+#	spawned in a Crimson Forrest.
+#	Z level is 72
 152, 25, "P3"
 
 
