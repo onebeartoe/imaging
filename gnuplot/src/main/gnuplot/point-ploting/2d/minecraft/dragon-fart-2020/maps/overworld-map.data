@@ -198,11 +198,22 @@
 #Buried Treasure ?
 -871, -1815, BT?
 
+# Frozen Ocean 1 Base 1
+# 	This is a base in a nice little pointy ice hill.
+#	It is at standard Z hieght of 69.
+-2410, 766, "FO1B1"
 
 # Frozen Ocean 1
-# This place has a bunch of blue and packed ice.
+#	This place has a bunch of blue and packed ice.
+#	There is a little mini base here
+#	There is also the begining of a path for minecart rails from Stronghold 1 to here.
 -2500, 700, "FO1"
 
+
+# Ocean Monument 2
+# 	This second monument I want to loot with the aid of a Conduit.
+#		First attempt failed.
+-2520, 840, "OM2"
 
 # Ocean Explorer Map 1
 # 	The Ocean Monument is at these coordinates.
