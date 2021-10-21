@@ -213,7 +213,8 @@
 # Ocean Monument 2
 # 	This second monument I want to loot with the aid of a Conduit.
 #		First attempt failed.
--2520, 840, "OM2"
+#	There is a Conduit here
+-2525, 830, "OM2"
 
 # Ocean Explorer Map 1
 # 	The Ocean Monument is at these coordinates.
