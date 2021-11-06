@@ -125,13 +125,31 @@
 1134, -365, "J1"
 
 
+# Stronghold 2
+#	thank you chunkbase
+#	The portal is here:
+#		1036, 31, -1591
+1044, -1564
+
+
 # Village 7 - Dessert
 #	This is right by a jungle and a Dessert Temple.
+#		This jungle has a panda in a boat waiting.
+#			1380, -920
 #	The Dessert Temple near here is a rip off, there was no loot.
 #	This is where the first parrots were found.
 #	The first rail and cart system for transport (villagers in this case) is here.
 #		It connects this village to the first iron farm village (V5).
+#	This is now pretty much a mini base; has a cured zombie armoror villager!
 1272, -296, "V7"
+
+
+#Jungle Temple 1
+1160, -1208
+
+
+#Jungle Temple 2
+1130, -1700
 
 
 # Ocean with Kelp!
@@ -250,7 +268,7 @@
 
 # This is the closest village by Stronghold 1
 #	It is swampy here.
-#	So I made water channel to SH1 (Strong Hold 1) for 
+#	So I made water channel to SH1 (Stronghold 1) for 
 #		transporting villagers.
 -1780, -450, "SH1V1"
 
