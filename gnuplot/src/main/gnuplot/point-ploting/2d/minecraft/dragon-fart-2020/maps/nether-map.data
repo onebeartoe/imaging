@@ -53,12 +53,14 @@
 
 
 # chunckbase - 1st Nether Fortress (Crossing)
-# 	This fortress has a Blaze spawner on the second floor.
+#	Follow the sign to the Fortress.
+# 	This fortress has a Blaze spawner on the second floor, see BS1.
+#	
 491, 187, "NF1"
 
 
 #Blaze Spawner
-530, 185, "BS"
+518, 76, 185, "BS1"
 
 # 2nd Nether Fortress
 955, 123, "NF2"
