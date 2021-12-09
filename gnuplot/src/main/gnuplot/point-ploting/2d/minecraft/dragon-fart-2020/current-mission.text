@@ -1,7 +1,26 @@
-Operation Home Base
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Operation Stronghold Base
 
 	*plants			
-		move to new location
 
 	trees
 
@@ -9,16 +28,80 @@ Operation Home Base
 
 	brew
 
+	[] animals 
+		separate all by 3 blocks
+		
+	[] villagers
+		separate all by 3 blocks
+
+		
+	splunking
+
+
+
+
+
+
+
+
+
+
+	
+Operation Caves and Cliffs Exploring
+
+	[x] more reset chunk spelunking
+
+		[x] from strong hold 1
+
+		[x] go to -1630, -586
+
+			skeleton spawner
+
+				-1687, 63, -574
+
+		[x] then to -830, -580
+
+			get back up water
+
+				-1479, 16, -597
+
+		[x] then dig back to -1630, -586
+
+			get up by water
+
+				-939, 11, -599
+
+				there is a lush cave down the other water placed to get lower! I got an axolotl
+
+	[x] strong hold one 1st rechunk
+
+		[x] -1921, -240
+
+
+	[x] get back with water
+
+		[x] -2010, -16, -249
+
+	[x] by Jungle base
+
+		[x] 1000, -340
+	
+			it's water now, after 1.18 update!
+
+Operation Home Base
+
+	*plants			
+		move to new location
+
 	animals 
 		move to new location
 		
-	villagers
-		
-	splunking
 
 --------------------------------------------
 
 Operation Nether Reset
+
+	[] reset all/most chunks in the Nether world
 
 	[] retrieve the Nether Spawn Anchor and all Ender Chests that are placed in the Nether realm
 
