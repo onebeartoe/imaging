@@ -10,29 +10,66 @@
 
 
 
+Document the best villager trade setups for emeralds.
+
+	bamboo/sugar cane farm -> sticks -> fletcher
+
+	sweet berries -> butcher
+
+	cactus farm -> cook -> green dye -> shepard
 
 
 
 
+
+
+Operation Get That Drowned that Got Me
+
+	I died
+
+		wiht a bucnh of good stuff
+
+			A trident got me
+
+			-853, 50, -82
+
+
+	yay, got my stuff back!
+
+		brewing
+
+			Glistering Melon Slice - Instant Health II
+
+			Blaze Powder - Strength
+
+	I got the stuff back, but oh my goodness! there is a rowdy lovely lush cavern right by the bed!
+
+		and I got a second trident from a Drowned, in the process too!
 
 
 
 
 Operation Stronghold Base
 
-	*plants			
+	[] plants			
+		bamboo farm
 
-	trees
+	[] trees
+		auto-farm
 
 	cook
 
-	brew
+	brew		
 
 	[] animals 
 		separate all by 3 blocks
 		
-	[] villagers
+	*[] villagers
 		separate all by 3 blocks
+
+		fletcher for stick to emerald trades
+
+		get a good Smite trade with a librarian
 
 		
 	splunking
