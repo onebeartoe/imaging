@@ -10,6 +10,65 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+get stuff back from the Piglins in the Nether
+
+	127, 62, 229
+
+
+
+
+Operation Wither 3 Skulls
+
+	[x] get a bunch of Blaze Rods, so we can reset the Nether when 1.18 arrives
+
+
+	[x] Nether Reset
+
+		[x] reset all/most chunks in the Nether world
+
+		[x] retrieve the Nether Spawn Anchor and all Ender Chests that are placed in the Nether realm
+
+			[x] strong hold 1
+				it didn't drop itself, even with a Silk Touch Diamond Pick Axe!?!
+
+			[x] V4
+
+			[x] V5, V7
+
+			[x] B1
+
+
+	[] Get 3 Wither Skulls
+
+		[] what is the name of the folder to load for MCASelector for the Nether world?
+
+	[] begin planing Operarion Wither Fight	
+
+
+
+
+
+
 Document the best villager trade setups for emeralds.
 
 	bamboo/sugar cane farm -> sticks -> fletcher
@@ -47,9 +106,33 @@ Operation Stronghold Base
 		
 	splunking
 
+Operation Home Base
+
+	*plants			
+		move to new location
+
+	animals 
+		move to new location
+		
+
+	
 
 
 
+
+Use Chorus fruit to find a cave. (thank you Farzy)
+
+Monsters Hunted
+
+Get the panda by Village 7
+
+Mod Packs
+
+
+
+
+
+---------------------------------------------------------------------------
 
 [x] Operation Get That Drowned that Got Me
 
@@ -78,9 +161,6 @@ Operation Stronghold Base
 
 
 
-
-
-	
 [x] Operation Caves and Cliffs Exploring
 
 	[x] more reset chunk spelunking
@@ -122,35 +202,4 @@ Operation Stronghold Base
 	
 			it's water now, after 1.18 update!
 
-Operation Home Base
-
-	*plants			
-		move to new location
-
-	animals 
-		move to new location
-		
-
---------------------------------------------
-
-Operation Nether Reset
-
-	[] reset all/most chunks in the Nether world
-
-	[] retrieve the Nether Spawn Anchor and all Ender Chests that are placed in the Nether realm
-
-	[x] get a bunch of Blaze Rods, so we can reset the Nether when 1.18 arrives
-	
-
----------------------------------------------
-
-Operation Wither Skull
-
-Use Chorus fruit to find a cave. (thank you Farzy)
-
-Monsters Hunted
-
-Get the panda by Village 7
-
-Mod Packs
 

@@ -66,6 +66,12 @@
 955, 123, "NF2"
 
 
+
+# Blaze Spawner 2
+# 	Y -> 61
+280, 187, "BS2"
+
+
 # Broken Portal 3 (kinda close to Strong Hold 1 'SH1') spawns here:
 -155, 36
 
