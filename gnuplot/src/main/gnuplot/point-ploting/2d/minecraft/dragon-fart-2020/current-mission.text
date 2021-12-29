@@ -46,6 +46,9 @@ Operation Wither 3 Skulls
 
 		[x] reset all/most chunks in the Nether world
 
+			[x] what is the name of the folder to load for MCASelector for the Nether world?			
+				Nether files are stored in the DIM-1 subfolder
+
 		[x] retrieve the Nether Spawn Anchor and all Ender Chests that are placed in the Nether realm
 
 			[x] strong hold 1
@@ -58,9 +61,8 @@ Operation Wither 3 Skulls
 			[x] B1
 
 
-	[] Get 3 Wither Skulls
+	[x] Get 3 Wither Skulls
 
-		[] what is the name of the folder to load for MCASelector for the Nether world?
 
 	[] begin planing Operarion Wither Fight	
 
