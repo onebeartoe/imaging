@@ -12,7 +12,8 @@
 
 
 
-
+# sure
+2, 2, 5, "sure"
 
 
 
@@ -62,6 +63,8 @@
 #	I inadvertantly made an axolotl farm here.
 #	The 'Balanced Diet' Achievment was made here with mushroom stew, dried kelp, and rabbit.
 -267, -183, "B1"
+
+
 
 
 
@@ -322,6 +325,19 @@
 # Check Point 3 - forest
 -280, 815, "CP3"
 
+
+
+# Initial Nether Portal Exit Point by BS2
+2080, 1320, "NPE2"
+
+
+
+# Operation Ghast Base
+2100, 1650, "OGB"
+
+
+# Giant Broken Nether portal to get a Ghast???
+2057, 1607, "GBNP1"
 
 
 # Nice littl hill top 1
