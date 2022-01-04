@@ -7,6 +7,36 @@
 
 
 
+Operation Ghast Base
+
+	[] plants			
+		bamboo farm
+
+	[] trees
+
+	cook
+
+	brew		
+
+	animals 
+		
+	villagers
+
+		
+	splunking/Ghast Hunting
+
+
+
+
+
+
+
+
+
+Operation Ghast Base - Done
+
+	[x] trees
+		auto-farm
 
 
 
@@ -17,6 +47,7 @@
 
 
 
+-----------------------------------------------------
 
 
 
@@ -27,17 +58,14 @@
 
 
 
-
-
-
-get stuff back from the Piglins in the Nether
+[x] get stuff back from the Piglins in the Nether
 
 	127, 62, 229
 
 
 
 
-Operation Wither 3 Skulls
+[x] Operation Wither 3 Skulls
 
 	[x] get a bunch of Blaze Rods, so we can reset the Nether when 1.18 arrives
 
@@ -96,10 +124,7 @@ Operation Stronghold Base
 
 	[] trees
 		auto-farm
-
-	cook
-
-	brew		
+	
 
 	[] animals 
 		separate all by 3 blocks
@@ -112,7 +137,6 @@ Operation Stronghold Base
 		get a good Smite trade with a librarian
 
 		
-	splunking
 
 Operation Home Base
 
