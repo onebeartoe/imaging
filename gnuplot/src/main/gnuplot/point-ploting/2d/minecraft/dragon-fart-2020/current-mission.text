@@ -9,10 +9,11 @@
 
 Operation Ghast Base
 
-	[] plants			
-		bamboo farm
+	[] plants
+		[] bamboo farm
 
-	[] trees
+
+	trees
 
 	cook
 
@@ -22,7 +23,8 @@ Operation Ghast Base
 		
 	villagers
 
-		
+	*auto-farms
+	
 	splunking/Ghast Hunting
 
 
@@ -35,11 +37,19 @@ Operation Ghast Base
 
 Operation Ghast Base - Done
 
+	[x] plants
+
+		[x] cactus farm
+
 	[x] trees
 		auto-farm
 
 
+	[x] cobllestone generator
 
+		used pixelriff's version
+
+			https://youtu.be/QwJezXeRL88?t=433
 
 
 
@@ -51,8 +61,15 @@ Operation Ghast Base - Done
 
 
 
+[] Get Mob heads using a trident with the Channeling enchantment.
 
+[] Get some custom pixel art in using a picture
 
+	Diego
+
+	Mario/Yoshi
+
+	Dinosaur
 
 
 
