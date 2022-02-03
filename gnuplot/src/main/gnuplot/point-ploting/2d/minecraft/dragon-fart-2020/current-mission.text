@@ -9,9 +9,7 @@
 
 Operation Ghast Base
 
-	[] plants
-		[] bamboo farm
-
+	plants
 
 	trees
 
@@ -27,41 +25,13 @@ Operation Ghast Base
 	
 	*splunking/
 
-	Ghast Hunting
-
-
-		I ended up getting it with a fishing rod with unbreaking on it.  I just kept pulling it 
-			util I got it close to the Nether Portal, then I when thru the purple part to the 
-			other side of the portal in the Nether.  Then I with the Ghast on the fishing rod still,
-			I pulled it from the other side.  I then went to the Overworld, where I got that sucka!
-
-		how to from Guggle that uses a rail (didn't try)
-
-			https://www.youtube.com/watch?v=YKXi8s-CNPw		
+		
 
 
 
 
 
 
-
-
-
-Operation Ghast Base - Done
-
-	[x] plants
-
-		[x] cactus farm
-
-	[x] trees
-		auto-farm
-
-
-	[x] cobllestone generator
-
-		used pixelriff's version
-
-			https://youtu.be/QwJezXeRL88?t=433
 
 
 
@@ -87,45 +57,11 @@ Operation Ghast Base - Done
 
 
 
-[x] get stuff back from the Piglins in the Nether
-
-	127, 62, 229
 
 
 
 
-[x] Operation Wither 3 Skulls
 
-	[x] get a bunch of Blaze Rods, so we can reset the Nether when 1.18 arrives
-
-
-	[x] Nether Reset
-
-		[x] reset all/most chunks in the Nether world
-
-			[x] what is the name of the folder to load for MCASelector for the Nether world?			
-				Nether files are stored in the DIM-1 subfolder
-
-		[x] retrieve the Nether Spawn Anchor and all Ender Chests that are placed in the Nether realm
-
-			[x] strong hold 1
-				it didn't drop itself, even with a Silk Touch Diamond Pick Axe!?!
-
-			[x] V4
-
-			[x] V5, V7
-
-			[x] B1
-
-
-	[x] Get 3 Wither Skulls
-
-
-	[x] begin planing Operarion Wither Fight
-
-		preparation videos
-
-			https://www.youtube.com/watch?v=vhzmLK7VdsA&ab_channel=IceCreamJunkie
 
 		
 
@@ -202,6 +138,82 @@ Mod Packs
 
 
 ---------------------------------------------------------------------------
+
+
+
+[x] Operation Ghast Base - Done
+
+	[x] plants
+
+		[x] cactus farm
+
+	[x] trees
+		auto-farm
+
+
+	[x] cobllestone generator
+
+		used pixelriff's version
+
+			https://youtu.be/QwJezXeRL88?t=433
+
+
+	[x]Ghast Hunting
+
+
+		I ended up getting it with a fishing rod with unbreaking on it.  I just kept pulling it 
+			util I got it close to the Nether Portal, then I when thru the purple part to the 
+			other side of the portal in the Nether.  Then I with the Ghast on the fishing rod still,
+			I pulled it from the other side.  I then went to the Overworld, where I got that sucka!
+
+		how to from Guggle that uses a rail (didn't try)
+
+			https://www.youtube.com/watch?v=YKXi8s-CNPw
+
+
+
+
+
+[x] Operation Wither 3 Skulls
+
+	[x] get a bunch of Blaze Rods, so we can reset the Nether when 1.18 arrives
+
+
+	[x] Nether Reset
+
+		[x] reset all/most chunks in the Nether world
+
+			[x] what is the name of the folder to load for MCASelector for the Nether world?			
+				Nether files are stored in the DIM-1 subfolder
+
+		[x] retrieve the Nether Spawn Anchor and all Ender Chests that are placed in the Nether realm
+
+			[x] strong hold 1
+				it didn't drop itself, even with a Silk Touch Diamond Pick Axe!?!
+
+			[x] V4
+
+			[x] V5, V7
+
+			[x] B1
+
+
+	[x] Get 3 Wither Skulls
+
+
+	[x] begin planing Operarion Wither Fight
+
+		preparation videos
+
+			https://www.youtube.com/watch?v=vhzmLK7VdsA&ab_channel=IceCreamJunkie
+
+
+[x] get stuff back from the Piglins in the Nether
+
+	127, 62, 229
+
+
+
 
 [x] Operation Get That Drowned that Got Me
 
