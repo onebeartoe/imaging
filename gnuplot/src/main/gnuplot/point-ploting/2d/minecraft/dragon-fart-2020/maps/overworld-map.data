@@ -13,7 +13,7 @@
 
 
 # sure
-2, 2, 5, "sure"
+2, 2, "sure"
 
 
 
@@ -113,6 +113,9 @@
 #		The structure is 10x9x9 (x,y,z).
 #	The base has the thrid Nether Portal, it has Fortress remenants with a Blaze spawner!
 #	It has a skeleton spawner right by it!
+#	Librarians
+#		Protection IV
+#		Looting III
 #	Broken portal!
 #		1304, 212
 #	Desert Temple!
