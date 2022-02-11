@@ -1,29 +1,48 @@
 
 
-Operation Ghast Base
+[] Two by Two Advancement (Breed all the animals)
 
-	plants
+	[] Update the Java application to show which animals have not been bred.
 
-	trees
+	[] Get the panda by Village 7
 
-	cook
+    /**
+     * This class verifies the production code returns the correct values for the 
+     * missing mobiles associated with the 'Breed All the Animals' advancement.
+     */
+    @Test
+    public void breedAllAnimals()
+    {
+        List<String> missingMobs = implementation.unbredAnimals();
+                
+        // These values are the expected missing values 
+        // in the advancements JSON file for this given user.
+        assertTrue( missingMobs.contains("minecraft:fox") );
+        assertTrue( missingMobs.contains("minecraft:goat") );
+        assertTrue( missingMobs.contains("minecraft:mule") );
+        assertTrue( missingMobs.contains("minecraft:strider") );
+        assertTrue( missingMobs.contains("minecraft:donkey") );
+        assertTrue( missingMobs.contains("minecraft:wolf") );
+        assertTrue( missingMobs.contains("minecraft:mooshroom") );
+        assertTrue( missingMobs.contains("minecraft:axolotl") );
+        assertTrue( missingMobs.contains("minecraft:llama") );
+        assertTrue( missingMobs.contains("minecraft:turtle") );
 
-	brew		
-
-	animals 
-		
-	villagers
-
-	auto-farms
-	
-	*splunking/
-
+[x]        assertTrue( missingMobs.contains("minecraft:hoglin") );
+			I got this one using the Nether portal at the Ghast base.
+[x]        assertTrue( missingMobs.contains("minecraft:ocelot") );
+			I got this one using the Parrot Jungle base.
+[x]        assertTrue( missingMobs.contains("minecraft:panda") );
+			I got this one using the Parrot Jungle base.               
+    }
 		
 -----------------------------------------------------
 
-[] Monsters Hunted
 
-	[] Get the panda by Village 7
+[] Get the 'Other Side' record from the Ghast base.
+
+
+[] Monsters Hunted
 
 
 
@@ -31,7 +50,7 @@ Operation Ghast Base
 
 
 
-[] Get some custom pixel art in using a picture
+[] Get some custom pixel art in using a Psicture
 
 	Diego
 
