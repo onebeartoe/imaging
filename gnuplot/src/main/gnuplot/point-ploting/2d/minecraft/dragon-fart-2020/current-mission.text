@@ -1,10 +1,41 @@
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 [] Two by Two Advancement (Breed all the animals)
 
 	[] Update the Java application to show which animals have not been bred.
 
-	[] Get the panda by Village 7
+	[x] Get the panda by Village 7
 
     /**
      * This class verifies the production code returns the correct values for the 
@@ -17,22 +48,25 @@
                 
         // These values are the expected missing values 
         // in the advancements JSON file for this given user.
-        assertTrue( missingMobs.contains("minecraft:fox") );
         assertTrue( missingMobs.contains("minecraft:goat") );
         assertTrue( missingMobs.contains("minecraft:mule") );
         assertTrue( missingMobs.contains("minecraft:strider") );
         assertTrue( missingMobs.contains("minecraft:donkey") );
         assertTrue( missingMobs.contains("minecraft:wolf") );
-        assertTrue( missingMobs.contains("minecraft:mooshroom") );
         assertTrue( missingMobs.contains("minecraft:axolotl") );
-        assertTrue( missingMobs.contains("minecraft:llama") );
         assertTrue( missingMobs.contains("minecraft:turtle") );
 
-[x]        assertTrue( missingMobs.contains("minecraft:hoglin") );
+[x]	assertTrue( missingMobs.contains("minecraft:mooshroom") );
+			Got'em way far away.
+[x]     assertTrue( missingMobs.contains("minecraft:llama") );
+		Got this at 1000, 325
+[x]     assertTrue( missingMobs.contains("minecraft:fox") );
+			I got this in the Taiga forest by Base 6.
+[x      assertTrue( missingMobs.contains("minecraft:hoglin") );
 			I got this one using the Nether portal at the Ghast base.
-[x]        assertTrue( missingMobs.contains("minecraft:ocelot") );
+[x]     assertTrue( missingMobs.contains("minecraft:ocelot") );
 			I got this one using the Parrot Jungle base.
-[x]        assertTrue( missingMobs.contains("minecraft:panda") );
+[x]     assertTrue( missingMobs.contains("minecraft:panda") );
 			I got this one using the Parrot Jungle base.               
     }
 		
@@ -127,6 +161,23 @@ Mod Packs
 
 
 ---------------------------------------------------------------------------
+
+
+[x] Get the mooshroom bread
+
+	[x] land at the village
+
+		-6980, -350
+
+	[x] get the mushroom
+
+		-6300, 490
+
+	[x] see the badlands
+
+		There is a really big coral ocean on the way here.
+
+		-8600, 1800
 
 
 

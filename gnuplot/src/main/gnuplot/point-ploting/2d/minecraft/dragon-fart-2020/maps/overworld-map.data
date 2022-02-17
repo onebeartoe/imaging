@@ -101,6 +101,9 @@
 
 # Sixth Village - Savana
 #	This one has a donkey!
+#	There is a taiga biome to the south of this village; gonna look for foxes to breed.
+#	The village here has a cool mountain with a villager at the top.
+#	There is a skeleton spawner at the two 'leaf towers'.
 700, 200, "V6"
 
 
@@ -127,7 +130,13 @@
 # Village 8 - Desert
 # 	This village is nice and flat.
 #	It already has a bunch of villagers with jobs.
+#	I was flying home and though I was slick.  But I had Bad Omen and accidentally stared a raid here.  I died a couple times but
+#		but eventually won and got all my stuff.  It was wild!
+#
 1590, 280, "V8"
+
+
+
 
 # Jungle 1
 1134, -365, "J1"
