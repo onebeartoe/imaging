@@ -28,7 +28,9 @@ public class DrawJavaCircles
         
         int imageWidth = 1600;
         int imageHeight = 1600;
+        
         BufferedImage bufferedImage = new BufferedImage(imageWidth, imageHeight, BufferedImage.TYPE_INT_RGB);
+        
         Graphics2D g2d = bufferedImage.createGraphics();
 
         g2d.setRenderingHint (RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
@@ -55,8 +57,11 @@ public class DrawJavaCircles
         g2d.dispose();
 
         File pwd = new File(".");
+
         File outfile = new File(pwd, "circles.png");
+
         System.out.println("outputing to: " + outfile.getCanonicalPath() );
+
         ImageIO.write(bufferedImage, "png", outfile);
     }
 }
