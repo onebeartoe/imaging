@@ -12,11 +12,11 @@ import javax.imageio.ImageIO;
 import org.onebeartoe.imaging.graphics.Circle;
 
 /**
- *
+ * This class generates an image of a grid of ants with random arm/leg positions.
  */
 public class BunchOfAnts
 {
-    private void genereate() throws IOException
+    private void genereateSampleImage() throws IOException
     {
         int imageWidth = 1600;
         int imageHeight = 1600;
@@ -26,17 +26,22 @@ public class BunchOfAnts
         Graphics2D g2d = bufferedImage.createGraphics();
 
         g2d.setRenderingHint (RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-        g2d.setPaint(Color.green);
         
-        IntStream.range(1, 5)
-                 .forEach( i -> 
-                 {
-                    Circle c = iToCircle(i);
-                                        
-                    System.out.println("(" + c.x + ", " + c.y + ") r: " + c.radius);
+        g2d.setPaint(Color.green);
+          
+        IntStream columnsRange = IntStream.range(0, 4);
+                
+        columnsRange.forEach( column -> 
+        {
+            IntStream.range(0, 7).forEach(row -> 
+            {
+                Circle c = locationToAnt(column, row);
 
-                    g2d.fillOval( (int)c.x, (int)c.y, (int)c.radius, (int)c.radius);
-                 });
+                System.out.println("(" + c.x + ", " + c.y + ") r: " + c.radius);
+
+                g2d.fillOval( (int)c.x, (int)c.y, (int)c.radius, (int)c.radius);                    
+            });
+        });
 
         g2d.dispose();
 
@@ -53,18 +58,20 @@ public class BunchOfAnts
     {
         BunchOfAnts app = new BunchOfAnts();
         
-        app.genereate();
+        app.genereateSampleImage();
     }
 
-    private Circle iToCircle(int currentColumn)
+    private Circle locationToAnt(int currentColumn, int row)
     {
         int radius = 100;
         
-        int xSpacing = 80;
+        int xSpacing = 180;
         
         int x = currentColumn * (radius + xSpacing);
         
-        int y = 100;
+        int ySpacing = 250;
+        
+        int y = row * ySpacing;
 
         Circle c = new Circle(x, y, radius);
         
