@@ -7,6 +7,7 @@ import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.Calendar;
 import java.util.stream.IntStream;
 import javax.imageio.ImageIO;
 import org.onebeartoe.imaging.graphics.Circle;
@@ -35,14 +36,16 @@ public class BunchOfAnts
         {
             IntStream.range(0, 7).forEach(row -> 
             {
-                Circle c = locationToAnt(column, row);
+                Ant c = locationToAnt(column, row);
 
-                System.out.println("(" + c.x + ", " + c.y + ") r: " + c.radius);
-
-                g2d.fillOval( (int)c.x, (int)c.y, (int)c.radius, (int)c.radius);                    
+                System.out.println("(" + c.thorax.x + ", " + c.thorax.y + ") r: " + c.thorax.radius);
+                
+                g2d.fillOval( (int)c.thorax.x, (int)c.thorax.y, (int)c.thorax.radius, (int)c.thorax.radius);                    
             });
         });
 
+//        Ellipse e;
+        
         g2d.dispose();
 
         File pwd = new File("target");
@@ -52,6 +55,11 @@ public class BunchOfAnts
         System.out.println("outputing to: " + outfile.getCanonicalPath() );
 
         ImageIO.write(bufferedImage, "png", outfile);
+        
+        // save a copy
+        long timeInMillis = Calendar.getInstance().getTimeInMillis();
+        String copyName = outfile.getCanonicalPath() + "." + timeInMillis + ".png";
+        ImageIO.write(bufferedImage, "png", new File(copyName));
     }
     
     public static void main(String[] args) throws IOException 
@@ -61,7 +69,7 @@ public class BunchOfAnts
         app.genereateSampleImage();
     }
 
-    private Circle locationToAnt(int currentColumn, int row)
+    private Ant locationToAnt(int currentColumn, int row)
     {
         int radius = 100;
         
@@ -75,6 +83,10 @@ public class BunchOfAnts
 
         Circle c = new Circle(x, y, radius);
         
-        return c;
+        Ant ant = new Ant();
+        
+        ant.thorax = c;
+        
+        return ant;
     }
 }
