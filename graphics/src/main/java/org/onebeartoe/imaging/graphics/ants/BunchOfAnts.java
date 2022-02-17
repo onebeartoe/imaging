@@ -17,7 +17,15 @@ import org.onebeartoe.imaging.graphics.Circle;
  */
 public class BunchOfAnts
 {
-    private void genereateSampleImage() throws IOException
+    private void drawAnt(Graphics2D graphics, Ant ant)
+    {
+        drawAntHead(graphics, ant);
+        
+        drawAntThorax(graphics, ant);
+        
+    }
+    
+    private BufferedImage genereateSampleImage() throws IOException
     {
         int imageWidth = 1600;
         int imageHeight = 1600;
@@ -34,39 +42,19 @@ public class BunchOfAnts
                 
         columnsRange.forEach( column -> 
         {
-            IntStream.range(0, 7).forEach(row -> 
+            IntStream.range(0, 4).forEach(row -> 
             {
                 Ant c = locationToAnt(column, row);
 
                 System.out.println("(" + c.thorax.x + ", " + c.thorax.y + ") r: " + c.thorax.radius);
                 
-                g2d.fillOval( (int)c.thorax.x, (int)c.thorax.y, (int)c.thorax.radius, (int)c.thorax.radius);                    
+                drawAnt(g2d, c);
             });
         });
-
-//        Ellipse e;
         
         g2d.dispose();
 
-        File pwd = new File("target");
-
-        File outfile = new File(pwd, "ants.png");
-
-        System.out.println("outputing to: " + outfile.getCanonicalPath() );
-
-        ImageIO.write(bufferedImage, "png", outfile);
-        
-        // save a copy
-        long timeInMillis = Calendar.getInstance().getTimeInMillis();
-        String copyName = outfile.getCanonicalPath() + "." + timeInMillis + ".png";
-        ImageIO.write(bufferedImage, "png", new File(copyName));
-    }
-    
-    public static void main(String[] args) throws IOException 
-    {
-        BunchOfAnts app = new BunchOfAnts();
-        
-        app.genereateSampleImage();
+        return bufferedImage;
     }
 
     private Ant locationToAnt(int currentColumn, int row)
@@ -88,5 +76,52 @@ public class BunchOfAnts
         ant.thorax = c;
         
         return ant;
+    }
+    
+    
+    
+    public static void main(String[] args) throws IOException 
+    {
+        BunchOfAnts app = new BunchOfAnts();
+        
+        BufferedImage graphics = app.genereateSampleImage();
+        
+        app.outputImages(graphics);
+    }
+
+    private void outputImages(BufferedImage bufferedImage) throws IOException 
+    {
+        File pwd = new File("target");
+
+        File outfile = new File(pwd, "ants.png");
+
+        System.out.println("outputing to: " + outfile.getCanonicalPath() );
+
+        ImageIO.write(bufferedImage, "png", outfile);
+        
+        // save a copy
+        long timeInMillis = Calendar.getInstance().getTimeInMillis();
+        String copyName = outfile.getCanonicalPath() + "." + timeInMillis + ".png";
+        ImageIO.write(bufferedImage, "png", new File(copyName));
+    }
+
+    private void drawAntThorax(Graphics2D graphics, Ant ant)
+    {
+        graphics.setColor(Color.gray);
+
+        graphics.fillOval((int)ant.thorax.x , (int)ant.thorax.y, 
+                            (int)ant.thorax.radius, (int)ant.thorax.radius);        
+    }
+
+    private void drawAntHead(Graphics2D graphics, Ant ant) 
+    {
+        graphics.setColor(Color.green);
+        
+        int x = (int)ant.thorax.x;// - (int) (ant.thorax.radius / 2.0);
+     
+        int y = (int)ant.thorax.y + (int) ant.thorax.radius;
+                
+        graphics.fillOval(x, y, 
+                          (int)ant.thorax.radius / 2, (int)ant.thorax.radius / 2);
     }
 }
