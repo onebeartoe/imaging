@@ -31,6 +31,20 @@
 
 
 
+
+
+
+[] Go to "SONP1" for Turtules (maybe another trident).
+
+
+
+
+
+
+
+
+
+
 [] Two by Two Advancement (Breed all the animals)
 
 	[] Update the Java application to show which animals have not been bred.
@@ -49,13 +63,15 @@
         // These values are the expected missing values 
         // in the advancements JSON file for this given user.
         assertTrue( missingMobs.contains("minecraft:goat") );
-        assertTrue( missingMobs.contains("minecraft:mule") );
-        assertTrue( missingMobs.contains("minecraft:strider") );
-        assertTrue( missingMobs.contains("minecraft:donkey") );
-        assertTrue( missingMobs.contains("minecraft:wolf") );
         assertTrue( missingMobs.contains("minecraft:axolotl") );
         assertTrue( missingMobs.contains("minecraft:turtle") );
 
+[x]	assertTrue( missingMobs.contains("minecraft:strider") );
+		I got them in the Nether, using the portal at Strong Hold Base 1.
+[x]     assertTrue( missingMobs.contains("minecraft:mule") );
+		Same spot at the donkey
+[x]	assertTrue( missingMobs.contains("minecraft:donkey") );
+		Plains village at -4100, -380
 [x]	assertTrue( missingMobs.contains("minecraft:mooshroom") );
 			Got'em way far away.
 [x]     assertTrue( missingMobs.contains("minecraft:llama") );
@@ -161,6 +177,11 @@ Mod Packs
 
 
 ---------------------------------------------------------------------------
+
+[x] Bullseye Advancement
+
+	at the Stronghold
+
 
 
 [x] Get the mooshroom bread
