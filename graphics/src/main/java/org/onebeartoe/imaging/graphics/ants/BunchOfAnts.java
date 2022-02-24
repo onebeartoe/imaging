@@ -23,11 +23,13 @@ public class BunchOfAnts
         
         drawAntThorax(graphics, ant);
         
+        
     }
     
     private BufferedImage genereateSampleImage() throws IOException
     {
         int imageWidth = 1600;
+        
         int imageHeight = 1600;
         
         BufferedImage bufferedImage = new BufferedImage(imageWidth, imageHeight, BufferedImage.TYPE_INT_RGB);
@@ -75,6 +77,8 @@ public class BunchOfAnts
         
         ant.thorax = c;
         
+        ant.head = new Circle(0, 0, radius / 2.0);
+        
         return ant;
     }
     
@@ -117,7 +121,7 @@ public class BunchOfAnts
     {
         graphics.setColor(Color.green);
         
-        int x = (int)ant.thorax.x;// - (int) (ant.thorax.radius / 2.0);
+        int x = (int)ant.thorax.x + (int) (ant.head.radius * 0.5);
      
         int y = (int)ant.thorax.y + (int) ant.thorax.radius;
                 
