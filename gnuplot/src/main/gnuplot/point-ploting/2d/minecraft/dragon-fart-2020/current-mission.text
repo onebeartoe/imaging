@@ -34,8 +34,6 @@
 
 
 
-[] Go to "SONP1" for Turtules (maybe another trident).
-
 
 
 
@@ -62,10 +60,14 @@
                 
         // These values are the expected missing values 
         // in the advancements JSON file for this given user.
-        assertTrue( missingMobs.contains("minecraft:goat") );
         assertTrue( missingMobs.contains("minecraft:axolotl") );
-        assertTrue( missingMobs.contains("minecraft:turtle") );
 
+
+[x]        assertTrue( missingMobs.contains("minecraft:goat") );
+		there are some here
+			760, 1312
+[x]     assertTrue( missingMobs.contains("minecraft:turtle") );
+		I got them near "SONP1".
 [x]	assertTrue( missingMobs.contains("minecraft:strider") );
 		I got them in the Nether, using the portal at Strong Hold Base 1.
 [x]     assertTrue( missingMobs.contains("minecraft:mule") );
