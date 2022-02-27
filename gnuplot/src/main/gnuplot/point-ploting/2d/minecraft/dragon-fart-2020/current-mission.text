@@ -26,28 +26,31 @@
 
 
 
+[x] Two Birds One Arrow
+
+	Does this boat technique, from Guggle, work?
+
+		https://www.youtube.com/watch?v=JtQ46aegYco
+
+
+	or this other one?
+
+		https://www.youtube.com/watch?v=myk2-al-LgE&ab_channel=T_Wagz
+
+
+	They both look like they work, but I ended up getting this Achievement with a 5x5 of Cobwebs 3 blocks off the ground.  It helped 
+
+		to have the platform really wide around the Cobweb square to get the right angle to line up the two Phantoms.
+
+[] Update the original hostile mob farm to use water flows.
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-[] Update the Java application to show which animals have not been bred.
-
-
-
-    
 		
 -----------------------------------------------------
+
 
 
 [] Monsters Hunted
@@ -55,6 +58,10 @@
 
 
 [] Get Mob heads using a trident with the Channeling enchantment.
+
+
+
+[] Update the Java application to show which animals have not been bred.
 
 
 
@@ -69,7 +76,7 @@
 
 
 
-Document the best villager trade setups for emeralds.
+[] Document the best villager trade setups for emeralds.
 
 	bamboo/sugar cane farm -> sticks -> fletcher
 
@@ -81,7 +88,7 @@ Document the best villager trade setups for emeralds.
 
 
 
-Operation Stronghold Base
+[] Operation Stronghold Base
 
 	[] plants			
 		bamboo farm
@@ -102,7 +109,7 @@ Operation Stronghold Base
 
 		
 
-Operation Home Base
+[] Operation Home Base
 
 	plants			
 		move to new location
@@ -124,17 +131,30 @@ Operation Home Base
 
 
 
-Use Chorus fruit to find a cave. (thank you Farzy)
+[] Use Chorus fruit to find a cave. (thank you Farzy)
 
 
 
-Mod Packs
+[] Mod Packs
 
 
 
 
 
 ---------------------------------------------------------------------------
+
+
+
+[] Star Trader
+
+
+
+[x] Caves and Cliffs (free fall)
+
+	location at mountain top
+
+		-205, 92, -135
+
 
 
 [x] Two by Two Advancement (Breed all the animals)
