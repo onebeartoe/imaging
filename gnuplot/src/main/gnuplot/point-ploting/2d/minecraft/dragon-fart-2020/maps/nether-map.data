@@ -19,7 +19,7 @@
 
 
 
-
+	
 
 
 
@@ -34,10 +34,26 @@
 -34, -18, "P1"
 
 
-# Warped Forrest
+# Warped Forrest 1
 #	this is the one where I was trying to get to Warped Nylium, but found a 
 #	Bastion Remnant along the way.
-300, -450
+#
+#		[x] Bastion - holglin stanles
+#			336, -352
+#	
+#
+#		[x] Bastion - treasure room
+#
+#			-208, -1104
+#
+#		[] Bastion - treasure room
+#
+#			-528, -976	
+#    
+#	Tehre is now a Nether Portal here at Y = 100.
+#		It transporst to the Overworld in the middle of an warm ocean, right next to a badlands biome.
+#	
+300, -450, "WF1"
 
 
 # second portal - at the libraian village (fourth village)
@@ -65,7 +81,7 @@
 # 2nd Nether Fortress
 955, 123, "NF2"
 
-
+ 
 
 # Blaze Spawner 2
 # 	Y -> 61

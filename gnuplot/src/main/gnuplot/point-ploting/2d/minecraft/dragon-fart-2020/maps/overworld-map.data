@@ -59,8 +59,8 @@
 #		On 2020-10-02, a pretty good loot was lost next to a spider spawner.   Anger.
 #		left off here: 
 #			-546, -288
-		another one here
-			-173, 34, -281
+#		another one here
+#			-173, 34, -281
 #	This base has a small aquarium.
 #	I inadvertantly made an axolotl farm here.
 #	The 'Balanced Diet' Achievment was made here with mushroom stew, dried kelp, and rabbit.
@@ -108,7 +108,7 @@
 
 
 # Fifth Village - Desert
-#	This village has the first iron farm, from Golumns.
+#	This village has the first (and only) iron farm, from Golumns.
 #		It is pretty much Wattles design, with the bottom base at 20 blocks off the ground.
 #
 #	This one has a structure to grow huge brown and red mushrooms on Podzol.  
@@ -354,6 +354,28 @@
 # Giant Broken Nether portal to get a Ghast???
 2057, 1607, "GBNP1"
 
+
+
+# Badlands 1
+#	This is near where the 'WF1' Nether Portal lets out in the Overworld, it is under the sea.
+#		
+#	The actual protal is at about 2416,41, -3650	
+#
+2680, 	-3650, "BL1"
+
+
+# Ocean Base for WF1
+#	It is so pretty here.
+#	It is a warm ocean.
+#	There is a nether portal at the bottom of the ocean (and top) here.
+#		2415, -3650
+#	
+2460,	-3700	, "OB-WF1"
+
+
+# Plains Vilalge - 'OB-WF1'
+#
+2280, -3000, "OB-WF1"
 
 # Nice littl hill top 1
 249, -587, "HT1"
