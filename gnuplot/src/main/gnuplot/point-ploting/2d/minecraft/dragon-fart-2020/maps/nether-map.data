@@ -46,9 +46,12 @@
 #
 #			-208, -1104
 #
-#		[] Bastion - treasure room
+#		[x] Bastion - treasure room  
 #
-#			-528, -976	
+#			The exit is around here:
+#
+#			-528, 67, -946	
+#			
 #    
 #	Tehre is now a Nether Portal here at Y = 100.
 #		It transporst to the Overworld in the middle of an warm ocean, right next to a badlands biome.
