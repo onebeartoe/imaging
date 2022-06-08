@@ -34,6 +34,26 @@
 -34, -18, "P1"
 
 
+
+# Village 5 Nether Portal
+# The height location is
+#	y = 82
+# Bastion - Treasure Room
+#
+#	[] -288, 304
+#		bridge is at y = 82
+#		There is a Magma Cube spawner here.
+#		exit is at -263, 83, 300
+#
+#	[] -240, 480	
+#		The outside mini base/exit is at -297, 80, 287
+#		Top/Roof exit is at -310, 94, 290
+#
+#	[] -752, -224
+#
+163, 85, "V5NP"
+
+
 # Warped Forrest 1
 #	this is the one where I was trying to get to Warped Nylium, but found a 
 #	Bastion Remnant along the way.
@@ -55,6 +75,8 @@
 #    
 #	Tehre is now a Nether Portal here at Y = 100.
 #		It transporst to the Overworld in the middle of an warm ocean, right next to a badlands biome.
+#
+#	I think there is a Respawn Anchor here.
 #	
 300, -450, "WF1"
 

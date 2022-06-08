@@ -96,7 +96,7 @@
 
 
 # Bridge over water betweeen Second village and Fifth village
-565, 104, I
+565, 104, "BRG"
 
 
 # Sixth Village - Savana
@@ -116,6 +116,9 @@
 #		The structure is 10x9x9 (x,y,z).
 #	The base has the thrid Nether Portal, it has Fortress remenants with a Blaze spawner!
 #	It has a skeleton spawner right by it!
+#	I put some turtles here.
+#	The music disc farm/setup is here.  There is a skeleton on lock down and a trap for the creeper.
+#	There is a mob head (charged Creeper) setup here too.
 #	Librarians
 #		Protection IV
 #		Looting III
@@ -146,7 +149,7 @@
 #	thank you chunkbase
 #	The portal is here:
 #		1036, 31, -1591
-1044, -1564
+1044, -1564, "SH2"
 
 
 # Village 7 - Dessert
@@ -162,11 +165,11 @@
 
 
 #Jungle Temple 1
-1160, -1208
+1160, -1208, "JT1"
 
 
 #Jungle Temple 2
-1130, -1700
+1130, -1700, "JT2"
 
 
 # Ocean with Kelp!
@@ -219,21 +222,21 @@
 # Check Point 1 - Bridge 1
 # 	This is the 'top left' corner.
 #	SH1 -> here is okay
--1690, 170, 'CP1B1'
+-1690, 170, "CP1B1"
 
 # Sunflower Plains Village 1
 -1880, 730, "SPV1"
 
 
 # Woodland Mansion
--1032, -2040
+-1032, -2040, "WM1"
 
 #Buried Treasure ?
--999, -1863, BT?
+-999, -1863, "BT1"
 
 
 #Buried Treasure ?
--871, -1815, BT?
+-871, -1815, "BT2"
 
 # Frozen Ocean 1 Base 1
 # 	This is a base in a nice little pointy ice hill.
@@ -256,7 +259,7 @@
 # Ocean Explorer Map 1
 # 	The Ocean Monument is at these coordinates.
 #       This is the first Ocean Monument that was looted in this world.
--3000, 900, OEM1
+-3000, 900, "OEM1"
 
 
 #Shipwreck
@@ -365,18 +368,19 @@
 
 
 # Ocean Base for WF1
+#	The Nether Pportal here goes to a warped forrest.
 #	It is so pretty here.
-#	It is a warm ocean, with lots of 	.
+#	It is a warm ocean, with lots of coral and fans.
 #	There is a nether portal at the bottom of the ocean (and top) here.
 #		2415, -3650
 #	There is an cool Bandlands biome very near here.
 #	This base has a Nether Portal to 2 Bastion treasure rooms (1.18).
-2460,	-3700	, "OB-WF1"
+2460,	-3700, "OB-WF1"
 
 
 # Plains Vilalge - 'OB-WF1'
 #
-2280, -3000, "OB-WF1"
+2280, -3000, "PV1"
 
 # Nice littl hill top 1
 249, -587, "HT1"
