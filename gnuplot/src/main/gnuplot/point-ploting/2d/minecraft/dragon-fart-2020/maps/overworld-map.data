@@ -185,7 +185,7 @@
 #	The first villager spawn was here.  they were willing after I gave them a bunch 
 #	of potatos. <3
 #	This one now has a bunch of librarian villagers and a decent small farm.
-#	This has a medium mob spawner platform.
+#	This has a medium mob spawner platform, that uses water dispensors.
 -341, -836, "V4"
 
 
@@ -275,11 +275,8 @@
 #	spider spawner at 
 #	-1612, 33, -226
 #	Base with villagers
-#		farmer 1 - carrots, wheet
-#		farmer 2 - wheat, beetroot
-#		farmer 3 - carrots
-#		farmer 4 - carrots, potato
 #	This base has a 'Gunpowder farm' via Creepers.
+#	This base has good trades with Librarian Villagers.
 -1630, -76, "SH1"
 
 
@@ -392,6 +389,9 @@
 
 # Plains Village with donkey and mules breeds 
 -4100, -380, "PVD1"
+
+# Outpost - First one with Allay
+-2192, -3776, "OPA1"
 
 
 # Directions

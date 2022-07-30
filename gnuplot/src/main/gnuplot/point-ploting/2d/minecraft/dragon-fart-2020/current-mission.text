@@ -2,15 +2,115 @@
 
 
 
-[x] All Music Records
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[] Get some Allay
+
+	Illager Outputs
+
+		720, -1824
+
+			nope - prolly have to regenerate
+
+		-2896, -1296
+
+			nope - prolly have to regenerate
+
+		-2192, -3776
+
+			yep
+
+	Woodland Mansion (using 1.19 chunk generation)
+
+		7,096, 3,000?
+
+		-4,936, 11,096
+
+		8,264, -9,960
+
+		11,112, 1769
+
+
+
+[] Operation Red Stone Mob Flusher Farm (Fourth Village)
+
+	this is at the one that hase a rail road entry
+
+	there is already that big structure there, where we learned hostil mobs don't spawn on water streams.
+
+	Get it working with water dispensers.
+
+
+[] Operation Iron Farm Base (village 5)
+
+	[] Make a Jukebox room with parrots. 
+
+
+
+[] Reset unused Overworld chunks for the 1.19 Wild Update.
+
+
+
+
+
+
+[] Goat Horn
+
+	da rang da dang (tu roo tu roo)
+
+
+	
+[] Friendly Illager (no crossbow)
+
+
+
+
+[] Get some Mangrove blocks.
+
+
+
+[] All Music Records
 
 	[x] Otherside
 
+
 	[] Pigstep
 
-		in Nether bastion remnants
+		in Nether Bastion Remnants
 
-	[] Others
+	[] The record from Ancient City fragments.
+
+	[x] Others
 
 		Most of these music discs were obtained at Village 5, using the 'skeleton kills Creeper' technique.
 
@@ -35,6 +135,18 @@
 	
 
 
+
+
+
+
+
+[] Create a Snow Golem 
+
+	unlimited snow balls
+
+
+
+
 [] Get Mob heads using a trident with the Channeling enchantment.
 
 	there is a setup at Village 5 for this.
@@ -49,11 +161,9 @@
 
 
 
-[] Enderman XP farm in the End Dimension using an Endermite :)
 
 
-	
-[] Friendly Illager (no crossbow)
+
 
 
 [] Get some custom pixel art in using a Psicture
@@ -93,28 +203,6 @@
 	cactus farm -> cook -> green dye -> shepard
 
 
-
-
-
-[] Operation Stronghold Base
-
-	[] plants			
-		bamboo farm
-
-	[] trees
-		auto-farm
-	
-
-	[] animals 
-		separate all by 3 blocks
-		
-	*[] villagers
-		separate all by 3 blocks
-
-		fletcher for stick to emerald trades
-
-		get a good Smite trade with a librarian
-
 		
 
 [] Operation Home Base
@@ -144,8 +232,33 @@
 
 ---------------------------------------------------------------------------
 
+[x] Operation Stronghold Base
 
-[x] Operation Iron Farm Base
+	[x] get the bee nests going again
+
+	[x] Jukebox Room with parrots
+
+	[x] plants			
+		bamboo farm
+			It is not automated.
+
+	[x] trees
+		auto-farm
+
+
+
+[x] Enderman XP farm in the End Dimension using an Endermite :)
+
+	I made a modified version of this one at Stronghold 1 End:
+
+		https://www.youtube.com/watch?v=nh8voJScSbw&ab_channel=Shulkercraft
+
+	Use a sward with sweeping edge and sharpness (looting and unbreaking).
+
+
+
+
+[x] Operation Iron Farm Base (village 5)
 
 	[x] Give all villager homes a lightning rod
 

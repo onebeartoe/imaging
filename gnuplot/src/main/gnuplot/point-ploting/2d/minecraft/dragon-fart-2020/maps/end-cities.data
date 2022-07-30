@@ -1,7 +1,34 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # End City Locations
 
 # First Portal
--740, -990, "P1"
+-55, -78, "P1"
+
+# First Portal Outlet
+-740, -990, "P1-O"
+
+
+
+Second Portal
+!!!!!!!!!!!!!!!!!
+
+Second Portal Outlet
+623, -800, "P2-O"
+
 
 
 # First Ender Chest
@@ -9,6 +36,8 @@
 -765, -986, EC1
 
 
+# Enderman/Endermite XP Farm
+86, -25, "EXPF"
 
 #end of third blob
 -1400, -1430, "EoTB"

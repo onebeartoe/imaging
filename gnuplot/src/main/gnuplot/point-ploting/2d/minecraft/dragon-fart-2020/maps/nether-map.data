@@ -40,16 +40,17 @@
 #	y = 82
 # Bastion - Treasure Room
 #
-#	[] -288, 304
+#	[x] -288, 304
 #		bridge is at y = 82
 #		There is a Magma Cube spawner here.
 #		exit is at -263, 83, 300
 #
-#	[] -240, 480	
+#	[x] -240, 480	
 #		The outside mini base/exit is at -297, 80, 287
 #		Top/Roof exit is at -310, 94, 290
 #
-#	[] -752, -224
+#	[x] -752, -224
+#		The outside mine base exit is at -756, 81, -223
 #
 163, 85, "V5NP"
 
@@ -58,19 +59,21 @@
 #	this is the one where I was trying to get to Warped Nylium, but found a 
 #	Bastion Remnant along the way.
 #
-#		[x] Bastion - holglin stanles
+#		[x-] Bastion - holglin stables
 #			336, -352
 #	
 #
-#		[x] Bastion - treasure room
+#		[x-x] Bastion - treasure room
 #
 #			-208, -1104
 #
-#		[x] Bastion - treasure room  
+#		[x-x] Bastion - treasure room  
 #
 #			The exit is around here:
 #
 #			-528, 67, -946	
+#
+#			There is still a chest with minor loot here.
 #			
 #    
 #	Tehre is now a Nether Portal here at Y = 100.
