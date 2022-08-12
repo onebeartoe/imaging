@@ -393,6 +393,10 @@
 # Outpost - First one with Allay
 -2192, -3776, "OPA1"
 
+# First Allay Bases
+# 	This one has a simple obsidian generater.
+-2132, -3735, "OPA1B"
+
 
 # Directions
 0, -1300, "N"
