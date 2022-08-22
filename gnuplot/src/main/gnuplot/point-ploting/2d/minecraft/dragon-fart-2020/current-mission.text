@@ -3,6 +3,18 @@
 
 
 
+[] String Farm
+
+	Make string from at the 3rd Ancient City
+
+		Poisonous Cave Spider Spawner 
+
+			53, -53, 2167
+
+
+
+
+
 
 
 
@@ -21,31 +33,16 @@
 	Get it working with water dispensers.
 
 
+
+
 [] Operation Iron Farm Base (village 5)
 
-	[] Make a Jukebox room with parrots. 
-
-
-
-[x] Reset unused Overworld chunks for the 1.19 Wild Update.
+	[] Make a Jukebox room with parrots.
 
 
 
 
-
-
-[] Goat Horn
-
-	da rang da dang (tu roo tu roo)
-
-
-	
 [] Friendly Illager (no crossbow)
-
-
-
-
-[x] Get some Mangrove blocks.
 
 
 
@@ -82,17 +79,7 @@
 			[x] strad
 			[x] wait
 			[x] ward
-	
 
-
-
-
-
-
-
-[] Create a Snow Golem 
-
-	unlimited snow balls
 
 
 
@@ -107,7 +94,7 @@
 
 		[] Zombie
 
-		[] Skeleton
+		[x] Skeleton
 
 
 
@@ -134,7 +121,7 @@
 
 			https://rebane2001.com/mapartcraft/
 
-		
+
 -----------------------------------------------------
 
 
@@ -153,14 +140,14 @@
 	cactus farm -> cook -> green dye -> shepard
 
 
-		
+
 
 [] Operation Home Base
 
-	[x] plants			
+	[x] plants
 		move to new location
 
-	[] animals 
+	[] animals
 		move to new location
 
 	[] villagers
@@ -168,8 +155,8 @@
 		[] Fletcher for stick trades
 
 		[x] house and lightning rod for all
-		
-		
+
+
 
 
 [] Use Chorus fruit to find a cave. (thank you Farzy)
@@ -181,6 +168,104 @@
 
 
 ---------------------------------------------------------------------------
+
+
+
+[x] Loot an Ancient City(ies)
+
+	On the run of the first 3 of 4, I got enough shards to make a few 5 music disks and took home two Swift Sneek I and one Swift Sneak II.
+
+	tips:
+
+			Use an Ender chest to stash items as you loot.
+
+			crouch/sneek at all times
+
+			torches
+
+			potion of night vision
+
+			food
+
+			plenty of whool
+
+			Shriekers and Sensors
+
+				cover on all sides
+
+				or
+
+				break with a silk touch, efficiency hoe
+
+			scaffoldingg to get out
+
+			eggs to distract the Warden
+
+
+
+
+	[x] check if the cluster around the village was reset to 1.19 world generation
+
+		Plains Village (chunkbase shows 4 Ancient Cities around it).
+
+			-192, 1776
+
+			There was no village here, but another is real close.
+
+		[x] Plains/Meadow Village in the middle of some huge mountain.
+
+			This now a base.
+
+			-344, 121,  2199
+
+			[x] Nearest Ancient City (thanks chunkbase!)
+
+				-360, -51, 2072
+
+				The water fall exit is at
+
+							-368, -51, 2111
+
+				It is looted (except one chest thtat I cant  find)!  I lost two Swift Sneak books though :(
+
+			[x] Second Ancient City
+
+				-360,-51, 1784
+
+				It looks like only a Deep Dark biome is here, I cound not find the Ancient City.
+
+			[x] Third Ancient City
+
+				88, -51, 2104
+
+					Exit is at
+
+						-19, -51, 2104
+
+			[~] Fourth Anchient City (have not checked it yet)
+
+				248, -51, 1672
+
+
+
+
+
+
+
+[x] Create a Snow Golem
+
+	unlimited snow balls
+
+
+
+[x] Get some Mangrove blocks.
+
+
+
+[x] Goat Horn
+
+	da rang da dang (tu roo tu roo)
+
 
 
 [x] Get some Allay
@@ -215,13 +300,20 @@
 
 
 
+
+[x] Reset unused Overworld chunks for the 1.19 Wild Update.
+
+
+
+
+
 [x] Operation Stronghold Base
 
 	[x] get the bee nests going again
 
 	[x] Jukebox Room with parrots
 
-	[x] plants			
+	[x] plants
 		bamboo farm
 			It is not automated.
 
@@ -301,7 +393,7 @@
 		https://www.youtube.com/watch?v=myk2-al-LgE&ab_channel=T_Wagz
 
 
-	They both look like they work, but I ended up getting this Achievement with a 5x5 of Cobwebs 3 blocks off the ground.  It helped 
+	They both look like they work, but I ended up getting this Achievement with a 5x5 of Cobwebs 3 blocks off the ground.  It helped
 
 		to have the platform really wide around the Cobweb square to get the right angle to line up the two Phantoms.
 
@@ -353,7 +445,7 @@
 	[x]     assertTrue( missingMobs.contains("minecraft:ocelot") );
 				I got this one using the Parrot Jungle base.
 	[x]     assertTrue( missingMobs.contains("minecraft:panda") );
-				I got this one using the Parrot Jungle base; Village 7).               
+				I got this one using the Parrot Jungle base; Village 7).
 
 
 
@@ -408,8 +500,8 @@
 	[x]Ghast Hunting
 
 
-		I ended up getting it with a fishing rod with unbreaking on it.  I just kept pulling it 
-			util I got it close to the Nether Portal, then I when thru the purple part to the 
+		I ended up getting it with a fishing rod with unbreaking on it.  I just kept pulling it
+			util I got it close to the Nether Portal, then I when thru the purple part to the
 			other side of the portal in the Nether.  Then I with the Ghast on the fishing rod still,
 			I pulled it from the other side.  I then went to the Overworld, where I got that sucka!
 
@@ -430,7 +522,7 @@
 
 		[x] reset all/most chunks in the Nether world
 
-			[x] what is the name of the folder to load for MCASelector for the Nether world?			
+			[x] what is the name of the folder to load for MCASelector for the Nether world?
 				Nether files are stored in the DIM-1 subfolder
 
 		[x] retrieve the Nether Spawn Anchor and all Ender Chests that are placed in the Nether realm
@@ -527,7 +619,5 @@
 	[x] by Jungle base
 
 		[x] 1000, -340
-	
+
 			it's water now, after 1.18 update!
-
-
