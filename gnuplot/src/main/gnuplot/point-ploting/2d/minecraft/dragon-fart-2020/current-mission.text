@@ -3,46 +3,42 @@
 
 
 
+
+
+
+
+
+
 [] String Farm
 
-	Make string from at the 3rd Ancient City
+	[] Make string from at the 3rd Ancient City
 
 		Poisonous Cave Spider Spawner 
 
 			53, -53, 2167
 
+		Use the Shulkercraft technique
+
+			https://www.youtube.com/watch?v=DFXppgfjI_A
 
 
 
 
 
+[] Get Mob heads using a trident with the Channeling enchantment.
+
+	there is a setup at Village 5 for this.
+
+	heads:
+
+		[x] Creeper
+
+		[] Zombie
+
+		[x] Skeleton
 
 
 
-
-
-
-
-
-[] Operation Red Stone Mob Flusher Farm (Fourth Village)
-
-	this is at the one that hase a rail road entry
-
-	there is already that big structure there, where we learned hostil mobs don't spawn on water streams.
-
-	Get it working with water dispensers.
-
-
-
-
-[] Operation Iron Farm Base (village 5)
-
-	[] Make a Jukebox room with parrots.
-
-
-
-
-[] Friendly Illager (no crossbow)
 
 
 
@@ -83,31 +79,13 @@
 
 
 
-
-[] Get Mob heads using a trident with the Channeling enchantment.
-
-	there is a setup at Village 5 for this.
-
-	heads:
-
-		[x] Creeper
-
-		[] Zombie
-
-		[x] Skeleton
-
-
-
-
-
-
-
-
-[] Get some custom pixel art in using a Psicture
+[] Get some custom pixel art in using a photo/image
 
 	[x] Diego
 
 		15 - 23
+
+		It is at Village 5
 
 	[] Mario/Yoshi
 
@@ -120,6 +98,34 @@
 		webapp
 
 			https://rebane2001.com/mapartcraft/
+
+
+
+
+
+[] Operation Iron Farm Base (village 5)
+
+	[] Make a Jukebox room with parrots.
+
+
+
+
+[] Friendly Illager (no crossbow)
+
+
+
+
+
+
+[] Operation Red Stone Mob Flusher Farm (Fourth Village)
+
+	this is at the one that hase a rail road entry
+
+	there is already that big structure there, where we learned hostil mobs don't spawn on water streams.
+
+	Get it working with water dispensers.
+
+
 
 
 -----------------------------------------------------
