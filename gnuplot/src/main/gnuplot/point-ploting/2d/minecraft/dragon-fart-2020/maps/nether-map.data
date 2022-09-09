@@ -41,15 +41,23 @@
 # Bastion - Treasure Room
 #
 #	[x] -288, 304
-#		bridge is at y = 82
+#		The bridge is at y = 82
+#
 #		There is a Magma Cube spawner here.
-#		exit is at -263, 83, 300
 #
-#	[x] -240, 480	
-#		The outside mini base/exit is at -297, 80, 287
-#		Top/Roof exit is at -310, 94, 290
+#			-269, 35, 272
 #
-#	[x] -752, -224
+#			for the frog light farm
+#
+#				9x9 around the spawner and one layer above and below
+#
+#		Exit is at -263, 83, 300
+#
+#	[x] Top Portal Base	
+#		The outside base is at 
+#			-255, 80, 284
+#
+#	[x] -752, -224* (double check)
 #		The outside mine base exit is at -756, 81, -223
 #
 163, 85, "V5NP"

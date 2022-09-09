@@ -95,6 +95,13 @@
 453, 95, "V2S"
 
 
+
+# Frog Base 1
+# 	It is is still very primitive
+2600, 260, "FB1"
+
+
+
 # Bridge over water betweeen Second village and Fifth village
 565, 104, "BRG"
 
@@ -116,8 +123,9 @@
 #		The structure is 10x9x9 (x,y,z).
 #	The base has the thrid Nether Portal, it has Fortress remenants with a Blaze spawner!
 #	It has a skeleton spawner right by it!
-#	I put some turtles here.
+#	I put some turtles here. 
 #	The music disc farm/setup is here.  There is a skeleton on lock down and a trap for the creeper.
+#	There is a simple flower farm here.  It uses note blocks.
 #	There is a mob head (charged Creeper) setup here too.
 #	Librarians
 #		Protection IV
@@ -128,6 +136,25 @@
 #		1320, -373
 #	This area has a horses.
 1313, 80, "V5"
+
+
+# Magma Cube Spawner 1 - Portal Base
+#	Magma Cube Spawner (Overworld) Portal
+#		y = -41
+#
+-2055, 2225, "MCS1-P"
+
+
+# Magma Cube Spawner 1 - Portal Base - Ocean Outlet
+#	You have to take the waterfall by the Portal Base all the way up to the Ocian floor.
+#		y = 43
+#	Snowy Slopes
+#		-800, 2230
+#	
+#		power snow
+#			-653, 141, 2190
+#			There are Goat( horn)s here.
+-2043, 2230, "MCS1-P-OO"
 
 
 # Village 8 - Desert
@@ -170,6 +197,17 @@
 
 #Jungle Temple 2
 1130, -1700, "JT2"
+# y = 121
+
+
+
+
+# Ancient City Base 1
+# 	There are 4 Ancient Cities near here
+#	The base is has lots of resources.
+-344, 2199, "ACB1"
+
+
 
 
 # Ocean with Kelp!
