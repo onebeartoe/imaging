@@ -142,6 +142,8 @@
 #	Magma Cube Spawner (Overworld) Portal
 #		y = -41
 #
+#	It has an Alley Cave.
+#	This is (overworld-side) Nether Portal closest to the Magma Cube/Frog Light farm.
 -2055, 2225, "MCS1-P"
 
 
@@ -315,6 +317,7 @@
 #	Base with villagers
 #	This base has a 'Gunpowder farm' via Creepers.
 #	This base has good trades with Librarian Villagers.
+#	This base has a Strider with a real long lava lane, towards the back of the base.	
 -1630, -76, "SH1"
 
 
