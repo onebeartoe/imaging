@@ -97,7 +97,7 @@
 
 
 # Frog Base 1
-# 	It is is still very primitive
+# 	It is is still very primitive; it has some stuff though.
 2600, 260, "FB1"
 
 
@@ -143,7 +143,7 @@
 #		y = -41
 #
 #	It has an Alley Cave.
-#	This is (overworld-side) Nether Portal closest to the Magma Cube/Frog Light farm.
+#	This is (overworld-side) Nether Portal closest to the Magma Cube/Froglight farm.
 -2055, 2225, "MCS1-P"
 
 
@@ -153,10 +153,36 @@
 #	Snowy Slopes
 #		-800, 2230
 #	
-#		power snow
+#		powder snow
 #			-653, 141, 2190
+#
 #			There are Goat( horn)s here.
+#
+#			Illager Outpost is at the bottom of the mountain (no Alley though)
 -2043, 2230, "MCS1-P-OO"
+
+
+
+# Goat Base 1
+#	This is the Goat area near "MCS1-P-OO".
+#	
+#	y = 159
+#
+#	There is a bunch of Powder Snow near here.
+#
+#	A green frog farm is also here, under the trap doors.
+#
+-664, 2143, "GB1"
+
+
+# White Frog Base 1
+#	This has a farm for white frogs.
+#
+#	The entrance is at y = 63
+#
+-1830, 1850, "WFB1"
+
+
 
 
 # Village 8 - Desert
