@@ -2,78 +2,7 @@
 
 
 
-[] Operation Frog Lights
-
-	[x] Obtain plenty of slime balls
-
-	[x] Obtain some frogs
-
-		mangrove swamp
-
-			try
-				2700, 0 
-
-			1st Frog Base
-	
-				2600, 262
-
-					It looks like there is a Slime chunk is near here.
-
-	[x] Obtain a bunch of leads to take the frogs to the Nether dimension.
-
-	[x] prepare the Magma Cube spawner
-
-		Pixlriffs's version?
-
-			https://www.youtube.com/watch?v=SUgJ9NsgHCs
-
-	[x] obtain frogs and take them to the Magma Cube spawner Nether portal
-
-		[x] green
-
-		[x] orange
-
-		[x] white
-
-			the Savanna makes white frogs
-
-				-1810,  1878
-
-	[x] take the frogs to teh Magma Cube spawner
-
-	[x] collect all froglight colors
-
-	[] return a set of lights to the Base 1.
-
-
-
-[] Goat Horn
-
-	[x] get one
-
-	[x] get more
-
-	[x] da rang da dang (tu roo tu roo)
-
-	[] make a copper horn
-
-	[] return a set of lights to the Base 1.
-
-
-
-[] Get Mob heads using a trident with the Channeling enchantment.
-
-	there is a setup at Village 5 for this.
-
-	heads:
-
-		[x] Creeper
-
-		[x] Zombie
-
-		[x] Skeleton
-
-		[] return a set of lights to the Base 1.
+[] Friendly Illager (no crossbow)
 
 
 
@@ -85,6 +14,12 @@
 	[] Pigstep
 
 		in Nether Bastion Remnants
+
+			is there one in the Nether near
+
+				[] Magmacube Froglight Farm Base
+
+				[] Ancient City Base
 
 	[x] The record from Ancient City fragments.
 
@@ -113,8 +48,6 @@
 
 
 
-
-[] Friendly Illager (no crossbow)
 
 
 
@@ -228,6 +161,85 @@
 
 
 ---------------------------------------------------------------------------
+
+
+
+[x] Operation Frog Lights
+
+	[x] Obtain plenty of slime balls
+
+	[x] Obtain some frogs
+
+		mangrove swamp
+
+			try
+				2700, 0 
+
+			1st Frog Base
+	
+				2600, 262
+
+					It looks like there is a Slime chunk is near here.
+
+	[x] Obtain a bunch of leads to take the frogs to the Nether dimension.
+
+	[x] prepare the Magma Cube spawner
+
+		Pixlriffs's version?
+
+			https://www.youtube.com/watch?v=SUgJ9NsgHCs
+
+	[x] obtain frogs and take them to the Magma Cube spawner Nether portal
+
+		[x] green
+
+		[x] orange
+
+		[x] white
+
+			the Savanna makes white frogs
+
+				-1810,  1878
+
+	[x] take the frogs to teh Magma Cube spawner
+
+	[x] collect all froglight colors
+
+	[x] return a set of lights to the Base 1.
+
+
+
+[x] Goat Horn
+
+	[x] get one
+
+	[x] get more
+
+	[x] da rang da dang (tu roo tu roo)
+
+	[-] make a copper horn
+
+		There is no copper goat horn in Java edition.
+
+	[x] return a set of (3) horns to the Base 1.
+
+
+
+[x] Get Mob heads using a trident with the Channeling enchantment.
+
+	there is a setup at Village 5 for this.
+
+	heads:
+
+		[x] Creeper
+
+		[x] Zombie
+
+		[x] Skeleton
+
+		[x] return a set of lights to the Base 1.
+
+
 
 
 
