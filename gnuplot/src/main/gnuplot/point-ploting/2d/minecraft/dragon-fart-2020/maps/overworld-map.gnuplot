@@ -19,9 +19,10 @@ print "2D plot ahead, one moment please ..."
 
 set label "0,0" at 0, 0
 
-plot 'overworld-map.data' using 1:2:3 with labels 
+plot 'overworld-map.data' using 1:2:3 with labels
+replot 'overworld-village-bases.data' using 1:2:3 with labels
+replot 'overworld-minimal-bases.data' using 1:2:3 with labels 
 
 pause -1 "Hit return to resume"
 
 reset
-
