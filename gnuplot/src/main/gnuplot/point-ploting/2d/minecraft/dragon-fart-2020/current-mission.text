@@ -2,6 +2,12 @@
 
 
 
+
+
+
+
+
+
 [] Friendly Illager (no crossbow)
 
 
@@ -15,7 +21,21 @@
 
 		in Nether Bastion Remnants
 
-			is there one in the Nether near
+			By Strong Hold 1
+
+				[x] -288, 304, "Treasure Room"
+
+						This one had already been looted.
+
+				[] -240, 480, "Treasure Room"
+
+						The top exit is at
+
+								-242, 76, 447
+
+						There was one here!    :)
+
+			By is there one in the Nether near?
 
 				[] Magmacube Froglight Farm Base
 
@@ -88,7 +108,7 @@
 
 	[] Make string from at the 3rd Ancient City
 
-		Poisonous Cave Spider Spawner 
+		Poisonous Cave Spider Spawner
 
 			53, -53, 2167
 
@@ -98,7 +118,7 @@
 
 
 
-
+[] Try some missions in the Lord of the Rings mod.
 
 
 
@@ -173,10 +193,10 @@
 		mangrove swamp
 
 			try
-				2700, 0 
+				2700, 0
 
 			1st Frog Base
-	
+
 				2600, 262
 
 					It looks like there is a Slime chunk is near here.
