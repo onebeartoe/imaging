@@ -1,17 +1,19 @@
 Operation Base Village
 
-	plants
+	farm veggetables
 
 	trees
 
 	cook
 
-	brew		
+	brew
 
-	animals 
-		
+	animals
+
 	villagers
 
-	auto-farms
-	
+	*auto-farms
+
+	craft
+
 	splunking
