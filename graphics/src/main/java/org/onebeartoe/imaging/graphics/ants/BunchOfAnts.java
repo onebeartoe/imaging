@@ -85,12 +85,24 @@ public class BunchOfAnts
     
     
     public static void main(String[] args) throws IOException 
-    {
+    {        
         BunchOfAnts app = new BunchOfAnts();
         
         BufferedImage graphics = app.genereateSampleImage();
         
         app.outputImages(graphics);
+
+        
+String s = String.format("%10s", "0");
+        System.out.println("s = " + s);
+        System.out.println("s.length() = " + s.length());
+
+        
+        String z = String.format("%-10s", "0");
+        System.out.println("z = " + z);
+        System.out.println("z.length() = " + z.length());
+
+        System.out.println(">" + String.format("%850s", "") + "<");
     }
 
     private void outputImages(BufferedImage bufferedImage) throws IOException 
@@ -125,7 +137,9 @@ public class BunchOfAnts
      
         int y = (int)ant.thorax.y + (int) ant.thorax.radius;
                 
-        graphics.fillOval(x, y, 
+        graphics.drawOval(
+//        graphics.fillOval(
+                          x, y, 
                           (int)ant.thorax.radius / 2, (int)ant.thorax.radius / 2);
     }
 }
