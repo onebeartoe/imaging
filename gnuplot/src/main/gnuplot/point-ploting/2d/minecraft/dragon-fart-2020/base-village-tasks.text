@@ -4,7 +4,7 @@ Operation Base Village
 
 	trees
 
-	cook
+	cook/smelt
 
 	brew
 
@@ -15,5 +15,7 @@ Operation Base Village
 	*auto-farms
 
 	craft
+
+			weapons/armor/enchantments
 
 	splunking

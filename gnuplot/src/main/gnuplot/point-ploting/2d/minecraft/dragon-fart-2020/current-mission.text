@@ -5,41 +5,15 @@
 
 
 
-[] String Farm
-
-	[] 		Use the Shulkercraft technique
-
-				https://www.youtube.com/watch?v=DFXppgfjI_A
-
-	[] There is a Spider Spawner at Stronghold 1 "SH1".
-
-			(use this one)
-
-
-	[] Make string from at the 3rd Ancient City (?)
-
-		Poisonous Cave Spider Spawner
-
-			53, -53, 2167
-
-
-
 [] Make Bubble columns to the End Portal at Stronghold  1.
 
 
 
-
-
+[x] Make Bubble columns for String Farm at Stronghold 1
 
 
 
 [] Try some missions in the Lord of the Rings mod.
-
-
-
-
-
-
 
 
 
@@ -134,6 +108,24 @@
 
 
 
+
+[x] String Farm
+
+	[x] 		Use the Shulkercraft technique
+
+				https://www.youtube.com/watch?v=DFXppgfjI_A
+
+				It is or cave spiders, but it still works if you take away the middle blocks at the attack spot.
+
+	[x] There is a Spider Spawner at Stronghold 1 "SH1".
+
+	[~] Make string from at the 3rd Ancient City (?)
+
+		Poisonous Cave Spider Spawner
+
+			53, -53, 2167
+
+			Use the one at Stronghold 1, for now.
 
 
 
@@ -622,7 +614,6 @@
 [x] Operation Wither 3 Skulls
 
 	[x] get a bunch of Blaze Rods, so we can reset the Nether when 1.18 arrives
-
 
 	[x] Nether Reset
 

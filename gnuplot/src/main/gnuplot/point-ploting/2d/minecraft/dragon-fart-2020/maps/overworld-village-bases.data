@@ -64,12 +64,18 @@
 # Stronghold 1 (found on https://www.chunkbase.com/apps/seed-map#-1861601998)
 # 	Library 1
 #		-1643, 33, -73
+#
 #	Silverfish door (last died here)
 #		-1640, 27, -105
+#
 #	End Portal
 #		-1620, 20, -117
+#
 #	spider spawner at
 #		-1628, 32, -219
+#   current entrance:
+#       -1623, 69, -216
+#
 #	Base with villagers
 #	This base has a 'Gunpowder farm' via Creepers.
 #	This base has good trades with Librarian Villagers.
