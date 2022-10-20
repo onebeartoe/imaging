@@ -8,14 +8,14 @@ Operation Base Village
 
 	brew
 
-	animals
+	*animals
 
-	villagers
+	village(rs)
 
-	*auto-farms
+	auto-farms
 
-	craft
+	enchantments
 
-			weapons/armor/enchantments
+	potions
 
 	splunking
