@@ -51,10 +51,9 @@ public class InterviewTest
             
             String ending = s.substring(1);
             
-            String output = 
+            String output = s.replaceFirst(replace, replace);
             
-            s.replaceFirst(replace, replace)
-        });                
+        }                
     }
 }
 
