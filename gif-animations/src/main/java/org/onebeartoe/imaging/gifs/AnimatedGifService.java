@@ -24,7 +24,7 @@ public class AnimatedGifService
         
         String annotation = "some annotation";
 
-        double frames_per_second = 2;
+        double frames_per_second = 7;
        
         File parentDir = null;
         
