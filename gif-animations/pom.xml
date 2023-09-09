@@ -23,17 +23,13 @@
     
     
   <organization>
-            
     <name>onebeartoe.org</name>
-        
   </organization>
       
   <modules>
-            
     <module>service</module>
           
     <module>square-chase</module>
-      
   </modules>
       
   <dependencies>
