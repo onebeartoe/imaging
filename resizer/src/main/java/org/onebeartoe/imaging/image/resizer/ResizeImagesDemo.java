@@ -9,6 +9,9 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JFrame;
+
+import com.formdev.flatlaf.FlatDarkLaf;
+
 import org.onebeartoe.application.logging.SysoutLoggerFactory;
 import org.onebeartoe.application.ui.swing.SwingApplication;
 
@@ -105,6 +108,9 @@ public class ResizeImagesDemo extends JFrame
     public static void main(String[] args) 
     {
         // setup and show the GUI
+        
+        // Apply the dark theme
+        FlatDarkLaf.setup();
         
         String title = "ImageResizer by onebeartoe.com";
         
