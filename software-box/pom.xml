@@ -3,12 +3,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.onebeartoe.imaging</groupId>
+    <parent>
+        <groupId>org.onebeartoe.imaging</groupId>
+        <artifactId>imaging-parent</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
     <artifactId>software-box</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>Software Box Generator</name>
+    <name>onebeartoe-imaging-software-box</name>
     <description>Modern JavaFX application converted from JavaFX Script</description>
 
     <properties>

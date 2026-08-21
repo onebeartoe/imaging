@@ -24,6 +24,7 @@
         <module>graphics</module>
         <module>resizer</module>
         <module>server</module>
+        <module>software-box</module>
     </modules>
 
     <repositories>
