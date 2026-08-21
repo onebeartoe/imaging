@@ -1,0 +1,82 @@
+.root {
+    -fx-font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    -fx-base: #1e1e24;
+    -fx-background: #141418;
+    -fx-control-inner-background: #282830;
+    -fx-accent: #007acc;
+    -fx-focus-color: #007acc;
+    -fx-faint-focus-color: #007acc22;
+}
+
+.header-pane {
+    -fx-background-color: linear-gradient(to right, #1e1e2d, #252538);
+    -fx-padding: 14 20;
+    -fx-border-color: #333345;
+    -fx-border-width: 0 0 1 0;
+}
+
+.title-text {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-fill: #ffffff;
+}
+
+.subtitle-text {
+    -fx-font-size: 12px;
+    -fx-fill: #8a8a9e;
+}
+
+.control-panel {
+    -fx-background-color: #1a1a24;
+    -fx-padding: 15;
+    -fx-spacing: 12;
+    -fx-border-color: #2c2c3e;
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+
+.section-label {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #61afef;
+}
+
+.slider-label {
+    -fx-font-size: 11px;
+    -fx-text-fill: #abb2bf;
+}
+
+.button-primary {
+    -fx-background-color: linear-gradient(to bottom, #3b82f6, #2563eb);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 8 16;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+}
+
+.button-primary:hover {
+    -fx-background-color: linear-gradient(to bottom, #60a5fa, #3b82f6);
+}
+
+.button-secondary {
+    -fx-background-color: linear-gradient(to bottom, #4b5563, #374151);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 8 16;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+}
+
+.button-secondary:hover {
+    -fx-background-color: linear-gradient(to bottom, #6b7280, #4b5563);
+}
+
+.box-container {
+    -fx-background-color: #0f0f15;
+    -fx-border-color: #2a2a3a;
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
